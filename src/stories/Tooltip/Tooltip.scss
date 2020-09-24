@@ -1,0 +1,113 @@
+@import "../variables.scss";
+
+
+.con-lmm-tooltip {
+  position: relative;
+  margin: 15px;
+}
+
+.lmm-tooltip {
+  display: block;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 40000;
+  background: $blue;
+  color: $white;
+  padding: 5px 7px;
+  font-family: $Regular;
+  font-size: 12px;
+  border-radius: 6px;
+  max-width: 220px;
+
+  & h4 {
+    font-size: 13px;
+    width: 100%;
+    border-bottom: 1px solid $white;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  &.after-none:after {
+    display: none !important;
+  }
+
+  &:after {
+    content: "";
+    background: inherit;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    display: block;
+  }
+
+  &.lmm-tooltip-top {
+    &:after {
+      bottom: -6px;
+    }
+  }
+
+  &.lmm-tooltip-bottom {
+    &:after {
+      top: -1px;
+    }
+  }
+
+  &.lmm-tooltip-left {
+    &:after {
+      right: -1px;
+    }
+  }
+
+  &.lmm-tooltip-right {
+    &:after {
+      left: -6px;
+    }
+  }
+
+  &.tooltip-fade-enter-active,
+  &.tooltip-fade-leave-active {
+    transition: opacity .2s, -webkit-transform .2s;
+    transition: opacity .2s, transform .2s;
+    transition: opacity .2s, transform .2s, -webkit-transform .2s;
+  }
+
+  &.tooltip-fade-enter,
+  &.tooltip-fade-leave-to {
+    opacity: 0;
+  }
+}
+
+.lmm-tooltip.lmm-tooltip-bottom:after,
+.lmm-tooltip.lmm-tooltip-top:after {
+  transform: rotate(45deg) translate(-50%);
+  left: 50%;
+}
+
+.lmm-tooltip.lmm-tooltip-left:after,
+.lmm-tooltip.lmm-tooltip-right:after {
+  transform: rotate(45deg) translateY(-50%);
+  top: 50%;
+}
+
+.tooltip-fade-enter.lmm-tooltip-top,
+.tooltip-fade-leave-to.lmm-tooltip-top {
+  transform: translateY(-10px);
+}
+
+.tooltip-fade-enter.lmm-tooltip-bottom,
+.tooltip-fade-leave-to.lmm-tooltip-bottom {
+  transform: translateY(10px);
+}
+
+.tooltip-fade-enter.lmm-tooltip-left,
+.tooltip-fade-leave-to.lmm-tooltip-left {
+  transform: translate(-10px);
+}
+
+.tooltip-fade-enter.lmm-tooltip-right,
+.tooltip-fade-leave-to.lmm-tooltip-right {
+  transform: translate(10px);
+}

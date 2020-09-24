@@ -1,0 +1,49 @@
+@import "../variables.scss";
+
+@font-face {
+  font-family: "PT Root UI_Regular";
+  src: url("./pt-root-ui-regular.eot") format("embedded-opentype");
+  src: url("./pt-root-ui-regular.eot?#iefix") format("embedded-opentype"),
+    url("./pt-root-ui-regular.woff2") format("woff2"),
+    url("./pt-root-ui-regular.woff") format("woff"),
+    url("./pt-root-ui-regular.ttf") format("truetype"),
+    url("./pt-root-ui-regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Root UI_Medium";
+  src: url("./pt-root-ui-medium.eot") format("embedded-opentype");
+  src: url("./pt-root-ui-medium.eot?#iefix") format("embedded-opentype"),
+    url("./pt-root-ui-medium.woff2") format("woff2"),
+    url("./pt-root-ui-medium.woff") format("woff"),
+    url("./pt-root-ui-medium.ttf") format("truetype"),
+    url("./pt-root-ui-medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Root UI_Bold";
+  src: url("./pt-root-ui-bold.eot") format("embedded-opentype");
+  src: url("./pt-root-ui-bold.eot?#iefix") format("embedded-opentype"),
+    url("./pt-root-ui-bold.woff2") format("woff2"),
+    url("./pt-root-ui-bold.woff") format("woff"),
+    url("./pt-root-ui-bold.ttf") format("truetype"),
+    url("./pt-root-ui-bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Root UI_Light";
+  src: url("./pt-root-ui-light.eot") format("embedded-opentype");
+  src: url("./pt-root-ui-light.eot?#iefix") format("embedded-opentype"),
+    url("./pt-root-ui-light.woff2") format("woff2"),
+    url("./pt-root-ui-light.woff") format("woff"),
+    url("./pt-root-ui-light.ttf") format("truetype"),
+    url("./pt-root-ui-light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}

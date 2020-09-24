@@ -1,0 +1,137 @@
+@import "../variables.scss";
+
+@import "../../../node_modules/material-icons/iconfont/material-icons.css";
+
+.button {
+  &:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+
+  font-family: $Regular;
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+  cursor: pointer;
+  transition: background 150ms ease-out,
+  border 150ms ease-out,
+  transform 150ms ease-out;
+  user-select: none;
+  touch-action: manipulation;
+  border-radius: 0;
+  color: $black;
+  background-color: transparent;
+  border: 1px solid $black;
+
+  span {
+    display: inline-block;
+  }
+
+  &.includeIco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .includeIconOnly {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .icon {
+    color: inherit;
+    text-align: center;
+    font-size: 1rem;
+
+    &.left {
+      order: 0;
+      margin-right: 5px;
+      margin-left: 0px;
+    }
+
+    &.center {
+      order: 0;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+
+    &.right {
+      order: 2;
+      margin-right: 0px;
+      margin-left: 5px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $blue;
+    background: $white;
+    border-color: $blue;
+    transform: translate3d(0, -3px, 0);
+    box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
+  }
+
+  &:not([disabled]) {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &--block {
+    display: flex;
+    justify-content: center;
+    flex: 1 0 auto;
+    min-width: 100% !important;
+    max-width: auto;
+  }
+
+  &--small {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+
+  &--medium {
+    font-size: 14px;
+    padding: 11px 20px;
+  }
+
+  &--large {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  &--round {
+    border-radius: 1.5em;
+  }
+
+  &--primary {
+    color: $white;
+    background-color: $blue;
+    border-color: $blue;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: rgba($blue, 0.85);
+      border-color: transparent;
+    }
+  }
+
+  &--border {
+    padding: 9px;
+  }
+
+  &--radius {
+    border-radius: 50%;
+  }
+
+  &--disabled {
+    opacity: 0.5;
+    box-shadow: none;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,77 @@
+@import "../variables.scss";
+
+.lmm-notifications {
+  position: fixed;
+  z-index: 200000;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: $blue;
+  color: $white;
+  cursor: default;
+  max-width: 350px;
+  min-width: 200px;
+
+  &:avtive {
+    opacity: 0.8;
+  }
+
+  & h3 {
+    font-size: 16px;
+    padding: 5px;
+    padding-bottom: 0;
+  }
+
+  & p {
+    font-size: 14px;
+    padding: 5px;
+    padding-right: 10px;
+  }
+
+  & h3,
+  & p {
+    z-index: 100;
+    position: relative;
+    animation: open 0.4s ease;
+  }
+
+  .content-noti {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .con-text-noti {
+      font-family: $Regular;
+      width: 100%;
+    }
+  }
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+    transform: translate(-30px);
+  }
+
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes openicon {
+  0% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

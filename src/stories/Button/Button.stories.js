@@ -1,0 +1,127 @@
+import lmmButton from "./Button.vue";
+
+export default {
+  title: "Example/Button",
+  component: lmmButton,
+  argTypes: {
+    backgroundColor: { control: "color" },
+    textColor: { control: "color" },
+    borderRadius: { control: "text" },
+    size: {
+      control: { type: "select", options: ["small", "medium", "large"] },
+    },
+    icon: {
+      control: { type: "select", options: ["left", "center", "right"] },
+    },
+  },
+  parameters: {
+    componentSubtitle:
+      "Кнопка используется как триггер для выполнения определённого действия. Кнопка однозначно сообщает пользователю, что произойдёт после нажатия на неё.",
+  },
+};
+
+const Template = (args, { argTypes }) => ({
+  props: Object.keys(argTypes),
+  components: { lmmButton },
+  template: '<lmm-button @onClick="onClick" v-bind="$props" />',
+});
+
+export const Default = Template.bind({});
+export const Round = Template.bind({});
+export const Primary = Template.bind({});
+export const Large = Template.bind({});
+export const Medium = Template.bind({});
+export const Small = Template.bind({});
+export const Block = Template.bind({});
+export const IconBtn = Template.bind({});
+
+Default.args = {
+  label: "Button",
+};
+
+Default.parameters = {
+  docs: {
+    storyDescription: "Обычная кнопка",
+  },
+};
+
+Round.args = {
+  label: "Button",
+  round: true,
+};
+
+Round.parameters = {
+  docs: {
+    storyDescription: "Кнопка со скруглёнными углами",
+  },
+};
+
+Primary.args = {
+  label: "Button",
+  primary: true,
+};
+
+Primary.parameters = {
+  docs: {
+    storyDescription: "Главная кнопка",
+  },
+};
+
+Large.args = {
+  size: "large",
+  label: "Button",
+};
+
+Large.parameters = {
+  docs: {
+    storyDescription: "Большая кнопка",
+  },
+};
+
+Medium.args = {
+  size: "medium",
+  label: "Button",
+};
+
+Medium.parameters = {
+  docs: {
+    storyDescription: "Средняя кнопка",
+  },
+};
+
+Small.args = {
+  size: "small",
+  label: "Button",
+};
+
+Small.parameters = {
+  docs: {
+    storyDescription: "Маленькая кнопка",
+  },
+};
+
+Block.args = {
+  size: "medium",
+  label: "Button",
+  block: true,
+};
+
+Block.parameters = {
+  docs: {
+    storyDescription: "Со 100% шириной",
+  },
+};
+
+IconBtn.args = {
+  size: "medium",
+  label: "Button",
+  icon: "left",
+  includeIco: true,
+  iconLabel: "search",
+};
+
+IconBtn.parameters = {
+  docs: {
+    storyDescription: "С иконкой",
+  },
+};

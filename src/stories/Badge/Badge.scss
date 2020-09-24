@@ -1,0 +1,40 @@
+@import "../variables.scss";
+
+.badge {
+  display: inline-block;
+  vertical-align: top;
+  font-family: $Regular;
+  font-size: $fs11;
+  line-height: $lh12;
+  padding: 4px 12px;
+  border-radius: 3em;
+  font-weight: 700;
+  color: $white;
+  background: $blue;
+
+  &--positive {
+    color: rgb(102, 191, 60);
+    background: rgb(225, 255, 212);
+  }
+
+  &--negative {
+    color: rgb(255, 68, 0);
+    background: rgb(254, 222, 210);
+  }
+
+  &--neutral {
+    color: rgb(102, 102, 102);
+    background: rgb(238, 238, 238);
+  }
+
+  &--error {
+    color: rgb(255, 255, 255);
+    background: rgb(255, 68, 0);
+  }
+
+  &--warning {
+    color: rgb(230, 157, 0);
+    background: rgb(255, 245, 207);
+  }
+
+}
