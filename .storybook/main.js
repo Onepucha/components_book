@@ -23,5 +23,6 @@ module.exports = {
     "@storybook/addon-storysource",
     "@storybook/addon-docs",
     "@storybook/addon-viewport",
+    "@storybook/addon-controls",
   ],
 };
