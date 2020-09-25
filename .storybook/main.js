@@ -20,7 +20,6 @@ module.exports = {
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-storysource",
     "@storybook/addon-docs",
     "@storybook/addon-viewport",
     "@storybook/addon-controls",

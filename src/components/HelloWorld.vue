@@ -1,24 +1,63 @@
 <template>
-  <div class="hello">
-    <Button label="Text"></Button>
+  <div class="grid">
+    <lmm-row>
+      <lmm-col type="flex" justify="center" align="center" Width="12">
+        100%
+      </lmm-col>
+    </lmm-row>
+    <lmm-row>
+      <lmm-col
+        Lg="6"
+        Sm="12"
+        Xs="12"
+        type="flex"
+        justify="center"
+        align="center"
+        Width="6"
+      >
+        50%
+      </lmm-col>
+      <lmm-col
+        Lg="6"
+        Sm="12"
+        Xs="12"
+        type="flex"
+        justify="center"
+        align="center"
+        Width="6"
+      >
+        50%
+      </lmm-col>
+    </lmm-row>
   </div>
 </template>
 
 <script>
-import Button from "../stories/Button/Button";
+import lmmRow from "../stories/lmmRow/lmmRow";
+import lmmCol from "../stories/lmmCol/lmmCol";
+
 export default {
   name: "HelloWorld",
   components: {
-    Button,
+    lmmRow,
+    lmmCol
   },
   props: {
-    msg: String,
-  },
+    msg: String
+  }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.grid {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 h3 {
   margin: 40px 0 0;
 }
