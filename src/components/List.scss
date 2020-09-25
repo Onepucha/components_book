@@ -1,4 +1,4 @@
-@import "../variables.scss";
+@import "../stories/variables.scss";
 
 .list {
   font-family: $Regular;
@@ -42,6 +42,11 @@
     &:last-child {
       margin-bottom: 0px;
     }
+  }
+
+  &_type_ordered {
+
+    // counter-reset: item;
   }
 
   &_type_ordered &--item {

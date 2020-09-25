@@ -1,19 +1,55 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <List :list="list" />
   </div>
 </template>
+
+<script>
+import List from "./components/List";
+export default {
+  components: { List },
+  data() {
+    return {
+      list: [
+        {
+          label: "label",
+          list: [
+            {
+              label: "label 1.1"
+            },
+            {
+              label: "label 1.2"
+            }
+          ]
+        },
+        {
+          label: "label 2",
+          list: [
+            { label: "label 2.1" },
+            {
+              label: "label 2.2",
+              list: [
+                {
+                  label: "label 2.2.1"
+                },
+                {
+                  label: "label 2.2.2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    };
+  }
+};
+</script>
 
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
