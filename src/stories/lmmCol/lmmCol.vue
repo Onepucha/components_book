@@ -1,20 +1,17 @@
 <template lang="html">
   <div
-    :class="[
-      'xs-'+Xs,
-      'sm-'+Sm,
-      'lg-'+Lg,
-    ]"
-
+    :class="['xs-' + Xs, 'sm-' + Sm, 'lg-' + Lg]"
     :style="{
-      'order':Order,
-      'justify-content':Justify,
-      'display':Type,
-      'align-items':Align,
-      'margin-left':Offset*100/12+'%',
-      'width':Width*100/12+'%'}"
-    class="col">
-    <slot/>
+      order: Order,
+      'justify-content': Justify,
+      display: Type,
+      'align-items': Align,
+      'margin-left': (Offset * 100) / 12 + '%',
+      width: (Width * 100) / 12 + '%',
+    }"
+    class="col"
+  >
+    <slot />
   </div>
 </template>
 
@@ -24,47 +21,49 @@ export default {
   props: {
     Width: {
       type: [Number, String],
-      default: 12
+      default: 12,
     },
     Xs: {
       type: [Number, String],
-      default: ""
+      default: "",
     },
     Sm: {
       type: [Number, String],
-      default: ""
+      default: "",
     },
     Lg: {
       type: [Number, String],
-      default: ""
+      default: "",
     },
     Offset: {
       type: [Number, String],
-      default: 0
+      default: 0,
     },
     Type: {
       type: String,
-      default: null
+      default: null,
     },
     Justify: {
       type: String,
-      default: null
+      default: null,
     },
     Align: {
       type: String,
-      default: null
+      default: null,
     },
     Order: {
       default: null,
-      type: [String, Number]
-    }
-  }
+      type: [String, Number],
+    },
+  },
 };
 </script>
 
 <style lang="css">
 .col {
-  float: left;
+  width: 100%;
+  padding: 10px;
+  position: relative;
   color: rgb(150, 150, 150);
   background: rgb(245, 245, 245);
   border-left: 1px solid rgb(210, 210, 210);
@@ -124,6 +123,54 @@ export default {
 
 .lg-0 {
   display: none !important;
+}
+
+.offset-1 {
+  margin-left: 8.33%;
+}
+
+.offset-2 {
+  margin-left: 16.66%;
+}
+
+.offset-3 {
+  margin-left: 25%;
+}
+
+.offset-4 {
+  margin-left: 33.33%;
+}
+
+.offset-5 {
+  margin-left: 41.66%;
+}
+
+.offset-6 {
+  margin-left: 50%;
+}
+
+.offset-7 {
+  margin-left: 58.33%;
+}
+
+.offset-8 {
+  margin-left: 66.66%;
+}
+
+.offset-9 {
+  margin-left: 75%;
+}
+
+.offset-10 {
+  margin-left: 83.33%;
+}
+
+.offset-11 {
+  margin-left: 91.66%;
+}
+
+.offset-12 {
+  margin-left: 100%;
 }
 
 @media only screen and (max-width: 900px) {

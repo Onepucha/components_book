@@ -35,7 +35,7 @@ export default {
     },
     color: {
       type: String,
-      default: "rgb(31, 116, 255)",
+      default: "rgb(0, 92, 254)",
     },
     colorText: {
       type: String,

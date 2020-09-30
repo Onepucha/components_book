@@ -1,0 +1,112 @@
+@import "../variables.scss";
+
+.lmm-content-textarea {
+  width: 100%;
+  position: relative;
+  border: 1px solid rgba($black, 0.08);
+  box-shadow: 0 0 0 0 transparent;
+  border-radius: 6px;
+  transition: boxShadow .25s ease, border .25s ease, -webkit-transform .25s ease;
+  transition: boxShadow .25s ease, border .25s ease, transform .25s ease;
+  transition: boxShadow .25s ease, border .25s ease, transform .25s ease, -webkit-transform .25s ease;
+  transform: translate(0);
+  margin-bottom: 16px;
+  font-family: $Regular;
+
+
+  &.focusx h4 {
+    background: $light-white;
+    padding-top: 4px;
+    padding-bottom: 4px
+  }
+
+  h4 {
+    font-size: .7rem;
+    padding: 8px;
+    padding-bottom: 0;
+    cursor: default;
+    transition: all .25s ease;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .lmm-textarea {
+    resize: none;
+    border-radius: 6px;
+    border: 0 solid transparent;
+    display: block;
+    padding: 9px;
+    color: $black;
+    font-size: .8rem;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    background: transparent;
+
+    &:focus {
+      resize: auto !important;
+
+      &~.count {
+        opacity: 1;
+      }
+    }
+
+    &--count {
+      position: absolute;
+      right: 14px;
+      bottom: 0;
+      transform: translateY(100%);
+      padding: 1px 6px;
+      font-size: .6rem;
+      border-radius: 0 0 5px 5px;
+      font-weight: 700;
+      box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .05);
+      cursor: default;
+      background: rgba(var(--vs-primary), 1);
+      color: #fff;
+      opacity: .3;
+      transition: all .25s ease;
+    }
+
+    &.textarea-danger {
+      border: 1px solid rgba(var(--vs-danger), .4);
+      box-shadow: 0 4px 20px 0 rgba(var(--vs-danger), .1);
+    }
+  }
+}
+
+
+.textarea-danger .lmm-textarea {
+  color: rgba(var(--vs-danger), .8);
+}
+
+.textarea-danger .count {
+  background: rgba(var(--vs-danger), 1);
+}
+
+.focusx.lmm-textarea-primary {
+  border: 1px solid rgba(var(--vs-primary), 1) !important;
+}
+
+.focusx.lmm-textarea-secondary {
+  border: 1px solid rgba(var(--vs-secondary), 1) !important;
+}
+
+.focusx.lmm-textarea-danger {
+  border: 1px solid rgba(var(--vs-danger), 1) !important;
+}
+
+.focusx.lmm-textarea-success {
+  border: 1px solid rgba(var(--vs-success), 1) !important;
+}
+
+.focusx.lmm-textarea-warning {
+  border: 1px solid rgba(var(--vs-warning), 1) !important;
+}
+
+.focusx.lmm-textarea-dark {
+  border: 1px solid rgba(var(--vs-dark), 1) !important;
+}
+
+.focusx.lmm-textarea-light {
+  border: 1px solid rgba(var(--vs-light), 1) !important;
+}

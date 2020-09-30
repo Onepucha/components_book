@@ -48,7 +48,7 @@
     list-style: decimal;
 
     &:before {
-      content: '';
+      content: "";
       // content: counter(item) ".";
       // counter-increment: item;
     }

@@ -78,7 +78,7 @@ export default {
         top: this.cords.top,
         transitionDelay: this.activeTooltip ? this.delay : "0s",
         background: this.color,
-        width: this.widthx,
+        width: `${this.widthx}px`,
       };
     },
   },
