@@ -1,48 +1,17 @@
 <template>
   <div id="app">
-    <List :list="list" />
+    <HelloWorld />
   </div>
 </template>
 
 <script>
-import List from "./components/List";
+import HelloWorld from "./components/HelloWorld";
 export default {
-  components: { List },
+  components: { HelloWorld },
   data() {
-    return {
-      list: [
-        {
-          label: "label",
-          list: [
-            {
-              label: "label 1.1"
-            },
-            {
-              label: "label 1.2"
-            }
-          ]
-        },
-        {
-          label: "label 2",
-          list: [
-            { label: "label 2.1" },
-            {
-              label: "label 2.2",
-              list: [
-                {
-                  label: "label 2.2.1"
-                },
-                {
-                  label: "label 2.2.2"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    };
-  }
-};
+    return {};
+  },
+}; 
 </script>
 
 <style lang="scss">

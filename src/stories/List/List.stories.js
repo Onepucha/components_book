@@ -3,9 +3,7 @@ import lmmList from "./List.vue";
 export default {
   title: "Example/List",
   component: lmmList,
-  argTypes: {
-    listStyle: { control: "text" },
-  },
+  argTypes: {},
 };
 
 const Template = (args, { argTypes }) => ({

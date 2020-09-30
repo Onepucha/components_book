@@ -139,7 +139,7 @@ export default {
       return {
         backgroundColor: this.backgroundColor,
         color: this.textColor,
-        borderRadius: this.borderRadius,
+        borderRadius: `${this.borderRadius}px`,
       };
     },
   },

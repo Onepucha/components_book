@@ -29,6 +29,30 @@
         50%
       </lmm-col>
     </lmm-row>
+    <lmm-row>
+      <lmm-col
+        Lg="6"
+        Sm="12"
+        Xs="6"
+        type="flex"
+        justify="center"
+        align="center"
+        Width="6"
+      >
+        50%
+      </lmm-col>
+      <lmm-col
+        Lg="6"
+        Sm="12"
+        Xs="6"
+        type="flex"
+        justify="center"
+        align="center"
+        Width="6"
+      >
+        50%
+      </lmm-col>
+    </lmm-row>
   </div>
 </template>
 
@@ -40,11 +64,11 @@ export default {
   name: "HelloWorld",
   components: {
     lmmRow,
-    lmmCol
+    lmmCol,
   },
   props: {
-    msg: String
-  }
+    msg: String,
+  },
 };
 </script>
 
