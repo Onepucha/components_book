@@ -1,3 +1,4 @@
+import lmmTab from "./Tab.vue";
 import lmmTabs from "./Tabs.vue";
 
 export default {
@@ -11,8 +12,9 @@ export default {
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  components: { lmmTabs },
-  template: '<lmm-tabs v-bind="$props" />',
+  components: { lmmTabs, lmmTab },
+  template:
+    '<lmm-tabs v-bind="$props"><lmm-tab v-for="item in children.label" :key="item.label"></lmm-tab></lmm-tabs>',
 });
 
 export const Default = Template.bind({});

@@ -7,6 +7,7 @@
       type="checkbox"
       class="lmm-checkbox--input"
       v-on="listeners"
+      :disabled="disabled"
     />
     <span :style="style" class="checkbox_x lmm-checkbox">
       <span :style="style_check" class="lmm-checkbox--check">
@@ -42,6 +43,9 @@ export default {
     fontSize: {
       type: Number,
       default: 16,
+    },
+    disabled: {
+      type: Boolean,
     },
   },
   computed: {

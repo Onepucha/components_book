@@ -59,10 +59,9 @@
 
 <script>
 import "./Tabs.scss";
-// import vsIcon from "../vsIcon/vsIcon.vue";
+
 export default {
   name: "lmm-tabs",
-  // components: { vsIcon },
   props: {
     value: {
       default: 0,
