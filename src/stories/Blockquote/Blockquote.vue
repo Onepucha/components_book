@@ -45,7 +45,8 @@
                 type: String,
                 default: "primary",
                 validator: function (value) {
-                    return ["primary", "danger", "success", "dark", "warning", "light", "code"].indexOf(value) !== -1;
+                    return ["primary", "danger", "success", "dark", "warning", "light", "code"].indexOf(value) !== -
+                        1;
                 },
             },
             /**
@@ -72,9 +73,9 @@
                 };
             },
             classesIcon() {
-            return {
-                [`${this.icon} material-icons`]: true,
-            };
+                return {
+                    [`${this.icon} material-icons`]: true,
+                };
             },
             style() {
                 return {
