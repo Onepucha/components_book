@@ -39,7 +39,7 @@ export default {
 };
 ```
 
-## Ресурсы
+## Наши ресурсы
 
 [Репозиторий GitHub](https://github.com/Onepucha/components_book)
 
