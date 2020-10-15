@@ -82,9 +82,9 @@ export default {
     avatarClass() {
       const classes = {}
       classes[this.size] = true
-      if (this.color) {
-        classes[`con-vs-avatar-${this.color}`] = true
-      }
+      // if (this.color) {
+      //   classes[`con-vs-avatar-${this.color}`] = true
+      // }
       return classes
     },
     avatarStyle() {
@@ -92,7 +92,7 @@ export default {
         width: /[px]/.test(this.size) ? this.size : null,
         height: /[px]/.test(this.size) ? this.size : null
       }
-      if (!this.color) {
+      if (this.color) {
         style.background = this.color
       }
       return style
@@ -101,14 +101,14 @@ export default {
       const classes = {
         badgeNumber: (typeof badge != 'boolean')
       }
-      if (this.badgeColor) {
-        classes[`dot-count-${this.badgeColor}`] = true
-      }
+      // if (this.badgeColor) {
+      //   classes[`dot-count-${this.badgeColor}`] = true
+      // }
       return classes
     },
     badgeStyle() {
       const style = {}
-      if (!this.badgeColor) {
+      if (this.badgeColor) {
         style.background = this.badgeColor
       }
       return style
@@ -117,16 +117,16 @@ export default {
       const classes = {
         'material-icons': !this.text
       }
-      if (this.textColor) {
-        classes[`vs-avatar-text-${this.textColor}`] = true
-      }
+      // if (this.textColor) {
+      //   classes[`vs-avatar-text-${this.textColor}`] = true
+      // }
       return classes
     },
     textStyle() {
       const style = {
         transform: `translate(-50%,-50%) scale(${this.returnScale})`
       }
-      if (!this.textColor) {
+      if (this.textColor) {
         style.color = this.textColor
       }
       return style
