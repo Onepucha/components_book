@@ -2,7 +2,7 @@ import lmmTab from "./Tab.vue";
 import lmmTabs from "./Tabs.vue";
 
 export default {
-  title: "Example/Tabs",
+  title: "Components/Tabs",
   component: lmmTabs,
   argTypes: {},
   parameters: {

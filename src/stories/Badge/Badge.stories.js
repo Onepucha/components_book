@@ -1,7 +1,7 @@
 import lmmBadge from "./Badge.vue";
 
 export default {
-  title: "Example/Badge",
+  title: "Components/Badge",
   component: lmmBadge,
   argTypes: {
     backgroundColor: { control: "color" },

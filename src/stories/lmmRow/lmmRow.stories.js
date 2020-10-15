@@ -1,7 +1,7 @@
 import lmmRow from "./lmmRow.vue";
 
 export default {
-  title: "Example/Row",
+  title: "Components/Row",
   component: lmmRow,
   argTypes: {},
   parameters: {

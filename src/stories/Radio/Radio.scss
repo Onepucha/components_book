@@ -1,20 +1,5 @@
 @import "../variables.scss";
 
-
-.content-lmm-radio:hover .lmm-radio--border {
-  border: 2px solid $blue;
-}
-
-.lmm-radio--label {
-  width: 100%;
-  cursor: pointer;
-  margin-left: 5px;
-  font-family: $Regular;
-}
-
-
-
-
 .content-lmm-radio {
   position: relative;
   display: flex;
@@ -35,6 +20,13 @@
     border-radius: 50%;
     cursor: pointer;
     flex-shrink: 0;
+
+    &--label {
+      width: 100%;
+      cursor: pointer;
+      margin-left: 5px;
+      font-family: $Regular;
+    }
 
     &--border {
       border-radius: 50%;

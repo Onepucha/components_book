@@ -1,7 +1,7 @@
 import lmmTextarea from "./Textarea.vue";
 
 export default {
-  title: "Example/Textarea",
+  title: "Components/Textarea",
   component: lmmTextarea,
   argTypes: {
     height: { control: "text" },

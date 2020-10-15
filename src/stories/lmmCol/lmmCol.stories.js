@@ -1,7 +1,7 @@
 import lmmCol from "./lmmCol.vue";
 
 export default {
-  title: "Example/Col",
+  title: "Components/Col",
   component: lmmCol,
   argTypes: {},
   parameters: {

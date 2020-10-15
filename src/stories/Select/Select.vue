@@ -310,7 +310,6 @@ export default {
     },
   },
   mounted() {
-    // this.$refs.inputselect.value = this.value
     this.changeValue();
     if (this.active) {
       utils.insertBody(this.$refs.vsSelectOptions);
@@ -356,7 +355,6 @@ export default {
           this.$emit("input", currentValues);
           this.filterItems("");
           this.changeValue();
-          // this.$refs.inputselect.value += ','
           this.$refs.inputselect.focus();
         } else {
           currentValues.push(value);

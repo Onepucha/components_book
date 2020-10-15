@@ -1,7 +1,7 @@
 import lmmCheckbox from "./Checkbox.vue";
 
 export default {
-  title: "Example/Checkbox",
+  title: "Components/Checkbox",
   component: lmmCheckbox,
   argTypes: {
     color: { control: "color" },

@@ -47,7 +47,7 @@ export default {
   border-bottom: 1px solid rgb(210, 210, 210);
 } */
 
-.row {
+/* .row {
   width: 100%;
   position: relative;
   display: flex;
@@ -59,5 +59,5 @@ export default {
 
 .row:last-child {
   border-bottom: 1px solid rgb(210, 210, 210);
-}
+} */
 </style>

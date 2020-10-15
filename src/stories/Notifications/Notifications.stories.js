@@ -1,7 +1,7 @@
 import lmmNotifications from "./Notifications.vue";
 
 export default {
-  title: "Example/Notifications",
+  title: "Components/Notifications",
   component: lmmNotifications,
   argTypes: {
     color: { control: "color" },
