@@ -4,15 +4,6 @@ export default {
     title: "Components/Avatar",
     component: lmmAvatar,
     argTypes: {
-        textColor: {
-            control: "color"
-        },
-        color: {
-            control: "color"
-        },
-        badgeColor: {
-            control: "color"
-        },
         size: {
             control: {
                 type: "select",
