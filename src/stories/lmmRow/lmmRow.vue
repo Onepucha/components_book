@@ -36,28 +36,3 @@ export default {
   },
 };
 </script>
-
-<style lang="css">
-/* .row {
-  clear: both;
-  flex-flow: wrap;
-  border-top: 1px solid rgb(210, 210, 210);
-}
-.row:last-child {
-  border-bottom: 1px solid rgb(210, 210, 210);
-} */
-
-/* .row {
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  border-top: 1px solid rgb(210, 210, 210);
-}
-
-.row:last-child {
-  border-bottom: 1px solid rgb(210, 210, 210);
-} */
-</style>

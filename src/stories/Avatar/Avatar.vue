@@ -82,9 +82,6 @@ export default {
     avatarClass() {
       const classes = {}
       classes[this.size] = true
-      // if (this.color) {
-      //   classes[`con-vs-avatar-${this.color}`] = true
-      // }
       return classes
     },
     avatarStyle() {
@@ -101,9 +98,6 @@ export default {
       const classes = {
         badgeNumber: (typeof badge != 'boolean')
       }
-      // if (this.badgeColor) {
-      //   classes[`dot-count-${this.badgeColor}`] = true
-      // }
       return classes
     },
     badgeStyle() {
@@ -117,9 +111,6 @@ export default {
       const classes = {
         'material-icons': !this.text
       }
-      // if (this.textColor) {
-      //   classes[`vs-avatar-text-${this.textColor}`] = true
-      // }
       return classes
     },
     textStyle() {
