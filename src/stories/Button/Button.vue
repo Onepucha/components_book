@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import "./Button.scss";
+import "./button.scss";
 
 export default {
   name: "lmm-button",
