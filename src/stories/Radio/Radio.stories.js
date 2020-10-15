@@ -1,7 +1,7 @@
 import lmmRadio from "./Radio.vue";
 
 export default {
-  title: "Example/Radio",
+  title: "Components/Radio",
   component: lmmRadio,
   argTypes: {
     color: { control: "color" },

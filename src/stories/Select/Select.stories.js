@@ -3,7 +3,7 @@ import lmmSelectItem from "./SelectItem.vue";
 import lmmSelectGroup from "./SelectGroup.vue";
 
 export default {
-  title: "Example/Select",
+  title: "Components/Select",
   component: lmmSelect,
   argTypes: {},
   parameters: {

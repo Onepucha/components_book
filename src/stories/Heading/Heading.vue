@@ -1,5 +1,12 @@
 <template>
-  <div :class="classes" :style="style">{{ title }}</div>
+  <h1 :class="classes" :style="style" v-if="size=='xl'">{{ title }}</h1>
+  <h2 :class="classes" :style="style" v-else-if="size=='l'">{{ title }}</h2>
+  <h3 :class="classes" :style="style" v-else-if="size=='m'">{{ title }}</h3>
+  <h4 :class="classes" :style="style" v-else-if="size=='s'">{{ title }}</h4>
+  <h5 :class="classes" :style="style" v-else-if="size=='xs'">{{ title }}</h5>
+
+
+
 </template>
 <script>
 import "./Heading.scss";

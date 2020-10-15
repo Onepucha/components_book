@@ -1,0 +1,53 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Getting started/Quick Start" />
+
+# Добро пожаловвать в дизайн-систему Лабмедиа
+## Get started
+
+**Components Book Labmedia** — это многократно используемая библиотека компонентов, которая помогает участникам быстрее создавать пользовательский интерфейс. Цель состоит в том, чтобы сделать создание надежных пользовательских интерфейсов более продуктивным и удовлетворительными.
+
+
+
+## Установка проекта
+Вы можете установить нашу дизайн-систему с помощью NPM.
+
+```npm install```
+
+Для запуска локального проекта используйте синтаксис сценариев 
+
+```npm run storybook```
+
+
+## Пример использования
+
+Нужно импортировать необходимые компоненты в свой интерфейс
+
+```import lmmButton from "../stories/lmmRow/lmmButton";```
+
+и используйте их, например так:
+
+```
+<template>
+    <div class="app">
+        <lmm-button label="I\'m a button!" size="medium">
+        </lmm-button>
+    </div>
+</template>
+
+export default {
+    components: {
+        lmmButton,
+    },
+};
+```
+
+## Ресурсы
+
+[Репозиторий GitHub](https://github.com/Onepucha/components_book)
+
+
+
+
+
+

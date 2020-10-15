@@ -100,6 +100,7 @@
   z-index: 40000;
   background: #fff;
   padding-left: 5px;
+  border: 1px solid $blue;
 }
 
 .vs-select--options ul {
@@ -156,21 +157,21 @@
 }
 
 .vs-select-primary .vs-select--item.activex {
-  background: rgba(var(--vs-primary), 0.1);
-  color: rgba(var(--vs-primary), 1);
+  background: rgba($primary, 0.1);
+  color: rgba($primary, 1);
   font-weight: 700;
 }
 
 .input-select-label-primary--active {
-  color: rgba(var(--vs-primary), 1);
+  color: rgba($primary, 1);
 }
 
 .input-select-validate-primary .input-select-con .input-select {
-  border-color: rgba(var(--vs-primary), 1);
+  border-color: rgba($primary, 1);
 }
 
 .input-select-validate-primary .input-select-con .vs-select--icon {
-  color: rgba(var(--vs-primary), 1);
+  color: rgba($primary, 1);
 }
 
 .vs-select-secondary .vs-select--item.activex {
@@ -192,93 +193,93 @@
 }
 
 .vs-select-danger .vs-select--item.activex {
-  background: rgba(var(--vs-danger), 0.1);
-  color: rgba(var(--vs-danger), 1);
+  background: rgba($danger, 0.1);
+  color: rgba($danger, 1);
   font-weight: 700;
 }
 
 .input-select-label-danger--active {
-  color: rgba(var(--vs-danger), 1);
+  color: rgba($danger, 1);
 }
 
 .input-select-validate-danger .input-select-con .input-select {
-  border-color: rgba(var(--vs-danger), 1) !important;
+  border-color: rgba($danger, 1) !important;
 }
 
 .input-select-validate-danger .input-select-con .vs-select--icon {
-  color: rgba(var(--vs-danger), 1);
+  color: rgba($danger, 1);
 }
 
 .vs-select-success .vs-select--item.activex {
-  background: rgba(var(--vs-success), 0.1);
-  color: rgba(var(--vs-success), 1);
+  background: rgba($success, 0.1);
+  color: rgba($success, 1);
   font-weight: 700;
 }
 
 .input-select-label-success--active {
-  color: rgba(var(--vs-success), 1);
+  color: rgba($success, 1);
 }
 
 .input-select-validate-success .input-select-con .input-select {
-  border-color: rgba(var(--vs-success), 1) !important;
+  border-color: rgba($success, 1) !important;
 }
 
 .input-select-validate-success .input-select-con .vs-select--icon {
-  color: rgba(var(--vs-success), 1);
+  color: rgba($success, 1);
 }
 
 .vs-select-warning .vs-select--item.activex {
-  background: rgba(var(--vs-warning), 0.1);
-  color: rgba(var(--vs-warning), 1);
+  background: rgba($warning, 0.1);
+  color: rgba($warning, 1);
   font-weight: 700;
 }
 
 .input-select-label-warning--active {
-  color: rgba(var(--vs-warning), 1);
+  color: rgba($warning, 1);
 }
 
 .input-select-validate-warning .input-select-con .input-select {
-  border-color: rgba(var(--vs-warning), 1) !important;
+  border-color: rgba($warning, 1) !important;
 }
 
 .input-select-validate-warning .input-select-con .vs-select--icon {
-  color: rgba(var(--vs-warning), 1);
+  color: rgba($warning, 1);
 }
 
 .vs-select-dark .vs-select--item.activex {
-  background: rgba(var(--vs-dark), 0.1);
-  color: rgba(var(--vs-dark), 1);
+  background: rgba($dark, 0.1);
+  color: rgba($dark, 1);
   font-weight: 700;
 }
 
 .input-select-label-dark--active {
-  color: rgba(var(--vs-dark), 1);
+  color: rgba($dark, 1);
 }
 
 .input-select-validate-dark .input-select-con .input-select {
-  border-color: rgba(var(--vs-dark), 1);
+  border-color: rgba($dark, 1);
 }
 
 .input-select-validate-dark .input-select-con .vs-select--icon {
-  color: rgba(var(--vs-dark), 1);
+  color: rgba($dark, 1);
 }
 
 .vs-select-light .vs-select--item.activex {
-  background: rgba(var(--vs-light), 0.1);
-  color: rgba(var(--vs-light), 1);
+  background: rgba($light, 0.1);
+  color: rgba($light, 1);
   font-weight: 700;
 }
 
 .input-select-label-light--active {
-  color: rgba(var(--vs-light), 1);
+  color: rgba($light, 1);
 }
 
 .input-select-validate-light .input-select-con .input-select {
-  border-color: rgba(var(--vs-light), 1);
+  border-color: rgba($light, 1);
 }
 
 .input-select-validate-light .input-select-con .vs-select--icon {
-  color: rgba(var(--vs-light), 1);
+  color: rgba($light, 1);
 }
 
 .vs-select--item {
@@ -346,13 +347,13 @@
 }
 
 .span-text-validation-success {
-  color: rgba(var(--vs-success), 1) !important;
+  color: rgba($success, 1) !important;
 }
 
 .span-text-validation-danger {
-  color: rgba(var(--vs-danger), 1) !important;
+  color: rgba($danger, 1) !important;
 }
 
 .span-text-validation-warning {
-  color: rgba(var(--vs-warning), 1) !important;
+  color: rgba($warning, 1) !important;
 }

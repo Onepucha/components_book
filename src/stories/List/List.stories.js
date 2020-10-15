@@ -1,7 +1,7 @@
 import lmmList from "./List.vue";
 
 export default {
-  title: "Example/List",
+  title: "Components/List",
   component: lmmList,
   argTypes: {},
 };

@@ -1,7 +1,7 @@
 import lmmHeading from "./Heading.vue";
 
 export default {
-  title: "Example/Heading",
+  title: "Components/Heading",
   component: lmmHeading,
   argTypes: {
     textColor: { control: "color" },

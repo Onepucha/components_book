@@ -67,7 +67,6 @@ export default {
     },
     styleCircle() {
       return {
-        // background: this.color,
         "box-shadow": `0px 3px 12px 0px ${this.color}`,
         border: `6px solid ${this.color}`,
       };

@@ -1,7 +1,7 @@
 import lmmText from "./BodyText.vue";
 
 export default {
-  title: "Example/BodyText",
+  title: "Components/BodyText",
   component: lmmText,
   argTypes: {
     textColor: { control: "color" },

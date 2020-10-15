@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import "./button.scss";
+import "./Button.scss";
 
 export default {
   name: "lmm-button",
@@ -97,6 +97,12 @@ export default {
     backgroundColor: {
       type: String,
     },
+    /**
+    Свойство устанвливает цвет обводки
+    */
+    borderColor: {
+      type: String,
+    },
     border: {
       type: Boolean,
     },
@@ -140,6 +146,7 @@ export default {
         backgroundColor: this.backgroundColor,
         color: this.textColor,
         borderRadius: `${this.borderRadius}px`,
+        borderColor: this.borderColor,
       };
     },
   },

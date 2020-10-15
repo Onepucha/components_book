@@ -280,7 +280,6 @@ export default {
       });
     },
 
-    // methods colors
     isColor() {
       return this.color;
     },

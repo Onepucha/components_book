@@ -1,7 +1,7 @@
 import lmmTooltip from "./Tooltip.vue";
 
 export default {
-  title: "Example/Tooltip",
+  title: "Components/Tooltip",
   component: lmmTooltip,
   argTypes: {
     color: { control: "color" },

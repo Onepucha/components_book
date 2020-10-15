@@ -234,13 +234,13 @@
 
 .vs-tabs-primary .con-ul-tabs .activeChild button,
 .vs-tabs-primary .con-ul-tabs button:not(:disabled):hover {
-  color: rgba(var(--vs-primary), 1) !important
+  color: rgba($primary, 1) !important
 }
 
 .vs-tabs-primary .con-ul-tabs .line-vs-tabs {
-  background: linear-gradient(30deg, rgba(var(--vs-primary), 1), rgba(var(--vs-primary), .5)) !important;
-  -webkit-box-shadow: 0 0 8px 0 rgba(var(--vs-primary), .4) !important;
-  box-shadow: 0 0 8px 0 rgba(var(--vs-primary), .4) !important
+  background: linear-gradient(30deg, rgba($primary, 1), rgba($primary, .5)) !important;
+  -webkit-box-shadow: 0 0 8px 0 rgba($primary, .4) !important;
+  box-shadow: 0 0 8px 0 rgba($primary, .4) !important
 }
 
 .vs-tabs-secondary .con-ul-tabs .activeChild button,
@@ -256,57 +256,57 @@
 
 .vs-tabs-danger .con-ul-tabs .activeChild button,
 .vs-tabs-danger .con-ul-tabs button:not(:disabled):hover {
-  color: rgba(var(--vs-danger), 1) !important
+  color: rgba($danger, 1) !important
 }
 
 .vs-tabs-danger .con-ul-tabs .line-vs-tabs {
-  background: linear-gradient(30deg, rgba(var(--vs-danger), 1), rgba(var(--vs-danger), .5)) !important;
-  -webkit-box-shadow: 0 0 8px 0 rgba(var(--vs-danger), .4) !important;
-  box-shadow: 0 0 8px 0 rgba(var(--vs-danger), .4) !important
+  background: linear-gradient(30deg, rgba($danger, 1), rgba($danger, .5)) !important;
+  -webkit-box-shadow: 0 0 8px 0 rgba($danger, .4) !important;
+  box-shadow: 0 0 8px 0 rgba($danger, .4) !important
 }
 
 .vs-tabs-success .con-ul-tabs .activeChild button,
 .vs-tabs-success .con-ul-tabs button:not(:disabled):hover {
-  color: rgba(var(--vs-success), 1) !important
+  color: rgba($success, 1) !important
 }
 
 .vs-tabs-success .con-ul-tabs .line-vs-tabs {
-  background: linear-gradient(30deg, rgba(var(--vs-success), 1), rgba(var(--vs-success), .5)) !important;
-  -webkit-box-shadow: 0 0 8px 0 rgba(var(--vs-success), .4) !important;
-  box-shadow: 0 0 8px 0 rgba(var(--vs-success), .4) !important
+  background: linear-gradient(30deg, rgba($success, 1), rgba($success, .5)) !important;
+  -webkit-box-shadow: 0 0 8px 0 rgba($success, .4) !important;
+  box-shadow: 0 0 8px 0 rgba($success, .4) !important
 }
 
 .vs-tabs-warning .con-ul-tabs .activeChild button,
 .vs-tabs-warning .con-ul-tabs button:not(:disabled):hover {
-  color: rgba(var(--vs-warning), 1) !important
+  color: rgba($warning, 1) !important
 }
 
 .vs-tabs-warning .con-ul-tabs .line-vs-tabs {
-  background: linear-gradient(30deg, rgba(var(--vs-warning), 1), rgba(var(--vs-warning), .5)) !important;
-  -webkit-box-shadow: 0 0 8px 0 rgba(var(--vs-warning), .4) !important;
-  box-shadow: 0 0 8px 0 rgba(var(--vs-warning), .4) !important
+  background: linear-gradient(30deg, rgba($warning, 1), rgba($warning, .5)) !important;
+  -webkit-box-shadow: 0 0 8px 0 rgba($warning, .4) !important;
+  box-shadow: 0 0 8px 0 rgba($warning, .4) !important
 }
 
 .vs-tabs-dark .con-ul-tabs .activeChild button,
 .vs-tabs-dark .con-ul-tabs button:not(:disabled):hover {
-  color: rgba(var(--vs-dark), 1) !important
+  color: rgba($dark, 1) !important
 }
 
 .vs-tabs-dark .con-ul-tabs .line-vs-tabs {
-  background: linear-gradient(30deg, rgba(var(--vs-dark), 1), rgba(var(--vs-dark), .5)) !important;
-  -webkit-box-shadow: 0 0 8px 0 rgba(var(--vs-dark), .4) !important;
-  box-shadow: 0 0 8px 0 rgba(var(--vs-dark), .4) !important
+  background: linear-gradient(30deg, rgba($dark, 1), rgba($dark, .5)) !important;
+  -webkit-box-shadow: 0 0 8px 0 rgba($dark, .4) !important;
+  box-shadow: 0 0 8px 0 rgba($dark, .4) !important
 }
 
 .vs-tabs-light .con-ul-tabs .activeChild button,
 .vs-tabs-light .con-ul-tabs button:not(:disabled):hover {
-  color: rgba(var(--vs-light), 1) !important
+  color: rgba($light, 1) !important
 }
 
 .vs-tabs-light .con-ul-tabs .line-vs-tabs {
-  background: linear-gradient(30deg, rgba(var(--vs-light), 1), rgba(var(--vs-light), .5)) !important;
-  -webkit-box-shadow: 0 0 8px 0 rgba(var(--vs-light), .4) !important;
-  box-shadow: 0 0 8px 0 rgba(var(--vs-light), .4) !important
+  background: linear-gradient(30deg, rgba($light, 1), rgba($light, .5)) !important;
+  -webkit-box-shadow: 0 0 8px 0 rgba($light, .4) !important;
+  box-shadow: 0 0 8px 0 rgba($light, .4) !important
 }
 
 .vs-tabs--content {

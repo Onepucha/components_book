@@ -1,11 +1,13 @@
+import { storiesOf } from "@storybook/vue";
 import lmmButton from "./Button.vue";
 
 export default {
-  title: "Example/Button",
+  title: "Components/Button",
   component: lmmButton,
   argTypes: {
     backgroundColor: { control: "color" },
     textColor: { control: "color" },
+    borderColor: { control: "color" },
     borderRadius: { control: "text" },
     size: {
       control: { type: "select", options: ["small", "medium", "large"] },
@@ -34,6 +36,17 @@ export const Medium = Template.bind({});
 export const Small = Template.bind({});
 export const Block = Template.bind({});
 export const IconBtn = Template.bind({});
+
+// storiesOf("Examples/Basic usage", module).add(
+//   "Simple example",
+//   () => ({
+//     components: { lmmButton: lmmButton },
+//     template: '<lmm-button label="I\'m a button!"/>',
+//   }),
+//   {
+//     info: {},
+//   }
+// );
 
 Default.args = {
   label: "Button",
