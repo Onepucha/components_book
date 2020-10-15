@@ -37,17 +37,6 @@ export const Small = Template.bind({});
 export const Block = Template.bind({});
 export const IconBtn = Template.bind({});
 
-// storiesOf("Examples/Basic usage", module).add(
-//   "Simple example",
-//   () => ({
-//     components: { lmmButton: lmmButton },
-//     template: '<lmm-button label="I\'m a button!"/>',
-//   }),
-//   {
-//     info: {},
-//   }
-// );
-
 Default.args = {
   label: "Button",
 };

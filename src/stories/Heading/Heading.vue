@@ -4,9 +4,6 @@
   <h3 :class="classes" :style="style" v-else-if="size=='m'">{{ title }}</h3>
   <h4 :class="classes" :style="style" v-else-if="size=='s'">{{ title }}</h4>
   <h5 :class="classes" :style="style" v-else-if="size=='xs'">{{ title }}</h5>
-
-
-
 </template>
 <script>
 import "./Heading.scss";

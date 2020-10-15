@@ -9,7 +9,7 @@
     align-items: center;
     border-radius: 3px;
     font-family: $Regular;
-    transition: background 150ms ease-out, transform 150ms ease-out;
+    transition: transform 150ms ease-out;
 
     & pre[class*='language-'] {
         background: none;
