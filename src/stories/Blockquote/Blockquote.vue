@@ -62,7 +62,26 @@
             icon: {
                 default: null,
                 type: String,
-            }
+            },
+            /**
+            Свойство устанавливает радиус скругления уголков
+            */
+            borderRadius: {
+                type: String,
+                default: '3',
+            },
+            /**
+            Свойство устанвливает цвет фона
+            */
+            backgroundColor: {
+                type: String,
+            },
+            /**
+            Свойство устанвливает цвет обводки
+            */
+            borderColor: {
+                type: String,
+            },
         },
 
         computed: {
@@ -80,6 +99,9 @@
             style() {
                 return {
                     color: this.textColor,
+                    backgroundColor: this.backgroundColor,
+                    borderColor: this.borderColor,
+                    borderRadius: `${this.borderRadius}px`,
                 };
             },
         },

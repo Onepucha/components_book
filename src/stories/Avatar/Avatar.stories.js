@@ -3,7 +3,9 @@ import lmmAvatar from "./Avatar.vue";
 export default {
     title: "Components/Avatar",
     component: lmmAvatar,
-    argTypes: {},
+    argTypes: {
+      borderRadius: { control: "text" },
+    },
     parameters: {
         componentSubtitle: "Компонент .",
     },
@@ -19,9 +21,15 @@ const Template = (args, {
     template: '<lmm-avatar v-bind="$props" />',
 });
 
+export const Default = Template.bind({});
 export const Small = Template.bind({});
 export const Large = Template.bind({});
 export const Custom  = Template.bind({});
+
+Default.args = {
+  size: "large",
+  text: "Text Default"
+};
 
 Small.args = {
   size: "small",

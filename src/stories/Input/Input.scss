@@ -1,0 +1,544 @@
+@import "../variables.scss";
+
+.lmm-con-input-label {
+    position: relative;
+    transition: all .3s ease;
+    width: 200px;
+}
+
+.lmm-con-input-label.is-label-placeholder {
+    margin-top: 17px;
+}
+
+.lmm-con-input-label .lmm-con-input {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+
+.lmm-input--icon {
+    position: absolute;
+    z-index: 100;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, .4);
+    cursor: default;
+    user-select: none;
+    top: 8px;
+}
+
+.vuesax-app-is-rtl .lmm-input--icon {
+    right: 5px;
+}
+
+.vuesax-app-is-ltr .lmm-input--icon {
+    left: 5px;
+}
+
+.vuesax-app-is-rtl .lmm-input--icon {
+    border-left: 1px solid rgba(0, 0, 0, .1);
+}
+
+.vuesax-app-is-ltr .lmm-input--icon {
+    border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.vuesax-app-is-rtl .lmm-input--icon {
+    padding-left: 3px;
+}
+
+.vuesax-app-is-ltr .lmm-input--icon {
+    padding-right: 3px;
+}
+
+.lmm-input--icon.small {
+    top: 4px;
+    font-size: 1rem;
+}
+
+.lmm-input--icon.large {
+    top: 14px;
+}
+
+.vuesax-app-is-rtl .lmm-input--icon.icon-after {
+    right: auto;
+}
+
+.vuesax-app-is-ltr .lmm-input--icon.icon-after {
+    left: auto;
+}
+
+.vuesax-app-is-rtl .lmm-input--icon.icon-after {
+    left: 5px;
+}
+
+.vuesax-app-is-ltr .lmm-input--icon.icon-after {
+    right: 5px;
+}
+
+.vuesax-app-is-rtl .lmm-input--icon.icon-after {
+    border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.vuesax-app-is-ltr .lmm-input--icon.icon-after {
+    border-left: 1px solid rgba(0, 0, 0, .1);
+}
+
+.vuesax-app-is-rtl .lmm-input--icon.icon-after {
+    border-left: 0;
+}
+
+.vuesax-app-is-ltr .lmm-input--icon.icon-after {
+    border-right: 0;
+}
+
+.vuesax-app-is-rtl .lmm-input--icon.icon-after {
+    padding-right: 3px;
+}
+
+.vuesax-app-is-ltr .lmm-input--icon.icon-after {
+    padding-left: 3px;
+}
+
+.vuesax-app-is-rtl .lmm-input--icon.icon-after {
+    padding-left: 0;
+}
+
+.vuesax-app-is-ltr .lmm-input--icon.icon-after {
+    padding-right: 0;
+}
+
+.lmm-input--icon.icon-no-border {
+    border: 0 !important;
+}
+
+.lmm-input--placeholder {
+    transition: all .2s ease;
+    position: absolute;
+    border-radius: 5px;
+    padding: .4rem;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: .85rem;
+    color: rgba(0, 0, 0, .4);
+    white-space: nowrap;
+    cursor: text;
+    user-select: none;
+    pointer-events: none;
+}
+
+.vuesax-app-is-rtl .lmm-input--placeholder {
+    right: 0;
+}
+
+.vuesax-app-is-ltr .lmm-input--placeholder {
+    left: 0;
+}
+
+.vuesax-app-is-rtl .lmm-input--placeholder {
+    padding-right: .55rem;
+}
+
+.vuesax-app-is-ltr .lmm-input--placeholder {
+    padding-left: .55rem;
+}
+
+.lmm-input--placeholder.small {
+    padding: .2rem;
+}
+
+.vuesax-app-is-rtl .lmm-input--placeholder.small {
+    padding-right: .55rem;
+}
+
+.vuesax-app-is-ltr .lmm-input--placeholder.small {
+    padding-left: .55rem;
+}
+
+.lmm-input--placeholder.large {
+    padding-top: .8rem;
+    padding: .7rem;
+}
+
+.lmm-input--label {
+    font-size: .85rem;
+    color: rgba(0, 0, 0, .7);
+}
+
+.vuesax-app-is-rtl .lmm-input--label {
+    padding-right: 5px;
+}
+
+.vuesax-app-is-ltr .lmm-input--label {
+    padding-left: 5px;
+}
+
+.lmm-input--text-validation {
+    position: relative;
+    font-size: .65rem;
+    overflow: hidden;
+    transition: all .2s ease;
+}
+
+.lmm-input--text-validation .lmm-input--text-validation-span {
+    padding: 2px 4px;
+    padding-bottom: 4px;
+    display: block;
+}
+
+.lmm-input--icon-validate {
+    position: absolute;
+    top: 0;
+    font-size: 1.1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+    border-radius: 0 5px 5px 0;
+    transition: all .2s ease;
+}
+
+.vuesax-app-is-rtl .lmm-input--icon-validate {
+    left: 0;
+}
+
+.vuesax-app-is-ltr .lmm-input--icon-validate {
+    right: 0;
+}
+
+.lmm-input--icon-validate.icon-before {
+    position: absolute;
+    right: auto;
+    z-index: 100;
+    font-size: 1.1rem;
+    cursor: default;
+    user-select: none;
+    top: 0;
+}
+
+.vuesax-app-is-rtl .lmm-input--icon-validate.icon-before {
+    right: 0;
+}
+
+.vuesax-app-is-ltr .lmm-input--icon-validate.icon-before {
+    left: 0;
+}
+
+.vuesax-app-is-rtl .lmm-input--icon-validate.icon-before {
+    padding-left: .2rem;
+}
+
+.vuesax-app-is-ltr .lmm-input--icon-validate.icon-before {
+    padding-right: .2rem;
+}
+
+.vuesax-app-is-rtl .lmm-input--icon-validate.icon-before {
+    border-left: 1px;
+}
+
+.vuesax-app-is-ltr .lmm-input--icon-validate.icon-before {
+    border-right: 1px;
+}
+
+.lmm-input--input {
+    color: inherit;
+    position: relative;
+    padding: .4rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, .15);
+    transition: all .3s ease;
+    width: 100%;
+}
+
+.lmm-input--input.small {
+    padding: .2rem;
+}
+
+.vuesax-app-is-rtl .lmm-input--input.small {
+    padding-right: .55rem;
+}
+
+.vuesax-app-is-ltr .lmm-input--input.small {
+    padding-left: .55rem;
+}
+
+.lmm-input--input.small+.lmm-placeholder-label-small {
+    padding: 0 .4rem;
+}
+
+.lmm-input--input.normal {
+    padding: .4rem;
+}
+
+.lmm-input--input.large {
+    padding: .8rem;
+}
+
+.lmm-input--input.large+.lmm-placeholder-label-large {
+    padding: .6rem;
+}
+
+.lmm-input--input:focus {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .15);
+}
+
+.lmm-input--input.hasValue+.lmm-placeholder-label,
+.lmm-input--input:focus+.lmm-placeholder-label {
+    font-size: .7rem;
+}
+
+.vuesax-app-is-rtl .lmm-input--input.hasValue+.lmm-placeholder-label,
+.vuesax-app-is-rtl .lmm-input--input:focus+.lmm-placeholder-label {
+    transform: translate(3px, -90%) !important;
+}
+
+.vuesax-app-is-ltr .lmm-input--input.hasValue+.lmm-placeholder-label,
+.vuesax-app-is-ltr .lmm-input--input:focus+.lmm-placeholder-label {
+    transform: translate(-3px, -90%) !important;
+}
+
+.vuesax-app-is-rtl .lmm-input--input.hasValue+.lmm-placeholder-label,
+.vuesax-app-is-rtl .lmm-input--input:focus+.lmm-placeholder-label {
+    padding-right: .5rem !important;
+}
+
+.vuesax-app-is-ltr .lmm-input--input.hasValue+.lmm-placeholder-label,
+.vuesax-app-is-ltr .lmm-input--input:focus+.lmm-placeholder-label {
+    padding-left: .5rem !important;
+}
+
+.lmm-input--input.hasValue+.lmm-placeholder-label-small,
+.lmm-input--input:focus+.lmm-placeholder-label-small {
+    font-size: .7rem;
+}
+
+.vuesax-app-is-rtl .lmm-input--input.hasValue+.lmm-placeholder-label-small,
+.vuesax-app-is-rtl .lmm-input--input:focus+.lmm-placeholder-label-small {
+    transform: translate(3px, -120%) !important;
+}
+
+.vuesax-app-is-ltr .lmm-input--input.hasValue+.lmm-placeholder-label-small,
+.vuesax-app-is-ltr .lmm-input--input:focus+.lmm-placeholder-label-small {
+    transform: translate(-3px, -120%) !important;
+}
+
+.vuesax-app-is-rtl .lmm-input--input.hasValue+.lmm-placeholder-label-small,
+.vuesax-app-is-rtl .lmm-input--input:focus+.lmm-placeholder-label-small {
+    padding-right: .5rem !important;
+}
+
+.vuesax-app-is-ltr .lmm-input--input.hasValue+.lmm-placeholder-label-small,
+.vuesax-app-is-ltr .lmm-input--input:focus+.lmm-placeholder-label-small {
+    padding-left: .5rem !important;
+}
+
+.vuesax-app-is-rtl .lmm-input--input:focus+.lmm-input--placeholder {
+    transform: translate(-5px);
+}
+
+.vuesax-app-is-ltr .lmm-input--input:focus+.lmm-input--placeholder {
+    transform: translate(5px);
+}
+
+.vuesax-app-is-rtl .lmm-input--input.hasIcon {
+    padding-right: 32px;
+}
+
+.vuesax-app-is-ltr .lmm-input--input.hasIcon {
+    padding-left: 32px;
+}
+
+.vuesax-app-is-rtl .lmm-input--input.hasIcon+.lmm-input--placeholder {
+    padding-right: 32px;
+}
+
+.vuesax-app-is-ltr .lmm-input--input.hasIcon+.lmm-input--placeholder {
+    padding-left: 32px;
+}
+
+.vuesax-app-is-rtl .lmm-input--input.icon-after-input {
+    padding-left: 1.75rem;
+}
+
+.vuesax-app-is-ltr .lmm-input--input.icon-after-input {
+    padding-right: 1.75rem;
+}
+
+.vuesax-app-is-rtl .lmm-input--input.icon-after-input+.lmm-input--placeholder {
+    padding-left: 1.75rem;
+}
+
+.vuesax-app-is-ltr .lmm-input--input.icon-after-input+.lmm-input--placeholder {
+    padding-right: 1.75rem;
+}
+
+.vuesax-app-is-rtl .lmm-input--input.hasIcon.icon-after-input {
+    padding-right: .85em;
+}
+
+.vuesax-app-is-ltr .lmm-input--input.hasIcon.icon-after-input {
+    padding-left: .85em;
+}
+
+.vuesax-app-is-rtl .lmm-input--input.hasIcon.icon-after-input+.lmm-input--placeholder {
+    padding-right: .85em;
+}
+
+.vuesax-app-is-ltr .lmm-input--input.hasIcon.icon-after-input+.lmm-input--placeholder {
+    padding-left: .85em;
+}
+
+.lmm-input--input:disabled,
+.lmm-input--input:disabled+.lmm-input--placeholder {
+    opacity: .5;
+    cursor: default;
+    pointer-events: none;
+}
+
+.lmm-input-primary .lmm-input--input:focus {
+    border: 1px solid rgba($primary, 1) !important;
+}
+
+.lmm-input-primary.isFocus .lmm-input--label,
+.lmm-input-primary .lmm-input--input:focus~.icon-inputx,
+.lmm-input-primary .lmm-input--input:focus~.lmm-placeholder-label {
+    color: rgba($primary, 1);
+}
+
+.span-text-validation-primary {
+    color: rgba($primary, 1) !important;
+}
+
+.input-icon-validate-primary .lmm-input--input,
+.input-icon-validate-primary .lmm-input--input:focus {
+    border: 1px solid rgba($primary, 1) !important;
+}
+
+.input-icon-validate-primary .input-icon-validate {
+    background: rgba($primary, .2);
+    color: rgba($primary, 1);
+}
+
+.lmm-input-danger .lmm-input--input:focus {
+    border: 1px solid rgba($danger, 1) !important;
+}
+
+.lmm-input-danger.isFocus .lmm-input--label,
+.lmm-input-danger .lmm-input--input:focus~.icon-inputx,
+.lmm-input-danger .lmm-input--input:focus~.lmm-placeholder-label {
+    color: rgba($danger, 1);
+}
+
+.span-text-validation-danger {
+    color: rgba($danger, 1) !important;
+}
+
+.input-icon-validate-danger .lmm-input--input,
+.input-icon-validate-danger .lmm-input--input:focus {
+    border: 1px solid rgba($danger, 1) !important;
+}
+
+.input-icon-validate-danger .input-icon-validate {
+    background: rgba($danger, .2);
+    color: rgba($danger, 1);
+}
+
+.lmm-input-success .lmm-input--input:focus {
+    border: 1px solid rgba($success, 1) !important;
+}
+
+.lmm-input-success.isFocus .lmm-input--label,
+.lmm-input-success .lmm-input--input:focus~.icon-inputx,
+.lmm-input-success .lmm-input--input:focus~.lmm-placeholder-label {
+    color: rgba($success, 1);
+}
+
+.span-text-validation-success {
+    color: rgba($success, 1) !important;
+}
+
+.input-icon-validate-success .lmm-input--input,
+.input-icon-validate-success .lmm-input--input:focus {
+    border: 1px solid rgba($success, 1) !important;
+}
+
+.input-icon-validate-success .input-icon-validate {
+    background: rgba($success, .2);
+    color: rgba($success, 1);
+}
+
+.lmm-input-warning .lmm-input--input:focus {
+    border: 1px solid rgba($warning, 1) !important;
+}
+
+.lmm-input-warning.isFocus .lmm-input--label,
+.lmm-input-warning .lmm-input--input:focus~.icon-inputx,
+.lmm-input-warning .lmm-input--input:focus~.lmm-placeholder-label {
+    color: rgba($warning, 1);
+}
+
+.span-text-validation-warning {
+    color: rgba($warning, 1) !important;
+}
+
+.input-icon-validate-warning .lmm-input--input,
+.input-icon-validate-warning .lmm-input--input:focus {
+    border: 1px solid rgba($warning, 1) !important;
+}
+
+.input-icon-validate-warning .input-icon-validate {
+    background: rgba($warning, .2);
+    color: rgba($warning, 1);
+}
+
+.lmm-input-dark .lmm-input--input:focus {
+    border: 1px solid rgba($dark, 1) !important;
+}
+
+.lmm-input-dark.isFocus .lmm-input--label,
+.lmm-input-dark .lmm-input--input:focus~.icon-inputx,
+.lmm-input-dark .lmm-input--input:focus~.lmm-placeholder-label {
+    color: rgba($dark, 1);
+}
+
+.span-text-validation-dark {
+    color: rgba($dark, 1) !important;
+}
+
+.input-icon-validate-dark .lmm-input--input,
+.input-icon-validate-dark .lmm-input--input:focus {
+    border: 1px solid rgba($dark, 1) !important;
+}
+
+.input-icon-validate-dark .input-icon-validate {
+    background: rgba($dark, .2);
+    color: rgba($dark, 1);
+}
+
+.lmm-input-light .lmm-input--input:focus {
+    border: 1px solid rgba($light, 1) !important;
+}
+
+.lmm-input-light.isFocus .lmm-input--label,
+.lmm-input-light .lmm-input--input:focus~.icon-inputx,
+.lmm-input-light .lmm-input--input:focus~.lmm-placeholder-label {
+    color: rgba($light, 1);
+}
+
+.span-text-validation-light {
+    color: rgba($light, 1) !important;
+}
+
+.input-icon-validate-light .lmm-input--input,
+.input-icon-validate-light .lmm-input--input:focus {
+    border: 1px solid rgba($light, 1) !important;
+}
+
+.input-icon-validate-light .input-icon-validate {
+    background: rgba($light, .2);
+    color: rgba($light, 1);
+}

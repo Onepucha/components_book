@@ -1,8 +1,11 @@
+@import "../variables.scss";
+
 .lmm-collapse {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   border-radius: 8px;
-  padding: 10px
+  padding: 10px;
+  font-family: $Regular;
 }
 
 .lmm-collapse.shadow .open-item {

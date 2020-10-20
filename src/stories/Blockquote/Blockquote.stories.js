@@ -4,6 +4,9 @@ export default {
     title: "Components/Blockquote",
     component: lmmBlockquote,
     argTypes: {
+        borderRadius: { control: "text" },
+        backgroundColor: { control: "color" },
+        borderColor: { control: "color" },
         textColor: {
             control: "color"
         },

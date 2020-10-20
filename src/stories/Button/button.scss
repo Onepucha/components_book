@@ -1,7 +1,5 @@
 @import "../variables.scss";
 
-@import "../../../node_modules/material-icons/iconfont/material-icons.css";
-
 .button {
   &:not(:disabled):not(.disabled) {
     cursor: pointer;

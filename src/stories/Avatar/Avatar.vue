@@ -3,18 +3,19 @@
     v-bind="$attrs"
     :style="avatarStyle"
     :class="avatarClass"
-    class="con-vs-avatar"
+    class="con-lmm-avatar"
     v-on="$listeners">
     <div
       v-if="badge && badge > 0"
       :style="badgeStyle"
       :class="badgeClass"
-      class="dot-count vs-avatar--count">
+      class="dot-count lmm-avatar--count">
       {{ typeof badge != 'boolean' ? badge : null }}
     </div>
     <div
       v-if="src"
-      class="con-img vs-avatar--con-img">
+      class="con-img lmm-avatar--con-img"
+      :style="iconStyle">
       <img
         :src="src"
         :alt="text"
@@ -26,7 +27,7 @@
       :style="textStyle"
       :class="[text ? '' : iconPack, text ? '' : icon, textClass]"
       translate="no"
-      class="vs-avatar--text notranslate"
+      class="lmm-avatar--text notranslate"
     >
       {{ text ? returnText : iconPack == 'material-icons' ? icon : '' }}
     </span>
@@ -76,27 +77,45 @@ export default {
     color:{
       type:String,
       default:'rgb(195, 195, 195)',
-    }
+    },
+    /**
+    Свойство устанавливает радиус скругления уголков
+    */
+    borderRadius: {
+      type: String,
+    },
   },
   computed:{
     avatarClass() {
       const classes = {}
       classes[this.size] = true
+      if (this.color) {
+        classes[`con-lmm-avatar-${this.color}`] = true
+      }
       return classes
     },
     avatarStyle() {
       const style = {
         width: /[px]/.test(this.size) ? this.size : null,
-        height: /[px]/.test(this.size) ? this.size : null
+        height: /[px]/.test(this.size) ? this.size : null,
+        borderRadius: `${this.borderRadius}px`,
       }
       if (this.color) {
         style.background = this.color
       }
       return style
     },
+    iconStyle() {
+      return {
+        borderRadius: `${this.borderRadius}px`,
+      }
+    },
     badgeClass() {
       const classes = {
         badgeNumber: (typeof badge != 'boolean')
+      }
+      if (this.badgeColor) {
+        classes[`dot-count-${this.badgeColor}`] = true
       }
       return classes
     },
@@ -110,6 +129,9 @@ export default {
     textClass() {
       const classes = {
         'material-icons': !this.text
+      }
+      if (this.textColor) {
+        classes[`lmm-avatar-text-${this.textColor}`] = true
       }
       return classes
     },

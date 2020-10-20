@@ -1,165 +1,167 @@
 @import "../variables.scss";
 
-.con-vs-avatar {
+.con-lmm-avatar {
     width: 32px;
     height: 32px;
     border-radius: 50%;
     position: relative;
     cursor: pointer;
     display: inline-block;
-    margin: 5px
+    margin: 5px;
+    font-family: $Regular;
+
+    &.large {
+        width: 50px;
+        height: 50px;
+    }
+
+    &.small {
+        width: 24px;
+        height: 24px;
+
+        & .lmm-avatar-text {
+            font-size: .9375em;
+        }
+    }
+
+    & .lmm-avatar{
+        &--count {
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            z-index: 100;
+    
+            &.badgeNumber {
+                width: auto;
+                height: auto;
+                top: -3px;
+                right: 0;
+                border-radius: 4px;
+                padding-left: 3px;
+                padding-right: 3px;
+                font-size: .625em;
+                color: $white;
+            }
+        }
+
+        &--text {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &--con-img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 50%;
+            
+            & img {
+                width: 100%
+            }
+        }
+    }
 }
 
-.con-vs-avatar.large {
-    width: 50px;
-    height: 50px
-}
-
-.con-vs-avatar.small {
-    width: 24px;
-    height: 24px
-}
-
-.con-vs-avatar.small .vs-avatar-text {
-    font-size: .9375em
-}
-
-.vs-avatar--count {
-    position: absolute;
-    top: 1px;
-    right: 1px;
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    z-index: 100
-}
-
-.vs-avatar--count.badgeNumber {
-    width: auto;
-    height: auto;
-    top: -3px;
-    right: 0;
-    border-radius: 4px;
-    padding-left: 3px;
-    padding-right: 3px;
-    font-size: .625em;
-    color: #fff
-}
-
-.vs-avatar--text {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%)
-}
-
-.vs-avatar--con-img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border-radius: 50%
-}
-
-.vs-avatar--con-img img {
-    width: 100%
-}
-
-.con-vs-avatar-primary {
+.con-lmm-avatar-primary {
     background: rgba($primary, 1)
 }
 
-.vs-avatar-text-primary {
+.lmm-avatar-text-primary {
     color: rgba($primary, 1)
 }
 
-.con-vs-avatar-danger {
+.con-lmm-avatar-danger {
     background: rgba($danger, 1)
 }
 
-.vs-avatar-text-danger {
+.lmm-avatar-text-danger {
     color: rgba($danger, 1)
 }
 
-.con-vs-avatar-success {
+.con-lmm-avatar-success {
     background: rgba($success, 1)
 }
 
-.vs-avatar-text-success {
+.lmm-avatar-text-success {
     color: rgba($success, 1)
 }
 
-.con-vs-avatar-warning {
+.con-lmm-avatar-warning {
     background: rgba($warning, 1)
 }
 
-.vs-avatar-text-warning {
+.lmm-avatar-text-warning {
     color: rgba($warning, 1)
 }
 
-.con-vs-avatar-dark {
+.con-lmm-avatar-dark {
     background: rgba($dark, 1)
 }
 
-.vs-avatar-text-dark {
+.lmm-avatar-text-dark {
     color: rgba($dark, 1)
 }
 
-.con-vs-avatar-light {
+.con-lmm-avatar-light {
     background: rgba($light, 1)
 }
 
-.vs-avatar-text-light {
+.lmm-avatar-text-light {
     color: rgba($light, 1)
 }
 
-.con-vs-icon-bg-primary,
+.con-lmm-icon-bg-primary,
 .dot-count-primary {
     background: rgba($primary, 1)
 }
 
-.vs-icon-primary {
+.lmm-icon-primary {
     color: rgba($primary, 1)
 }
 
-.con-vs-icon-bg-danger,
+.con-lmm-icon-bg-danger,
 .dot-count-danger {
     background: rgba($danger, 1)
 }
 
-.vs-icon-danger {
+.lmm-icon-danger {
     color: rgba($danger, 1)
 }
 
-.con-vs-icon-bg-success,
+.con-lmm-icon-bg-success,
 .dot-count-success {
     background: rgba($success, 1)
 }
 
-.vs-icon-success {
+.lmm-icon-success {
     color: rgba($success, 1)
 }
 
-.con-vs-icon-bg-warning,
+.con-lmm-icon-bg-warning,
 .dot-count-warning {
     background: rgba($warning, 1)
 }
 
-.vs-icon-warning {
+.lmm-icon-warning {
     color: rgba($warning, 1)
 }
 
-.con-vs-icon-bg-dark,
+.con-lmm-icon-bg-dark,
 .dot-count-dark {
     background: rgba($dark, 1)
 }
 
-.vs-icon-dark {
+.lmm-icon-dark {
     color: rgba($dark, 1)
 }
 
-.con-vs-icon-bg-light,
+.con-lmm-icon-bg-light,
 .dot-count-light {
     background: rgba($light, 1)
 }

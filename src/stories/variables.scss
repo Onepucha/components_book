@@ -1,5 +1,6 @@
 @import "../../node_modules/normalize.scss/normalize.scss";
 @import "../../node_modules/scss-reset/src/scss/reset";
+@import "../../../node_modules/material-icons/iconfont/material-icons.css";
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -90,14 +91,6 @@ $dark: rgb(30, 30, 30);
 $warning: rgb(255, 186, 0);
 $light: rgb(245, 245, 245);
 
-$blue-gradient: linear-gradient(179.41deg, #005cfe 4.94%, #9296ff 99.52%);
-$aqua-gradient: linear-gradient(180deg,
-  rgba(254, 240, 255, 1) 3.26%,
-  rgba(230, 249, 255, 1) 105.13%);
-$violet-light-gradient: linear-gradient(173.66deg,
-  #ded6ff -14.63%,
-  #ebf6ff 93.4%);
-
 $Regular: "PT Root UI_Regular",
 sans-serif;
 $Medium: "PT Root UI_Medium",
@@ -112,4 +105,8 @@ sans-serif;
   text-align: center;
   font-size: inherit;
   font-size: 100%;
+}
+
+body {
+  font-family: $Regular;
 }

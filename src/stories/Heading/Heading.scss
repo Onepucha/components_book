@@ -1,92 +1,95 @@
 @import "../variables.scss";
 
-.heading {
-  margin: 0;
-  font-family: $Bold;
-  font-weight: 700;
-
-  &+& {
-    margin-top: 0px;
-  }
-
-  &,
-  & *,
-  &::before,
-  &::after {
-    box-sizing: border-box;
-  }
-
-  &--xl {
-    font-size: $fs38;
-    line-height: $lh50;
-
-    @media (max-width: 719px) {
+h1, h2, h3, h4, h5, h6 {
+  &.heading {
+    margin: 0;
+    font-family: $Bold !important;
+    font-weight: 700;
+    border: none;
+  
+    &+& {
+      margin-top: 0px;
+    }
+  
+    &,
+    & *,
+    &::before,
+    &::after {
+      box-sizing: border-box;
+    }
+  
+    &--xl {
+      font-size: $fs38;
+      line-height: $lh50;
+  
+      @media (max-width: 719px) {
+        font-size: $fs30;
+        line-height: $lh40;
+      }
+    }
+  
+    &--l {
       font-size: $fs30;
       line-height: $lh40;
+  
+      @media (max-width: 719px) {
+        font-size: $fs22;
+        line-height: $lh30;
+      }
     }
-  }
-
-  &--l {
-    font-size: $fs30;
-    line-height: $lh40;
-
-    @media (max-width: 719px) {
+  
+    &--m {
       font-size: $fs22;
       line-height: $lh30;
+  
+      @media (max-width: 719px) {
+        font-size: $fs18;
+        line-height: $lh27;
+      }
     }
-  }
-
-  &--m {
-    font-size: $fs22;
-    line-height: $lh30;
-
-    @media (max-width: 719px) {
+  
+    &--s {
       font-size: $fs18;
       line-height: $lh27;
+  
+      @media (max-width: 719px) {
+        font-size: $fs16;
+        line-height: $lh24;
+      }
     }
-  }
-
-  &--s {
-    font-size: $fs18;
-    line-height: $lh27;
-
-    @media (max-width: 719px) {
-      font-size: $fs16;
-      line-height: $lh24;
-    }
-  }
-
-  &--xs {
-    font-size: $fs16;
-    line-height: $lh24;
-
-    @media (max-width: 719px) {
-      font-size: $fs16;
-      line-height: $lh24;
-    }
-  }
-
-  &.margins {
-    &--xl {
-      margin: 0 0 24px;
-    }
-
-    &--l {
-      margin: 40px 0 16px;
-    }
-
-    &--m {
-      margin: 40px 0 16px;
-    }
-
-    &--s {
-      margin: 40px 0 16px;
-    }
-
+  
     &--xs {
-      margin: 40px 0 16px;
+      font-size: $fs16;
+      line-height: $lh24;
+  
+      @media (max-width: 719px) {
+        font-size: $fs16;
+        line-height: $lh24;
+      }
     }
-
+  
+    &.margins {
+      &--xl {
+        margin: 0 0 24px;
+      }
+  
+      &--l {
+        margin: 40px 0 16px;
+      }
+  
+      &--m {
+        margin: 40px 0 16px;
+      }
+  
+      &--s {
+        margin: 40px 0 16px;
+      }
+  
+      &--xs {
+        margin: 40px 0 16px;
+      }
+  
+    }
+  
   }
-
 }
