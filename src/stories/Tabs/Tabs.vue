@@ -1,58 +1,54 @@
 <template lang="html">
   <div
-    :class="[`vs-tabs-${color}`, `vs-tabs-position-${position}`]"
-    class="con-vs-tabs vs-tabs"
+    :class="[`lmm-tabs-${color}`, `lmm-tabs-position-${position}`]"
+    class="con-lmm-tabs lmm-tabs"
   >
     <div class="con-ul-tabs">
       <ul
         ref="ul"
         :class="[`ul-tabs-${alignment}`]"
-        class="ul-tabs vs-tabs--ul"
+        class="ul-tabs lmm-tabs--ul"
       >
         <li
           v-for="(child, index) in children"
           ref="li"
           :class="{ activeChild: childActive == index }"
           :style="childActive == index ? styleTab : {}"
-          class="vs-tabs--li"
-          @mouseover="hover = true"
-          @mouseout="hover = false"
+          class="lmm-tabs--li"
         >
           <button
             v-bind="child.attrs"
             :style="styleAlignIcon(child.icon)"
-            class="vs-tabs--btn"
+            class="lmm-tabs--btn"
             type="button"
             @click="activeChild(index)"
             v-on="child.listeners"
           >
-            <!-- <vs-icon
+          <i
               v-if="child.icon"
-              :icon-pack="child.iconPack"
-              :icon="child.icon"
               :color="color"
-              class="vs-tabs--btn-icon"
-            ></vs-icon> -->
+              class="lmm-tabs--btn-icon material-icons"
+            >{{ child.icon }}</i>
             <span v-if="child.label">{{ child.label }}</span>
           </button>
 
           <button
             v-if="child.tag"
-            class="vs-tabs--btn-tag"
+            class="lmm-tabs--btn-tag"
             @click="clickTag(child)"
           >
-            <!-- <vs-icon
-              :icon-pack="child.iconPack"
-              :icon="child.tag"
+          <i
+              v-if="child.icon"
               :color="child.tagColor"
-            ></vs-icon> -->
+              class="lmm-tabs--btn-icon material-icons"
+            >{{ child.tag }}</i>
           </button>
         </li>
       </ul>
-      <span :style="stylex" class="line-vs-tabs" />
+      <span :style="stylex" class="line-lmm-tabs" />
     </div>
     <div class="con-slot-tabs">
-      <slot />
+      <slot></slot>
     </div>
   </div>
 </template>
@@ -92,9 +88,6 @@ export default {
     heightx: {
       type: String,
     },
-    hover: {
-      type: Boolean,
-    },
     topx: {
       type: String,
       default: "auto",
@@ -104,9 +97,6 @@ export default {
     },
     widthx: {
       type: String,
-    },
-    these: {
-      type: Boolean,
     },
   },
   computed: {
@@ -123,7 +113,6 @@ export default {
         height: `${this.heightx}px`,
         background: `linear-gradient(30deg, ${this.color} 0%, ${this.color} 100%)`,
         boxShadow: `0px 0px 8px 0px ${this.color}`,
-        transform: `scaleX(${this.these ? 1.3 : 1})`,
       };
     },
   },
@@ -162,11 +151,9 @@ export default {
       initialAnimation = !!initialAnimation;
       const elem = this.$refs.li[index];
       if (this.childActive == index && !initialAnimation) {
-        this.these = true;
         elem.classList.add("isActive");
         setTimeout(() => {
           elem.classList.remove("isActive");
-          this.these = false;
         }, 200);
       }
 

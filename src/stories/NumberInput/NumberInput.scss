@@ -1,0 +1,298 @@
+@import "../variables.scss";
+
+.lmm-input-number {
+    position: relative;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 10px;
+    background: $light-gray;
+    padding: 2px;
+    border-radius: 5px;
+    font-family: $Regular;
+}
+
+.lmm-input-number.isChangeValue .lmm-input-number--input {
+    transform: translateY(-2px);
+    opacity: .5;
+}
+
+.lmm-input-number .lmm-input-number--input {
+    transition: all .2s ease;
+    width: 55px;
+    min-width: 55px;
+    border: 0;
+    text-align: center;
+    background: transparent;
+    padding: 4px;
+    -moz-appearance: textfield;
+}
+
+.lmm-input-number .lmm-input-number--input[type=number]::-webkit-inner-spin-button,
+.lmm-input-number .lmm-input-number--input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.lmm-input-number button {
+    min-width: 22px;
+    min-height: 22px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    position: relative;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+    color: $white;
+    backface-visibility: hidden;
+}
+
+.lmm-input-number button:disabled {
+    opacity: .5;
+    cursor: default;
+    pointer-events: none;
+}
+
+.lmm-input-number button i {
+    font-size: .9rem;
+}
+
+.app-is-rtl .lmm-input-number button.lmm-input-number--button-plus {
+    transform: translate(-10px);
+}
+
+.app-is-ltr .lmm-input-number button.lmm-input-number--button-plus {
+    transform: translate(10px);
+}
+
+.app-is-rtl .lmm-input-number button.lmm-input-number--button-plus:active {
+    transform: translate(-10px) scale(.9);
+}
+
+.app-is-ltr .lmm-input-number button.lmm-input-number--button-plus:active {
+    transform: translate(10px) scale(.9);
+}
+
+.lmm-input-number button.lmm-input-number--button-plus.limit,
+.lmm-input-number button.lmm-input-number--button-plus:disabled {
+    opacity: .5;
+    cursor: default;
+    pointer-events: none;
+    background-color: rgba($black, .5);
+}
+
+.app-is-rtl .lmm-input-number button.lmm-input-number--button-less {
+    transform: translate(10px);
+}
+
+.app-is-ltr .lmm-input-number button.lmm-input-number--button-less {
+    transform: translate(-10px);
+}
+
+.app-is-rtl .lmm-input-number button.lmm-input-number--button-less:active {
+    transform: translate(10px) scale(.9);
+}
+
+.app-is-ltr .lmm-input-number button.lmm-input-number--button-less:active {
+    transform: translate(-10px) scale(.9);
+}
+
+.lmm-input-number button.lmm-input-number--button-less.limit,
+.lmm-input-number button.lmm-input-number--button-less:disabled {
+    opacity: .5;
+    cursor: default;
+    pointer-events: none;
+    background-color: rgba($black, .5);
+}
+
+.lmm-input-number.lmm-input-number-size-medium input {
+    padding: 3px;
+    font-size: .8rem;
+}
+
+.lmm-input-number.lmm-input-number-size-medium button {
+    min-width: 19px;
+    min-height: 19px;
+}
+
+.lmm-input-number.lmm-input-number-size-medium button i {
+    font-size: .8rem;
+}
+
+.app-is-rtl .lmm-input-number.lmm-input-number-size-medium button.lmm-input-number--button-plus {
+    transform: translate(-8px);
+}
+
+.app-is-ltr .lmm-input-number.lmm-input-number-size-medium button.lmm-input-number--button-plus {
+    transform: translate(8px);
+}
+
+.app-is-rtl .lmm-input-number.lmm-input-number-size-medium button.lmm-input-number--button-plus:active {
+    transform: translate(-8px) scale(.9);
+}
+
+.app-is-ltr .lmm-input-number.lmm-input-number-size-medium button.lmm-input-number--button-plus:active {
+    transform: translate(8px) scale(.9);
+}
+
+.app-is-rtl .lmm-input-number.lmm-input-number-size-medium button.lmm-input-number--button-less {
+    transform: translate(8px);
+}
+
+.app-is-ltr .lmm-input-number.lmm-input-number-size-medium button.lmm-input-number--button-less {
+    transform: translate(-8px);
+}
+
+.app-is-rtl .lmm-input-number.lmm-input-number-size-medium button.lmm-input-number--button-less:active {
+    transform: translate(8px) scale(.9);
+}
+
+.app-is-ltr .lmm-input-number.lmm-input-number-size-medium button.lmm-input-number--button-less:active {
+    transform: translate(-8px) scale(.9);
+}
+
+.lmm-input-number.lmm-input-number-size-small .lmm-input-number--input {
+    padding: 2px;
+    font-size: .7rem;
+}
+
+.lmm-input-number.lmm-input-number-size-small button {
+    min-width: 16px;
+    min-height: 16px;
+}
+
+.lmm-input-number.lmm-input-number-size-small button i {
+    font-size: .7rem;
+}
+
+.app-is-rtl .lmm-input-number.lmm-input-number-size-small button.lmm-input-number--button-plus {
+    transform: translate(-7px);
+}
+
+.app-is-ltr .lmm-input-number.lmm-input-number-size-small button.lmm-input-number--button-plus {
+    transform: translate(7px)
+}
+
+.app-is-rtl .lmm-input-number.lmm-input-number-size-small button.lmm-input-number--button-plus:active {
+    transform: translate(-7px) scale(.9);
+}
+
+.app-is-ltr .lmm-input-number.lmm-input-number-size-small button.lmm-input-number--button-plus:active {
+    transform: translate(7px) scale(.9);
+}
+
+.app-is-rtl .lmm-input-number.lmm-input-number-size-small button.lmm-input-number--button-less {
+    transform: translate(7px);
+}
+
+.app-is-ltr .lmm-input-number.lmm-input-number-size-small button.lmm-input-number--button-less {
+    transform: translate(-7px);
+}
+
+.app-is-rtl .lmm-input-number.lmm-input-number-size-small button.lmm-input-number--button-less:active {
+    transform: translate(7px) scale(.9);
+}
+
+.app-is-ltr .lmm-input-number.lmm-input-number-size-small button.lmm-input-number--button-less:active {
+    transform: translate(-7px) scale(.9);
+}
+
+.lmm-input-number.lmm-input-number-size-mini .lmm-input-number--input {
+    padding: 1px;
+    font-size: .6rem;
+}
+
+.lmm-input-number.lmm-input-number-size-mini button {
+    min-width: 14px;
+    min-height: 14px;
+}
+
+.lmm-input-number.lmm-input-number-size-mini button i {
+    font-size: .6rem;
+}
+
+.app-is-rtl .lmm-input-number.lmm-input-number-size-mini button.lmm-input-number--button-plus {
+    transform: translate(-6px);
+}
+
+.app-is-ltr .lmm-input-number.lmm-input-number-size-mini button.lmm-input-number--button-plus {
+    transform: translate(6px);
+}
+
+.app-is-rtl .lmm-input-number.lmm-input-number-size-mini button.lmm-input-number--button-plus:active {
+    transform: translate(-6px) scale(.9);
+}
+
+.app-is-ltr .lmm-input-number.lmm-input-number-size-mini button.lmm-input-number--button-plus:active {
+    transform: translate(6px) scale(.9);
+}
+
+.app-is-rtl .lmm-input-number.lmm-input-number-size-mini button.lmm-input-number--button-less {
+    transform: translate(6px);
+}
+
+.app-is-ltr .lmm-input-number.lmm-input-number-size-mini button.lmm-input-number--button-less {
+    transform: translate(-6px);
+}
+
+.app-is-rtl .lmm-input-number.lmm-input-number-size-mini button.lmm-input-number--button-less:active {
+    transform: translate(6px) scale(.9);
+}
+
+.app-is-ltr .lmm-input-number.lmm-input-number-size-mini button.lmm-input-number--button-less:active {
+    transform: translate(-6px) scale(.9);
+}
+
+.lmm-input-number-primary button {
+    background: rgba($primary, 1);
+}
+
+.lmm-input-number-primary button:hover {
+    box-shadow: 0 3px 12px 0 rgba($primary, .4);
+}
+
+.lmm-input-number-danger button {
+    background: rgba($danger, 1);
+}
+
+.lmm-input-number-danger button:hover {
+    box-shadow: 0 3px 12px 0 rgba($danger, .4);
+}
+
+.lmm-input-number-success button {
+    background: rgba($success, 1);
+}
+
+.lmm-input-number-success button:hover {
+    box-shadow: 0 3px 12px 0 rgba($success, .4);
+}
+
+.lmm-input-number-warning button {
+    background: rgba($warning, 1);
+}
+
+.lmm-input-number-warning button:hover {
+    box-shadow: 0 3px 12px 0 rgba($warning, .4);
+}
+
+.lmm-input-number-dark button {
+    background: rgba($dark, 1);
+}
+
+.lmm-input-number-dark button:hover {
+    box-shadow: 0 3px 12px 0 rgba($dark, .4);
+}
+
+.lmm-input-number-light button {
+    background: rgba($light, 1);
+}
+
+.lmm-input-number-light button:hover {
+    box-shadow: 0 3px 12px 0 rgba($light, .4);
+}

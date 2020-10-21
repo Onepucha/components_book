@@ -10,7 +10,7 @@
         : 'fade-tab'
     "
   >
-    <div v-if="active" class="con-tab vs-tabs--content">
+    <div v-if="active" class="con-tab lmm-tabs--content">
       <slot />
     </div>
   </transition>
@@ -55,16 +55,16 @@ export default {
     },
   },
   mounted() {
-    this.id = this.$parent.children.length;
-    this.$parent.children.push({
-      label: this.label,
-      icon: this.icon,
-      iconPack: this.iconPack,
-      tag: this.tag,
-      id: this.$parent.children.length,
-      listeners: this.$listeners,
-      attrs: this.$attrs,
-    });
+    // this.id = this.$parent.children.length;
+    // this.$parent.children.push({
+    //   label: this.label,
+    //   icon: this.icon,
+    //   iconPack: this.iconPack,
+    //   tag: this.tag,
+    //   id: this.$parent.children.length,
+    //   listeners: this.$listeners,
+    //   attrs: this.$attrs,
+    // });
   },
 };
 </script>

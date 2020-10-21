@@ -74,6 +74,6 @@ Disabled.args = {
 };
 
 DescriptionText.args = {
-    label: 'Disabled',
+    label: 'Description text',
     descriptionText: 'Description text',
 };

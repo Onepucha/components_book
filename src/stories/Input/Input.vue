@@ -52,7 +52,6 @@
       <i
         v-if="icon"
         :class="{'icon-after':iconAfter, 'icon-no-border':iconNoBorder}"
-        :icon-pack="iconPack"
         class="material-icons icon-inputx notranslate lmm-input--icon"
         @click="focusInput(); $emit('icon-click');">{{ icon }}
       </i>
@@ -65,7 +64,6 @@
           <i
             class="material-icons"
             :class="{'icon-before':iconAfter}"
-            :icon-pack="iconPack"
           >{{ getIcon }}</i>
         </span>
       </transition>
@@ -158,10 +156,6 @@ export default {
       default:false,
       type:Boolean
     },
-    iconPack:{
-      default:'material-icons',
-      type:String
-    },
     color:{
       default:'primary',
       type:String
@@ -201,10 +195,6 @@ export default {
     disabled: {
         type: Boolean,
         default: false,
-    },
-    valIconPack:{
-      default:'material-icons',
-      type:String
     },
     valIconSuccess:{
       default: 'done',
