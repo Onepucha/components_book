@@ -4,7 +4,14 @@ import lmmTabs from "./Tabs.vue";
 export default {
   title: "Components/Tabs",
   component: lmmTabs,
-  argTypes: {},
+  argTypes: {
+    color: {
+      control: {
+          type: "select",
+          options: ["primary", "danger", "success", "warning", "dark", "light"],
+      },
+    },
+  },
   parameters: {
     componentSubtitle: "Компонент навигации в виде табов.",
   },
@@ -12,15 +19,44 @@ export default {
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  components: { lmmTabs, lmmTab },
+  components: { lmmTab, lmmTabs },
   template:
-    '<lmm-tabs v-bind="$props"><lmm-tab v-for="item in children.label" :key="item.label"></lmm-tab></lmm-tabs>',
+    `
+    <div>
+      <lmm-tabs v-bind="$props">
+        <lmm-tab v-for="(item, index) in children" :key="'item' + index">
+          <div class="con-tab-ejemplo">
+            {{ item.content }}
+          </div>
+        </lmm-tab>
+      </lmm-tabs>
+    </div>
+    `,
 });
 
 export const Default = Template.bind({});
+export const Left = Template.bind({});
+export const Right = Template.bind({});
+export const Fixed = Template.bind({});
 
 Default.args = {
-  value: 0,
+  children: [
+    {
+      label: "Tab 1",
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ex quis, veniam voluptatum consectetur repudiandae praesentium doloribus totam eius soluta iure ducimus, quam repellendus odit sapiente iusto sint mollitia nesciunt!'
+    },
+    {
+      label: "Tab 2",
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ex quis, veniam voluptatum consectetur repudiandae praesentium doloribus totam eius soluta iure ducimus, quam repellendus odit sapiente iusto sint mollitia nesciunt!'
+    },
+    {
+      label: "Tab 3",
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ex quis, veniam voluptatum consectetur repudiandae praesentium doloribus totam eius soluta iure ducimus, quam repellendus odit sapiente iusto sint mollitia nesciunt!'
+    },
+  ],
+};
+
+Left.args = {
   children: [
     {
       label: "label1",
@@ -32,4 +68,35 @@ Default.args = {
       label: "labe3",
     },
   ],
+  position: 'left',
+};
+
+Right.args = {
+  children: [
+    {
+      label: "label1",
+    },
+    {
+      label: "label2",
+    },
+    {
+      label: "labe3",
+    },
+  ],
+  position: 'right',
+};
+
+Fixed.args = {
+  children: [
+    {
+      label: "label1",
+    },
+    {
+      label: "label2",
+    },
+    {
+      label: "labe3",
+    },
+  ],
+  alignment: 'fixed',
 };
