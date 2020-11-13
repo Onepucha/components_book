@@ -54,17 +54,6 @@ export default {
       this.$parent.children[this.id].attrs = val;
     },
   },
-  mounted() {
-    // this.id = this.$parent.children.length;
-    // this.$parent.children.push({
-    //   label: this.label,
-    //   icon: this.icon,
-    //   iconPack: this.iconPack,
-    //   tag: this.tag,
-    //   id: this.$parent.children.length,
-    //   listeners: this.$listeners,
-    //   attrs: this.$attrs,
-    // });
-  },
+
 };
 </script>
