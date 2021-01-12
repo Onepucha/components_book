@@ -1,17 +1,19 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <h1>Главная</h1>
+    <a href="#" class="black-text" @click.prevent="logout">Выйти</a>
   </div>
+
 </template>
 
 <script>
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
-  name: "Home",
-  components: {
-    HelloWorld,
+  name: 'home',
+  methods: {
+    async logout() {
+      await this.$store.dispatch('logout')
+      this.$router.push('/login?message=logout')
+    }
   },
-};
+}
 </script>

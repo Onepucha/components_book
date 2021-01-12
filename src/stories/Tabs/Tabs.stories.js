@@ -59,13 +59,16 @@ Default.args = {
 Left.args = {
   children: [
     {
-      label: "label1",
+      label: "Tab 1",
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ex quis, veniam voluptatum consectetur repudiandae praesentium doloribus totam eius soluta iure ducimus, quam repellendus odit sapiente iusto sint mollitia nesciunt!'
     },
     {
-      label: "label2",
+      label: "Tab 2",
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ex quis, veniam voluptatum consectetur repudiandae praesentium doloribus totam eius soluta iure ducimus, quam repellendus odit sapiente iusto sint mollitia nesciunt!'
     },
     {
-      label: "labe3",
+      label: "Tab 3",
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ex quis, veniam voluptatum consectetur repudiandae praesentium doloribus totam eius soluta iure ducimus, quam repellendus odit sapiente iusto sint mollitia nesciunt!'
     },
   ],
   position: 'left',
@@ -74,13 +77,16 @@ Left.args = {
 Right.args = {
   children: [
     {
-      label: "label1",
+      label: "Tab 1",
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ex quis, veniam voluptatum consectetur repudiandae praesentium doloribus totam eius soluta iure ducimus, quam repellendus odit sapiente iusto sint mollitia nesciunt!'
     },
     {
-      label: "label2",
+      label: "Tab 2",
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ex quis, veniam voluptatum consectetur repudiandae praesentium doloribus totam eius soluta iure ducimus, quam repellendus odit sapiente iusto sint mollitia nesciunt!'
     },
     {
-      label: "labe3",
+      label: "Tab 3",
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ex quis, veniam voluptatum consectetur repudiandae praesentium doloribus totam eius soluta iure ducimus, quam repellendus odit sapiente iusto sint mollitia nesciunt!'
     },
   ],
   position: 'right',
@@ -89,13 +95,16 @@ Right.args = {
 Fixed.args = {
   children: [
     {
-      label: "label1",
+      label: "Tab 1",
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ex quis, veniam voluptatum consectetur repudiandae praesentium doloribus totam eius soluta iure ducimus, quam repellendus odit sapiente iusto sint mollitia nesciunt!'
     },
     {
-      label: "label2",
+      label: "Tab 2",
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ex quis, veniam voluptatum consectetur repudiandae praesentium doloribus totam eius soluta iure ducimus, quam repellendus odit sapiente iusto sint mollitia nesciunt!'
     },
     {
-      label: "labe3",
+      label: "Tab 3",
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ex quis, veniam voluptatum consectetur repudiandae praesentium doloribus totam eius soluta iure ducimus, quam repellendus odit sapiente iusto sint mollitia nesciunt!'
     },
   ],
   alignment: 'fixed',
