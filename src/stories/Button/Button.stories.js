@@ -1,30 +1,49 @@
-import { storiesOf } from "@storybook/vue";
+import {
+  storiesOf
+} from "@storybook/vue";
 import lmmButton from "./Button.vue";
 
 export default {
   title: "Components/Button",
   component: lmmButton,
   argTypes: {
-    backgroundColor: { control: "color" },
-    textColor: { control: "color" },
-    borderColor: { control: "color" },
-    borderRadius: { control: "text" },
+    backgroundColor: {
+      control: "color"
+    },
+    textColor: {
+      control: "color"
+    },
+    borderColor: {
+      control: "color"
+    },
+    borderRadius: {
+      control: "text"
+    },
     size: {
-      control: { type: "select", options: ["small", "medium", "large"] },
+      control: {
+        type: "select",
+        options: ["small", "medium", "large"]
+      },
     },
     icon: {
-      control: { type: "select", options: ["left", "center", "right"] },
+      control: {
+        type: "select",
+        options: ["left", "center", "right"]
+      },
     },
   },
   parameters: {
-    componentSubtitle:
-      "Кнопка используется как триггер для выполнения определённого действия. Кнопка однозначно сообщает пользователю, что произойдёт после нажатия на неё.",
+    componentSubtitle: "Кнопка используется как триггер для выполнения определённого действия. Кнопка однозначно сообщает пользователю, что произойдёт после нажатия на неё.",
   },
 };
 
-const Template = (args, { argTypes }) => ({
+const Template = (args, {
+  argTypes
+}) => ({
   props: Object.keys(argTypes),
-  components: { lmmButton },
+  components: {
+    lmmButton
+  },
   template: '<lmm-button @onClick="onClick" v-bind="$props" />',
 });
 
@@ -127,3 +146,19 @@ IconBtn.parameters = {
     storyDescription: "С иконкой",
   },
 };
+
+
+storiesOf("Examples/Basic usage", module).add(
+  "Simple example",
+  (function () {
+    return {
+      components: {
+        lmmButton: lmmButton
+      },
+      template: '<lmm-button label="I\'m a button!"/>'
+    };
+  }), {
+    info: {},
+  }
+);
+
