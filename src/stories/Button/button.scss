@@ -106,6 +106,16 @@
     border-radius: 1.5em;
   }
 
+  &--radius {
+    border-radius: 50%;
+  }
+
+  &--disabled {
+    opacity: 0.5;
+    box-shadow: none;
+    pointer-events: none;
+  }
+
   &--primary {
     color: $white;
     background-color: $blue;
@@ -117,19 +127,112 @@
       background-color: rgba($blue, 0.85);
       border-color: transparent;
     }
+
+    &.button--border {
+      border: 1px solid rgba($blue, 100);
+      background: transparent !important;
+      color: rgba($blue,100);
+
+      &:hover,
+      &:focus {
+        background: rgba($blue, 0.20) !important;
+      }
+    }
   }
 
-  &--border {
-    padding: 9px;
+  &--success {
+    color: $white;
+    background-color: $success;
+    border-color: $success;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: rgba($success, 0.85);
+      border-color: transparent;
+    }
+
+    &.button--border {
+      border: 1px solid rgba($success, 100);
+      background: transparent !important;
+      color: rgba($success,100);
+
+      &:hover,
+      &:focus {
+        background: rgba($success, 0.20) !important;
+      }
+    }
   }
 
-  &--radius {
-    border-radius: 50%;
+  &--danger {
+    color: $white;
+    background-color: $danger;
+    border-color: $danger;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: rgba($danger, 0.85);
+      border-color: transparent;
+    }
+
+    &.button--border {
+      border: 1px solid rgba($danger, 100);
+      background: transparent !important;
+      color: rgba($danger,100);
+
+      &:hover,
+      &:focus {
+        background: rgba($danger, 0.20) !important;
+      }
+    }
   }
 
-  &--disabled {
-    opacity: 0.5;
-    box-shadow: none;
-    pointer-events: none;
+  &--warning {
+    color: $white;
+    background-color: $warning;
+    border-color: $warning;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: rgba($warning, 0.85);
+      border-color: transparent;
+    }
+
+    &.button--border {
+      border: 1px solid rgba($warning, 100);
+      background: transparent !important;
+      color: rgba($warning,100);
+
+      &:hover,
+      &:focus {
+        background: rgba($warning, 0.20) !important;
+      }
+    }
+  }
+
+  &--dark {
+    color: $white;
+    background-color: $dark;
+    border-color: $dark;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: rgba($dark, 0.85);
+      border-color: transparent;
+    }
+
+    &.button--border {
+      border: 1px solid rgba($dark, 100);
+      background: transparent !important;
+      color: rgba($dark,100);
+
+      &:hover,
+      &:focus {
+        background: rgba($dark, 0.20) !important;
+      }
+    }
   }
 }

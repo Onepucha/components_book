@@ -62,6 +62,18 @@ export default {
     primary: {
       type: Boolean,
     },
+    success: {
+      type: Boolean,
+    },
+    danger: {
+      type: Boolean,
+    },
+    warning: {
+      type: Boolean,
+    },
+    dark: {
+      type: Boolean,
+    },
     /**
     Тип кнопки с закруглением
     */
@@ -127,6 +139,10 @@ export default {
         button: true,
         "button--round": this.round,
         "button--primary": this.primary,
+        "button--success": this.success,
+        "button--danger": this.danger,
+        "button--warning": this.warning,
+        "button--dark": this.dark,
         "button--disabled": this.disabled,
         includeIco: this.includeIco,
         includeIconOnly: !this.label,

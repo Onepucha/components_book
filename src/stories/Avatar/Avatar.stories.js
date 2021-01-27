@@ -5,6 +5,24 @@ export default {
     component: lmmAvatar,
     argTypes: {
       borderRadius: { control: "text" },
+      textColor: {
+        control: "color"
+      },
+      color: {
+        control: "color"
+      },
+      size: {
+        control: {
+          type: "select",
+          options: ["small", "medium", "large"]
+        },
+      },
+      badgeColor: {
+        control: {
+          type: "select",
+          options: ["primary", "danger", "success", "warning", "dark", "light"]
+        },
+      },
     },
     parameters: {
         componentSubtitle: "Компонент .",
