@@ -161,21 +161,18 @@ storiesOf("Examples/Basic usage", module)
                     lmmButton
                 },
                 template: `
-        <div>
-            <lmm-button label="I'm a button!"/>
-            <lmm-button label="I'm a button!" primary="true"/>
-            <lmm-button label="I'm a button!" success="true"/>
-            <lmm-button label="I'm a button!" danger="true"/>
-            <lmm-button label="I'm a button!" warning="true"/>
-            <lmm-button label="I'm a button!" dark="true"/>
-        </div>
-      `
+                    <div>
+                        <lmm-button label="I'm a button!"/>
+                        <lmm-button label="I'm a button!" :primary="true"/>
+                        <lmm-button label="I'm a button!" :success="true"/>
+                        <lmm-button label="I'm a button!" :danger="true"/>
+                        <lmm-button label="I'm a button!" :warning="true"/>
+                        <lmm-button label="I'm a button!" :dark="true"/>
+                    </div>
+                `
             };
         }), {
-            info: {
-                info: true,
-                summary: 'Summary for MyComponent'
-            }
+            info: {}
         }
     )
     .add(
@@ -186,29 +183,17 @@ storiesOf("Examples/Basic usage", module)
                     lmmButton
                 },
                 template: `
-          <div>
-              <lmm-button label="I'm a button!" border="true"/>
-              <lmm-button label="I'm a button!" border="true" primary="true"/>
-              <lmm-button label="I'm a button!" border="true" success="true"/>
-              <lmm-button label="I'm a button!" border="true" danger="true"/>
-              <lmm-button label="I'm a button!" border="true" warning="true"/>
-              <lmm-button label="I'm a button!" border="true" dark="true"/>
-          </div>
-        `
+                    <div>
+                        <lmm-button label="I'm a button!" :border="true"/>
+                        <lmm-button label="I'm a button!" :border="true" :primary="true"/>
+                        <lmm-button label="I'm a button!" :border="true" :success="true"/>
+                        <lmm-button label="I'm a button!" :border="true" :danger="true"/>
+                        <lmm-button label="I'm a button!" :border="true" :warning="true"/>
+                        <lmm-button label="I'm a button!" :border="true" :dark="true"/>
+                    </div>
+                    `
             };
         }), {
-            info: `
-        # This is _summary_
-
-        You can write summary in [Markdown](https://en.wikipedia.org/wiki/Markdown).
-
-        There is also syntax highlighting powered by [Highlight.js](https://highlightjs.org/).
-
-        \`\`\`js
-        export function foo() {
-          console.log('Hello, World!')
-        }
-        \`\`\`
-      `
+            info: {}
         }
     );
