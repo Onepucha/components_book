@@ -2,9 +2,6 @@ import {
     storiesOf
 } from "@storybook/vue";
 import lmmButton from "./Button.vue";
-import {
-    withInfo
-} from 'storybook-addon-vue-info';
 
 export default {
     title: "Components/Button",
@@ -152,7 +149,6 @@ IconBtn.parameters = {
 
 
 storiesOf("Examples/Basic usage", module)
-    .addDecorator(withInfo)
     .add(
         "Button group filled",
         (function () {

@@ -44,7 +44,7 @@
     "autoprefixer-loader": "^3.2.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
-    "chromatic": "^5.2.0",
+    "chromatic": "^5.6.1",
     "css-loader": "^4.3.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
