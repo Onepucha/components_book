@@ -26,7 +26,7 @@ const Template = (args, {
                     <h3 class="heading heading--m">{{ title }}</h3>
                 </div>
             </slot>
-            <slot slot="media">
+            <slot slot="media" v-if="image">
                 <div>
                     <img :src="image" alt="image">
                 </div>
@@ -51,8 +51,14 @@ const Template = (args, {
 });
 
 export const Default = Template.bind({});
+export const Media = Template.bind({});
 
 Default.args = {
+    title: 'Default Title',
+    text: 'Default Text',
+};
+
+Media.args = {
     title: 'Default Title',
     image: 'https://image.freepik.com/free-vector/blue-gradient-geometric-shapes-background_23-2148262366.jpg',
     text: 'Default Text',

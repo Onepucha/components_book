@@ -7,6 +7,6 @@ export default create({
   fontCode: "monospace",
 
   brandTitle: "Labmedia",
-  brandUrl: "/",
+  brandUrl: "#",
   brandImage: "https://softskills.labmedia.su/images/logo.svg",
 });

@@ -19,4 +19,7 @@ module.exports = {
     "@storybook/addon-controls",
     "@storybook/addon-storysource",
   ],
+  performance: {
+    hints: false
+  }
 };
