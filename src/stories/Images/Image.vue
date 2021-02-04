@@ -1,10 +1,10 @@
 <template>
-  <li class="vs-image">
-    <div class="con-vs-image">
+  <li class="lmm-image">
+    <div class="con-lmm-image">
       <div
         :v-bind="$attrs"
         :style="styleImage"
-        class="vs-image--img">
+        class="lmm-image--img">
       </div>
     </div>
     <img

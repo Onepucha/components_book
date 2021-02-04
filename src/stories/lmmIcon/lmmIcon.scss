@@ -1,0 +1,49 @@
+@import "../variables.scss";
+
+.round {
+    border-radius: 50%;
+}
+
+.lmm-icon {
+    color: inherit;
+    text-align: center;
+    font-size: 1rem
+}
+
+.lmm-icon.large {
+    font-size: 3.125rem;
+    width: 3.125rem;
+    height: 3.125rem
+}
+
+.lmm-icon.medium {
+    font-size: 2.31rem;
+    width: 2.31rem;
+    height: 2.31rem
+}
+
+.lmm-icon.small {
+    font-size: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem
+}
+
+.lmm-icon-bg {
+    width: 1rem;
+    height: 1rem
+}
+
+.lmm-icon-bg.bg-large {
+    width: 3.125rem;
+    height: 3.125rem
+}
+
+.lmm-icon-bg.bg-medium {
+    width: 2.31rem;
+    height: 2.31rem
+}
+
+.lmm-icon-bg.bg-small {
+    width: 1.5rem;
+    height: 1.5rem
+}

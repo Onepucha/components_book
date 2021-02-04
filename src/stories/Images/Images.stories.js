@@ -4,7 +4,14 @@ import lmmImages from "./Images.vue";
 export default {
     title: "Components/Images",
     component: lmmImage,
-    argTypes: {},
+    argTypes: {
+        hover: {
+            control: {
+                type: "select",
+                options: ["blur", "zoom", "default", "dark", "scale", "curtain"]
+            },
+        },
+    },
     parameters: {
         componentSubtitle: "Компонент эффект картинок.",
     },
@@ -19,19 +26,20 @@ const Template = (args, {
         lmmImages
     },
     template: `
-    
-            <lmm-images v-bind="$props">
-                <lmm-image v-bind="$props" :key="index"  v-for="(image, index) in 8" />
-            </lmm-images>
-        
+        <lmm-images v-bind="$props">
+            <lmm-image v-bind="$props" :key="index" v-for="(image, index) in 8" />
+        </lmm-images>
     `,
 });
 
 export const Default = Template.bind({});
 
 Default.args = {
-    src: 'https://i.picsum.photos/id/41/400/400.jpg?hmac=NH3IBQXgqMIidNwbm1htW8tY8jFEK3UxM0zswT9bdXI',
-    hover: 'dark'
+    src: 'https://demo.cloudimg.io/v7/https://img.scaleflex.com/truck.jpg?&w=594',
+    hover: 'dark',
+    alternating: false,
+    notBorderRadius: false,
+    notMargin: false,
 };
 
 
