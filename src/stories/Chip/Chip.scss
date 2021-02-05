@@ -1,7 +1,6 @@
 @import "../variables.scss";
 
-
-.con-vs-chip {
+.con-lmm-chip {
     background: $light-gray;
     border-radius: 20px;
     display: flex;
@@ -14,7 +13,7 @@
     position: relative;
     font-family: $Regular;
 
-    & .vs-chip--close {
+    & .lmm-chip--close {
         width: 20px;
         height: 20px;
         display: flex;
@@ -37,7 +36,7 @@
         }
     }
 
-    & .vs-chip--text {
+    & .lmm-chip--text {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -46,10 +45,27 @@
     &.bg-chip-transparent {
         font-weight: 500;
     }
+
+    &.con-lmm-avatar {
+        width: 24px;
+        height: 24px;
+        position: relative;
+        display: block;
+        margin: 2px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba($black, .15);
+
+        &.material-icons {
+            margin-top: 0;
+            font-size: .8rem
+        }
+    }
 }
 
 .app-is-rtl {
-    & .con-vs-chip {
+    & .con-lmm-chip {
         float: right;
         margin-left: 2px;
         padding-left: 10px;
@@ -57,15 +73,19 @@
         &.closable {
             padding-left: 0;
         }
+
+        & .con-lmm-avatar {
+            transform: translate(8px);
+        }
     }
 
-    & .vs-chip--text {
+    & .lmm-chip--text {
         margin-right: 10px;
     }
 }
 
 .app-is-ltr {
-    & .con-vs-chip {
+    & .con-lmm-chip {
         float: left;
         margin-right: 2px;
         padding-right: 10px;
@@ -73,64 +93,68 @@
         &.closable {
             padding-right: 0;
         }
+
+        & .con-lmm-avatar {
+            transform: translate(-8px);
+        }
     }
 
-    & .vs-chip--text {
+    & .lmm-chip--text {
         margin-left: 10px;
     }
 }
 
 
-.vs-chip-primary:not(.bg-chip-transparent) {
+.lmm-chip-primary:not(.bg-chip-transparent) {
     background: rgba($primary, 1);
 }
 
-.vs-chip-primary.bg-chip-transparent {
+.lmm-chip-primary.bg-chip-transparent {
     background: rgba($primary, .15);
     color: rgba($primary, 1);
 }
 
-.vs-chip-danger:not(.bg-chip-transparent) {
+.lmm-chip-danger:not(.bg-chip-transparent) {
     background: rgba($danger, 1);
 }
 
-.vs-chip-danger.bg-chip-transparent {
+.lmm-chip-danger.bg-chip-transparent {
     background: rgba($danger, .15);
     color: rgba($danger, 1);
 }
 
-.vs-chip-success:not(.bg-chip-transparent) {
+.lmm-chip-success:not(.bg-chip-transparent) {
     background: rgba($success, 1);
 }
 
-.vs-chip-success.bg-chip-transparent {
+.lmm-chip-success.bg-chip-transparent {
     background: rgba($success, .15);
     color: rgba($success, 1);
 }
 
-.vs-chip-warning:not(.bg-chip-transparent) {
+.lmm-chip-warning:not(.bg-chip-transparent) {
     background: rgba($warning, 1);
 }
 
-.vs-chip-warning.bg-chip-transparent {
+.lmm-chip-warning.bg-chip-transparent {
     background: rgba($warning, .15);
     color: rgba($warning, 1);
 }
 
-.vs-chip-dark:not(.bg-chip-transparent) {
+.lmm-chip-dark:not(.bg-chip-transparent) {
     background: rgba($dark, 1);
 }
 
-.vs-chip-dark.bg-chip-transparent {
+.lmm-chip-dark.bg-chip-transparent {
     background: rgba($dark, .15);
     color: rgba($dark, 1);
 }
 
-.vs-chip-light:not(.bg-chip-transparent) {
+.lmm-chip-light:not(.bg-chip-transparent) {
     background: rgba($light, 1);
 }
 
-.vs-chip-light.bg-chip-transparent {
+.lmm-chip-light.bg-chip-transparent {
     background: rgba($light, .15);
     color: rgba($light, 1);
 }

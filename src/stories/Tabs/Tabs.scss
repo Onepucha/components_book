@@ -161,10 +161,10 @@
 }
 
 .lmm-tabs--li button.lmm-tabs--btn {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
   position: relative;
+  white-space: nowrap;
   width: 100%;
   background: transparent;
   margin: 0;

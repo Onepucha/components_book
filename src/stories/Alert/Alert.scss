@@ -1,0 +1,190 @@
+@import "../variables.scss";
+
+.con-lmm-alert {
+    border-radius: 6px;
+    color: #fff;
+    width: 100%;
+    position: relative;
+    font-size: .8rem;
+    cursor: default;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+    overflow: hidden
+}
+
+.icon-alert {
+    height: 100%;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    font-size: 1.1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.lmm-app-is-rtl .icon-alert {
+    right: 0
+}
+
+.lmm-app-is-ltr .icon-alert {
+    left: 0
+}
+
+.lmm-alert {
+    padding: 10px;
+    overflow: hidden;
+    position: relative
+}
+
+.lmm-app-is-rtl .lmm-alert.con-icon {
+    padding-right: 40px
+}
+
+.lmm-app-is-ltr .lmm-alert.con-icon {
+    padding-left: 40px
+}
+
+.lmm-alert--title {
+    font-size: .9rem;
+    font-weight: 700;
+    padding: 8px 10px
+}
+
+.lmm-alert--close {
+    position: relative;
+    margin-top: 4px;
+    display: inline-block;
+    padding: 4px;
+    border-radius: 6px;
+    padding-bottom: 1px;
+    cursor: pointer;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease
+}
+
+.lmm-app-is-rtl .lmm-alert--close {
+    margin-left: 4px
+}
+
+.lmm-app-is-ltr .lmm-alert--close {
+    margin-right: 4px
+}
+
+.lmm-app-is-rtl .lmm-alert--close {
+    float: left
+}
+
+.lmm-app-is-ltr .lmm-alert--close {
+    float: right
+}
+
+.lmm-alert--close:hover {
+    -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .1)
+}
+
+.con-lmm-alert-primary {
+    background: rgba($primary, .15);
+    -webkit-box-shadow: 0 0 25px 0 rgba($primary, .15);
+    box-shadow: 0 0 25px 0 rgba($primary, .15);
+    color: rgba($primary, 1)
+}
+
+.con-lmm-alert-primary h4 {
+    -webkit-box-shadow: 0 6px 15px -7px rgba($primary, .4);
+    box-shadow: 0 6px 15px -7px rgba($primary, .4)
+}
+
+.con-lmm-alert-primary .con-x {
+    background: rgba($primary, 1);
+    color: #fff
+}
+
+.con-lmm-alert-danger {
+    background: rgba($danger, .15);
+    -webkit-box-shadow: 0 0 25px 0 rgba($danger, .15);
+    box-shadow: 0 0 25px 0 rgba($danger, .15);
+    color: rgba($danger, 1)
+}
+
+.con-lmm-alert-danger h4 {
+    -webkit-box-shadow: 0 6px 15px -7px rgba($danger, .4);
+    box-shadow: 0 6px 15px -7px rgba($danger, .4)
+}
+
+.con-lmm-alert-danger .con-x {
+    background: rgba($danger, 1);
+    color: #fff
+}
+
+.con-lmm-alert-success {
+    background: rgba($success, .15);
+    -webkit-box-shadow: 0 0 25px 0 rgba($success, .15);
+    box-shadow: 0 0 25px 0 rgba($success, .15);
+    color: rgba($success, 1)
+}
+
+.con-lmm-alert-success h4 {
+    -webkit-box-shadow: 0 6px 15px -7px rgba($success, .4);
+    box-shadow: 0 6px 15px -7px rgba($success, .4)
+}
+
+.con-lmm-alert-success .con-x {
+    background: rgba($success, 1);
+    color: #fff
+}
+
+.con-lmm-alert-warning {
+    background: rgba($warning, .15);
+    -webkit-box-shadow: 0 0 25px 0 rgba($warning, .15);
+    box-shadow: 0 0 25px 0 rgba($warning, .15);
+    color: rgba($warning, 1)
+}
+
+.con-lmm-alert-warning h4 {
+    -webkit-box-shadow: 0 6px 15px -7px rgba($warning, .4);
+    box-shadow: 0 6px 15px -7px rgba($warning, .4)
+}
+
+.con-lmm-alert-warning .con-x {
+    background: rgba($warning, 1);
+    color: #fff
+}
+
+.con-lmm-alert-dark {
+    background: rgba($dark, .15);
+    -webkit-box-shadow: 0 0 25px 0 rgba($dark, .15);
+    box-shadow: 0 0 25px 0 rgba($dark, .15);
+    color: rgba($dark, 1)
+}
+
+.con-lmm-alert-dark h4 {
+    -webkit-box-shadow: 0 6px 15px -7px rgba($dark, .4);
+    box-shadow: 0 6px 15px -7px rgba($dark, .4)
+}
+
+.con-lmm-alert-dark .con-x {
+    background: rgba($dark, 1);
+    color: #fff
+}
+
+.con-lmm-alert-light {
+    background: rgba($light, .15);
+    -webkit-box-shadow: 0 0 25px 0 rgba($light, .15);
+    box-shadow: 0 0 25px 0 rgba($light, .15);
+    color: rgba($light, 1)
+}
+
+.con-lmm-alert-light h4 {
+    -webkit-box-shadow: 0 6px 15px -7px rgba($light, .4);
+    box-shadow: 0 6px 15px -7px rgba($light, .4)
+}
+
+.con-lmm-alert-light .con-x {
+    background: rgba($light, 1);
+    color: #fff
+}

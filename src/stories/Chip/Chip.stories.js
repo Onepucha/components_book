@@ -1,4 +1,5 @@
 import lmmChip from "./Chip.vue";
+import lmmAvatar from "../Avatar/Avatar.vue";
 
 export default {
   title: "Components/Chip",
@@ -18,7 +19,9 @@ export default {
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  components: { lmmChip },
+  components: { 
+    lmmChip, lmmAvatar 
+  },
   template: `
   <div class="app-is-ltr">
     <lmm-chip v-bind="$props" @closeChip="closeChip()">{{ text }}</lmm-chip>
@@ -52,3 +55,4 @@ Closable.args = {
   color: "primary",
   closable: true,
 };
+

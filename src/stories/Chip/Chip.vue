@@ -2,22 +2,22 @@
   <div
     :style="styleChip"
     :class="[
-      `vs-chip-${color}`,
+      `lmm-chip-${color}`,
       {
         'closable': closable,
         'con-color': color,
         'bg-chip-transparent': transparent
       }
     ]"
-    class="con-vs-chip">
+    class="con-lmm-chip">
 
-    <span class="text-chip vs-chip--text">
+    <span class="text-chip lmm-chip--text">
       <slot/>
     </span>
 
     <button
       v-if="closable"
-      class="btn-close vs-chip--close"
+      class="btn-close lmm-chip--close"
       type="button"
       @click="closeChip">
       <i class="icon material-icons">
@@ -82,12 +82,11 @@ export default {
   },
   methods:{
     closeChip() {
-      console.log(123);
       this.$emit('input', false)
       this.$emit('click')
     },
     remove(){
-      this.$emit('vs-remove', false)
+      this.$emit('lmm-remove', false)
       this.$emit('input', false)
     }
   }
