@@ -21,5 +21,8 @@ module.exports = {
   ],
   performance: {
     hints: false
+  },
+  refs: {
+    'package-name': { disable: true }
   }
 };
