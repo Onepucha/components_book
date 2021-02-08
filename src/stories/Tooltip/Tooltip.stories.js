@@ -23,29 +23,24 @@ export const Right = Template.bind({});
 Default.args = {
   text: "Tooltip position Left",
   position: "left",
-  value: true,
 };
 
 Left.args = {
   text: "Tooltip position Left",
   position: "left",
-  value: true,
 };
 
 Top.args = {
   text: "Tooltip position Top",
   position: "top",
-  value: true,
 };
 
 Bottom.args = {
   text: "Tooltip position Bottom",
   position: "bottom",
-  value: true,
 };
 
 Right.args = {
   text: "Tooltip position Right",
   position: "right",
-  value: true,
 };

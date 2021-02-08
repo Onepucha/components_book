@@ -2,10 +2,14 @@ import {
     storiesOf
 } from "@storybook/vue";
 import lmmButton from "./Button.vue";
+import lmmTooltip from "../Tooltip/Tooltip.vue";
 
 export default {
     title: "Components/Button",
-    component: lmmButton,
+    components: {
+        lmmButton,
+        lmmTooltip
+    },
     argTypes: {
         backgroundColor: {
             control: "color"
@@ -42,7 +46,8 @@ const Template = (args, {
 }) => ({
     props: Object.keys(argTypes),
     components: {
-        lmmButton
+        lmmButton,
+        lmmTooltip
     },
     template: '<lmm-button @onClick="onClick" v-bind="$props" />',
 });
@@ -187,6 +192,26 @@ storiesOf("Examples/Basic usage", module)
                         <lmm-button label="I'm a button!" :border="true" :warning="true"/>
                         <lmm-button label="I'm a button!" :border="true" :dark="true"/>
                     </div>
+                    `
+            };
+        }), {
+            info: {}
+        }
+    )
+    .add(
+        "Button tooltip",
+        (function () {
+            return {
+                components: {
+                    lmmTooltip: lmmTooltip,
+                    lmmButton: lmmButton,
+                },
+                template: `
+                <div>
+                    <lmm-tooltip text="tooltip">
+                        <button class="button button--primary button--medium">Button</button>
+                    </lmm-tooltip>
+                </div>
                     `
             };
         }), {
