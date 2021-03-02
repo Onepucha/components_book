@@ -23,7 +23,6 @@
       :class="{'active-text':isChecked || $attrs.checked}"
       class="text-on text-switch lmm-switch--text">
       <slot name="on"/>
-
       <lmm-icon
         :icon-pack="iconPack"
         :icon="lmmIconOn || lmmIcon"
@@ -34,7 +33,6 @@
       ref="off"
       :class="{'active-text':!isChecked && !$attrs.checked}"
       class="text-off text-switch lmm-switch--text">
-      <!-- gato con botas -->
       <slot name="off"/>
       <lmm-icon
         :icon-pack="iconPack"

@@ -3,12 +3,13 @@ import {
 } from "@storybook/vue";
 import lmmButton from "./Button.vue";
 import lmmTooltip from "../Tooltip/Tooltip.vue";
+import mdx from './Button.mdx';
+
 
 export default {
     title: "Components/Button",
     components: {
         lmmButton,
-        lmmTooltip
     },
     argTypes: {
         backgroundColor: {
@@ -37,7 +38,10 @@ export default {
         },
     },
     parameters: {
-        componentSubtitle: "Кнопка используется как триггер для выполнения определённого действия. Кнопка однозначно сообщает пользователю, что произойдёт после нажатия на неё.",
+        // componentSubtitle: "Кнопка используется как триггер для выполнения определённого действия. Кнопка однозначно сообщает пользователю, что произойдёт после нажатия на неё.",
+        docs: {
+            page: mdx,
+        },
     }
 };
 
@@ -46,10 +50,14 @@ const Template = (args, {
 }) => ({
     props: Object.keys(argTypes),
     components: {
-        lmmButton,
-        lmmTooltip
+        lmmButton
     },
     template: '<lmm-button @onClick="onClick" v-bind="$props" />',
+    methods: {
+        onClick() {
+            this.$emit("onClick");
+        },
+    },
 });
 
 export const Default = Template.bind({});
