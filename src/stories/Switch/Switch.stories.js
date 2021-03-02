@@ -33,6 +33,11 @@ const Template = (args, {
             </slot>
         </lmm-switch>
     `,
+    data: () => {
+        return {
+            switch1: false,
+        }
+    }
 });
 
 export const Default = Template.bind({});
@@ -43,20 +48,17 @@ export const Icon = Template.bind({});
 Default.args = {
     value: false,
     lmmValue: false,
-    switch1:false,
 };
 
 Color.args = {
     value: true,
     lmmValue: true,
-    switch1:true,
     color: 'success',
 };
 
 Text.args = {
     value: false,
     lmmValue: false,
-    switch1:true,
     on: 'On',
     off: 'Off'
 };
@@ -64,7 +66,6 @@ Text.args = {
 Icon.args = {
     value: false,
     lmmValue: false,
-    switch1:true,
     color: 'danger',
     lmmIcon: 'close',
     lmmIconOn: 'close'

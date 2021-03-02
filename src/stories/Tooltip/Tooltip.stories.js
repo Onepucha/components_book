@@ -4,13 +4,25 @@ export default {
   title: "Components/Tooltip",
   component: lmmTooltip,
   argTypes: {
-    color: { control: "color" },
+    color: {
+      control: "color",
+    },
+    position: {
+      control: {
+        type: "select",
+        options: ["top", "right", "bottom", "left"]
+      },
+    },
   },
 };
 
-const Template = (args, { argTypes }) => ({
+const Template = (args, {
+  argTypes
+}) => ({
   props: Object.keys(argTypes),
-  components: { lmmTooltip },
+  components: {
+    lmmTooltip
+  },
   template: '<lmm-tooltip v-bind="$props" />',
 });
 

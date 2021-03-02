@@ -82,22 +82,15 @@ export default {
     children: {
       type: Array,
     },
-    childActive: {
-      type: Number,
-    },
-    heightx: {
-      type: String,
-    },
-    topx: {
-      type: String,
-      default: "auto",
-    },
-    leftx: {
-      type: String,
-    },
-    widthx: {
-      type: String,
-    },
+  },
+  data: function() {
+    return {
+      childActive: 0,
+      widthx: "auto",
+      heightx: "auto",
+      topx: "auto",
+      leftx: null,
+    }
   },
   computed: {
     styleTab() {

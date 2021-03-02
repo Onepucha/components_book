@@ -15,6 +15,11 @@ const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   components: { lmmSlider },
   template: `<div style="margin-top:40px;"><lmm-slider v-bind="$props" v-model="value" /></div>`,
+  data: () => {
+    return {
+      
+    }
+  }
 });
 
 export const Default = Template.bind({});

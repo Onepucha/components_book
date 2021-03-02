@@ -22,6 +22,11 @@ const Template = (args, { argTypes }) => ({
     lmmProgress,
   },
   template: `<lmm-progress v-bind="$props" />`,
+  data: () => {
+    return {
+      
+    }
+  }
 });
 
 export const Default = Template.bind({});
