@@ -37,10 +37,13 @@
 
 <script>
 import "./Avatar.scss";
+import lmmIcon from "../lmmIcon/lmmIcon.vue";
 
 export default {
   name: 'lmmAvatar',
-  
+  components: {
+      lmmIcon,
+  },
   props:{
     badge:{
       type:[Boolean,String,Number],

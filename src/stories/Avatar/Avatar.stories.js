@@ -1,4 +1,5 @@
 import lmmAvatar from "./Avatar.vue";
+import mdx from './Avatar.mdx';
 
 export default {
     title: "Components/Avatar",
@@ -25,7 +26,9 @@ export default {
       },
     },
     parameters: {
-        componentSubtitle: "Компонент .",
+        docs: {
+            page: mdx,
+        },
     },
 };
 

@@ -7,7 +7,7 @@
     position: relative;
     cursor: pointer;
     display: inline-block;
-    margin: 5px;
+    margin: 5px !important;
     font-family: $Regular;
 
     &.large {
