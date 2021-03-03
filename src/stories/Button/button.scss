@@ -5,6 +5,10 @@
     cursor: pointer;
   }
 
+  & + & {
+    margin-left: 20px;
+  }
+
   font-family: $Regular;
   line-height: 1;
   position: relative;
@@ -29,7 +33,7 @@
   }
 
   &.includeIco {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
   }
