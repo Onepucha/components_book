@@ -1,0 +1,170 @@
+@import "../variables.scss";
+
+.carousel {
+    position: relative;
+
+    &.story {
+        .story__slide {
+            height: 200px;
+            font-size: 18px;
+            color: $white;
+        }
+    
+        &--primary {
+            .story__slide {
+                background: $primary;
+            }
+
+            .carousel__arrows {
+                i {
+                    color: $white;
+                }
+            }
+        }
+
+        &--danger {
+            .story__slide {
+                background: $danger;
+            }
+
+            .carousel__arrows {
+                i {
+                    color: $white;
+                }
+            }
+        }
+
+        &--success {
+            .story__slide {
+                background: $success;
+            }
+
+            .carousel__arrows {
+                i {
+                    color: $white;
+                }
+            }
+        }
+
+        &--warning {
+            .story__slide {
+                background: $warning;
+            }
+
+            .carousel__arrows {
+                i {
+                    color: $white;
+                }
+            }
+        }
+
+        &--dark {
+            .story__slide {
+                background: $dark;
+            }
+
+            .carousel__arrows {
+                i {
+                    color: $white;
+                }
+            }
+        }
+
+        &--light {
+            .story__slide {
+                background: $light;
+                color: $black;
+            }
+
+            .carousel__arrows {
+                i {
+                    color: $black;
+                }
+            }
+        }
+    
+        &--multiple {
+            .story__slide {
+                flex: 0 0 100%;
+    
+                @media (min-width: 500px) {
+                    flex: 0 0 50%;
+                }
+    
+                @media (min-width: 768px) {
+                    flex: 0 0 33.33%;
+                }
+    
+                @media (min-width: 1024px) {
+                    flex: 0 0 25%;
+                }
+    
+                @media (min-width: 1280px) and (max-width: 1440px) {
+                    flex: 0 0 20%;
+                }
+            }
+        }
+    
+        &--images {
+            .story__slide {
+                img {
+                    height: 200px;
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__slide {
+        flex: 0 0 100%;
+        height: 100%;
+        scroll-snap-align: start;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+    }
+
+    &__arrows {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        cursor: pointer;
+
+        &:disabled {
+            cursor: not-allowed;
+        }
+
+        &--left {
+            left: 0;
+        }
+
+        &--right {
+            right: 0;
+        }
+    }
+}
+
+
