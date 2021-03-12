@@ -1,11 +1,9 @@
-import cactus from '../assets/cactus.jpg'
-
 const mocks = [
     {
       id: 'example-slide-01',
       content: 'Slide 1',
       name: 'Example slide description',
-      image: cactus,
+      image: 'https://images.pexels.com/photos/6869100/pexels-photo-6869100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       href: '#',
       width: '280'
     },
@@ -13,7 +11,7 @@ const mocks = [
       id: 'example-slide-02',
       content: 'Slide 2',
       name: 'Example slide description',
-      image: cactus,
+      image: 'https://images.pexels.com/photos/6869100/pexels-photo-6869100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       href: '#',
       width: '122'
     },
@@ -21,7 +19,7 @@ const mocks = [
       id: 'example-slide-03',
       content: 'Slide 3',
       name: 'Example slide description',
-      image: cactus,
+      image: 'https://images.pexels.com/photos/6869100/pexels-photo-6869100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       href: '#',
       width: '132'
     },
@@ -29,7 +27,7 @@ const mocks = [
       id: 'example-slide-04',
       content: 'Slide 4',
       name: 'Example slide description',
-      image: cactus,
+      image: 'https://images.pexels.com/photos/6869100/pexels-photo-6869100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       href: '#',
       width: '276'
     },
@@ -37,7 +35,7 @@ const mocks = [
       id: 'example-slide-05',
       content: 'Slide 5',
       name: 'Example slide description',
-      image: cactus,
+      image: 'https://images.pexels.com/photos/6869100/pexels-photo-6869100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       href: '#',
       width: '95'
     },
@@ -45,7 +43,7 @@ const mocks = [
       id: 'example-slide-06',
       content: 'Slide 6',
       name: 'Example slide description',
-      image: cactus,
+      image: 'https://images.pexels.com/photos/6869100/pexels-photo-6869100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       href: '#',
       width: '112'
     },
@@ -53,7 +51,7 @@ const mocks = [
       id: 'example-slide-07',
       content: 'Slide 7',
       name: 'Example slide description',
-      image: cactus,
+      image: 'https://images.pexels.com/photos/6869100/pexels-photo-6869100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       href: '#',
       width: '142'
     },
@@ -61,7 +59,7 @@ const mocks = [
       id: 'example-slide-08',
       content: 'Slide 8',
       name: 'Example slide description',
-      image: cactus,
+      image: 'https://images.pexels.com/photos/6869100/pexels-photo-6869100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       href: '#',
       width: '99'
     },
@@ -69,7 +67,7 @@ const mocks = [
       id: 'example-slide-09',
       content: 'Slide 9',
       name: 'Example slide description',
-      image: cactus,
+      image: 'https://images.pexels.com/photos/6869100/pexels-photo-6869100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       href: '#',
       width: '155'
     },
@@ -77,7 +75,7 @@ const mocks = [
       id: 'example-slide-10',
       content: 'Slide 10',
       name: 'Example slide description',
-      image: cactus,
+      image: 'https://images.pexels.com/photos/6869100/pexels-photo-6869100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       href: '#',
       width: '102'
     },
@@ -85,7 +83,7 @@ const mocks = [
       id: 'example-slide-11',
       content: 'Slide 11',
       name: 'Example slide description',
-      image: cactus,
+      image: 'https://images.pexels.com/photos/6869100/pexels-photo-6869100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       href: '#',
       width: '80'
     },
@@ -93,7 +91,7 @@ const mocks = [
       id: 'example-slide-12',
       content: 'Slide 12',
       name: 'Example slide description',
-      image: cactus,
+      image: 'https://images.pexels.com/photos/6869100/pexels-photo-6869100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       href: '#',
       width: '192'
     },
@@ -101,7 +99,7 @@ const mocks = [
       id: 'example-slide-13',
       content: 'Slide 13',
       name: 'Example slide description',
-      image: cactus,
+      image: 'https://images.pexels.com/photos/6869100/pexels-photo-6869100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       href: '#',
       width: '132'
     },
@@ -109,7 +107,7 @@ const mocks = [
       id: 'example-slide-14',
       content: 'Slide 14',
       name: 'Example slide description',
-      image: cactus,
+      image: 'https://images.pexels.com/photos/6869100/pexels-photo-6869100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       href: '#',
       width: '376'
     },
@@ -117,7 +115,7 @@ const mocks = [
       id: 'example-slide-15',
       content: 'Slide 15',
       name: 'Example slide description',
-      image: cactus,
+      image: 'https://images.pexels.com/photos/6869100/pexels-photo-6869100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       href: '#',
       width: '95'
     },
@@ -125,7 +123,7 @@ const mocks = [
       id: 'example-slide-16',
       content: 'Slide 16',
       name: 'Example slide description',
-      image: cactus,
+      image: 'https://images.pexels.com/photos/6869100/pexels-photo-6869100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       href: '#',
       width: '112'
     },
@@ -133,7 +131,7 @@ const mocks = [
       id: 'example-slide-17',
       content: 'Slide 17',
       name: 'Example slide description',
-      image: cactus,
+      image: 'https://images.pexels.com/photos/6869100/pexels-photo-6869100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       href: '#',
       width: '142'
     },
@@ -141,7 +139,7 @@ const mocks = [
       id: 'example-slide-18',
       content: 'Slide 18',
       name: 'Example slide description',
-      image: cactus,
+      image: 'https://images.pexels.com/photos/6869100/pexels-photo-6869100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       href: '#',
       width: '102'
     },
@@ -149,7 +147,7 @@ const mocks = [
       id: 'example-slide-19',
       content: 'Slide 19',
       name: 'Example slide description',
-      image: cactus,
+      image: 'https://images.pexels.com/photos/6869100/pexels-photo-6869100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       href: '#',
       width: '155'
     },
@@ -157,7 +155,7 @@ const mocks = [
       id: 'example-slide-20',
       content: 'Slide 20',
       name: 'Example slide description',
-      image: cactus,
+      image: 'https://images.pexels.com/photos/6869100/pexels-photo-6869100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       href: '#',
       width: '82'
     }

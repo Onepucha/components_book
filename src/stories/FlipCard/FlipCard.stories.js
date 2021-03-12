@@ -1,5 +1,4 @@
 import lmmFlipCard from "./FlipCard.vue";
-import cactus from '../assets/cactus.jpg'
 
 export default {
     title: "Components/FlipCard",
@@ -35,7 +34,7 @@ Default.args = {
     titleBack: 'Title back',
     textBack: 'Text back',
     name: 'Example slide description',
-    image: cactus,
+    image: 'https://images.pexels.com/photos/6869100/pexels-photo-6869100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     sizeTitleFront: 'm',
     sizeTitleBack: 'm',
     sizeTextFront: 'm',
