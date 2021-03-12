@@ -8,7 +8,7 @@
     <!-- @slot Slot for Arrows -->
     <slot v-if="!hideArrows" name="arrows" :change-slide="changeSlide" :bound-left="boundLeft"
       :bound-right="boundRight">
-      <button v-show="hideArrowsOnBound ? !boundLeft : true" type="button" :aria-label="i18n.slideLeft"
+      <button v-show="hideArrowsOnBound ? !boundLeft : true" type="button"
         :disabled="boundLeft" class="
           carousel__arrows
           carousel__arrows--left
@@ -16,7 +16,7 @@
         <lmm-icon :icon="iconLeft" :icon-pack="iconPack" />
       </button>
 
-      <button v-show="hideArrowsOnBound ? !boundRight : true" type="button" :aria-label="i18n.slideRight"
+      <button v-show="hideArrowsOnBound ? !boundRight : true" type="button"
         :disabled="boundRight" class="
           carousel__arrows
           carousel__arrows--right
@@ -63,20 +63,6 @@
       tag: {
         type: String,
         default: 'ul'
-      },
-      /**
-       * Translations
-       */
-      i18n: {
-        type: Object,
-        default: () => ({
-          slideLeft: 'Slide left',
-          slideRight: 'Slide right'
-        }),
-        validator: config => {
-          const translations = ['slideLeft', 'slideRight']
-          return translations.every(key => key in config)
-        }
       },
       /**
       Тип галереии
