@@ -30,15 +30,11 @@
 </template>
 
 <script>
-  import debounce from 'lodash/debounce';
   import {
     approximatelyEqual,
   } from '../../utils';
   import './Carousel.scss';
 
-
-  const SCROLL_DEBOUNCE = 100
-  const RESIZE_DEBOUNCE = 410
 
   export default {
     props: {
@@ -126,10 +122,6 @@
     },
     mounted() {
       this.calcOnInit();
-
-      // Assign to new variable and keep reference for removeEventListener (Avoid Memory Leaks)
-      this.onResizeFn = debounce(this.calcOnInit, RESIZE_DEBOUNCE)
-      this.onScrollFn = debounce(this.calcOnScroll, SCROLL_DEBOUNCE)
 
       // MutationObserver
       this.attachMutationObserver()
