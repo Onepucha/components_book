@@ -1,4 +1,4 @@
-import cactus from './images/cactus.jpg'
+import cactus from '../assets/cactus.jpg'
 
 const mocks = [
     {
