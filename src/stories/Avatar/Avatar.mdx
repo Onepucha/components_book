@@ -1,0 +1,152 @@
+import { Meta, Preview, Story } from '@storybook/addon-docs/dist/blocks';
+import {lmmAvatar} from './Avatar.vue';
+
+# Avatar
+
+Аватар — графическое изображение пользователя, фотография или рисунок.
+
+Он нужен, чтобы быстро узнавать пользователя. Например, в чате или в ветке комментариев.
+А ещё — чтобы пользователь мог узнать сам себя. Например, проверить, что вошёл в
+аккаунт под нужным логином.
+
+- [Аватар](#аватар)
+- [Размер](#размер)
+- [C иконкой](#с-иконкой)
+- [Cо значком](#со-значком)
+- [Список свойств](#свойства)
+- [Пример использования](#пример)
+
+## Аватар
+
+Если у вас есть фотография пользователя, укажите ссылку на неё с помощью
+`src`.
+
+Если фотографии нет, аватар сформируется из имени пользователя (свойство `text`).
+
+Если вы не укажете ни то, ни другое, аватар всё равно появится.
+
+<div style={{ display: 'flex' }}>
+  <div class="con-img lmm-avatar--con-img">
+    <img class="con-lmm-avatar large"
+      src="https://www.dermosil.ru/storage/D0DCB1D3E6009494550EE62644C8044CA190B6192F38D7052A97530651105B81/aedbabfa258d417792d474acc12280fe/jpg/media/4df8db6b20f940a698a06ed4e292cdd3/Man.jpg" />
+  </div>
+
+  <div class="con-lmm-avatar large" style={{ backgroundColor: 'rgb(195, 195, 195)' }}>
+    <span title="Иван Иванов" translate="translate" class="lmm-avatar--text notranslate"
+      style={{ color: 'rgb(255, 255, 255)', transform: 'translate(-50%, -50%) scale(0.666667)' }}>
+      ИИ
+    </span>
+  </div>
+
+  <div class="con-lmm-avatar con-lmm-avatar-success large">
+    <span title="Иван Иванов" translate="translate" class="lmm-avatar--text notranslate"
+      style={{ color: 'rgb(255, 255, 255)', transform: 'translate(-50%, -50%) scale(0.666667)' }}>
+      ИИ
+    </span>
+  </div>
+
+  <div class="con-lmm-avatar large" style={{ backgroundColor: 'rgb(195, 195, 195)' }}>
+    <span title="Иван Иванов" translate="translate" class="lmm-avatar--text notranslate"
+      style={{ color: 'rgb(255, 255, 255)', transform: 'translate(-50%, -50%) scale(0.666667)' }}>
+    </span>
+  </div>
+</div>
+
+```ts
+<lmm-avatar :size="large"
+  :src="https://www.dermosil.ru/storage/D0DCB1D3E6009494550EE62644C8044CA190B6192F38D7052A97530651105B81/aedbabfa258d417792d474acc12280fe/jpg/media/4df8db6b20f940a698a06ed4e292cdd3/Man.jpg" />
+<lmm-avatar :size="large" :text="Иван Иванов" />
+<lmm-avatar :size="large" :text="Иван Иванов" :color="success" />
+<lmm-avatar :size="large" />
+```
+
+## Размер
+
+За размер отвечает свойство `size`.
+
+```ts
+<lmm-avatar :size="small" />
+<lmm-avatar :size="medium" />
+<lmm-avatar :size="large" />
+```
+
+<div style={{ display: 'flex' }}>
+  <div class="con-img lmm-avatar--con-img">
+    <img class="con-lmm-avatar small"
+      src="https://www.dermosil.ru/storage/D0DCB1D3E6009494550EE62644C8044CA190B6192F38D7052A97530651105B81/aedbabfa258d417792d474acc12280fe/jpg/media/4df8db6b20f940a698a06ed4e292cdd3/Man.jpg" />
+  </div>
+  <div class="con-img lmm-avatar--con-img">
+    <img class="con-lmm-avatar medium"
+      src="https://www.dermosil.ru/storage/D0DCB1D3E6009494550EE62644C8044CA190B6192F38D7052A97530651105B81/aedbabfa258d417792d474acc12280fe/jpg/media/4df8db6b20f940a698a06ed4e292cdd3/Man.jpg" />
+  </div>
+  <div class="con-img lmm-avatar--con-img">
+    <img class="con-lmm-avatar large"
+      src="https://www.dermosil.ru/storage/D0DCB1D3E6009494550EE62644C8044CA190B6192F38D7052A97530651105B81/aedbabfa258d417792d474acc12280fe/jpg/media/4df8db6b20f940a698a06ed4e292cdd3/Man.jpg" />
+  </div>
+</div>
+
+## C иконкой
+
+За иконку отвечает свойство `icon`. Это свойство ожидает компонент иконки из нашей библиотеки иконок.
+
+<div class="con-lmm-avatar large" style={{ backgroundColor: 'rgb(195, 195, 195)' }}>
+  <span title="" translate="translate" class="lmm-avatar--text notranslate material-icons person"
+    style={{ color: 'rgb(255, 255, 255)', transform: 'translate(-50%, -50%) scale(1)' }}>person
+  </span>
+</div>
+
+```ts
+<lmm-avatar :size="large" :icon="person" :iconPack="material-icons" :text="" />
+```
+## Со значком
+
+Вы можете добавить к аватару метку уведомления, либо точку отсчета, либо число со свойством `badge`.
+
+Вы также можете изменить цвет значка с помощью свойства `badge-color`. Вы можете использовать основные цвета или цвета **RGB** и **HEX**.
+
+<div class="con-lmm-avatar con-lmm-avatar-primary large">
+  <div class="dot-count lmm-avatar--count badgeNumber dot-count-dark">
+    8
+  </div>
+  <span title="Иван Иванов" translate="translate" class="lmm-avatar--text notranslate"
+    style={{ color: 'rgb(255, 255, 255)', transform: 'translate(-50%, -50%) scale(0.666667)' }}>
+    ИИ
+  </span>
+</div>
+
+```ts
+<lmm-avatar :size="large" :text="Иван Иванов" :color="primary" :badge="8" :badge-color="dark" />
+```
+
+
+## Свойства
+
+| Свойство | Тип | По умолчанию | Описание |
+| ----------------- | ------------------------------ | ------------ |---------------------------------------------------------------- |
+| `borderRadius` | `string` | - | Свойство устанавливает радиус скругления уголков |
+| `textColor` | `string` | `'rgb(255, 255, 255)'` | Свойство устанавливает цвет текста |
+| `color` | `string` | `'rgb(195, 195, 195)'` | Свойство устанавливает цвет фона |
+| `size` | `string` | - | Размер аватара |
+| `badgeColor` | `string` | `'danger'` | Свойство устанавливает цвет фона значка |
+| `text` | `string`, `number` | - | Имя пользователя |
+| `badge` | `boolean` | - | Свойство отвечает за показ значка |
+| `src` | `string` | - | Ссылка на изображение (аватар пользователя) |
+| `icon` | `string` | - | Свойство устанавливает картинку |
+| `iconPack` | `string` | - | Свойство отвечает за выбор библиотеки иконок |
+
+## Пример
+
+```ts
+import Vue from 'vue';
+import { lmmAvatar } from '../stories/Avatar/Avatar.vue';
+
+<div id="app">
+  <lmm-avatar :size="large" :text="Иван Иванов" />
+</div>
+
+<script>
+  new Vue({
+    el: '#app'
+  })
+</script>
+```

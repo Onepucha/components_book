@@ -1,7 +1,5 @@
 import { Meta, Preview, Story } from '@storybook/addon-docs/dist/blocks';
-
 import {lmmButton} from './Button.vue';
-
 
 # Button
 
@@ -99,10 +97,11 @@ import {lmmButton} from './Button.vue';
 ### Кнопка с иконкой
 
 Название кнопки можно дополнять иконкой. Она поможет быстрее найти нужную кнопку в ряду других и быстрее понять, что эта
-кнопка делает. За иконку отвечает свойство `includeIco`, а за расположение отвечает свойство `icon` со значением `left` (ставит иконку слева от текста на кнопке) или `right` (ставит
+кнопка делает. За иконку отвечает свойство `includeIco`, а за расположение отвечает свойство `icon` со значением `left`
+(ставит иконку слева от текста на кнопке) или `right` (ставит
 иконку справа). Оба эти свойства ожидают компонент иконки из нашей библиотеки иконок.
 
-<div class="d-flex">
+<div style={{ display: 'flex' }}>
   <button type="button" name="button" class="button button--primary includeIco button--medium">
     <i class="icon material-icons left material-icons">arrow_back_ios</i>
     <span>Назад</span>
@@ -124,7 +123,8 @@ import {lmmButton} from './Button.vue';
 #### Только иконка
 
 Кнопка может состоять только из иконки. Такие кнопки экономят место и позволяют разместить рядом много похожих кнопок.
-Например, кнопки для выбора даты или фильтров. Для создания такой кнопки используйте свойство `icon` со значением `center` (ставит иконку по центру на кнопке).
+Например, кнопки для выбора даты или фильтров. Для создания такой кнопки используйте свойство `icon` со значением
+`center` (ставит иконку по центру на кнопке).
 
 <button type="button" name="button" class="button button--primary button--border includeIco button--medium">
   <i class="icon material-icons center material-icons">file_download</i>
@@ -143,7 +143,8 @@ import {lmmButton} from './Button.vue';
 могут быть круглыми `round`.
 
 <button type="button" name="button" class="button button--primary button--medium"><span>Default</span></button>
-<button type="button" name="button" class="button button--primary button--round button--medium"><span>Round</span></button>
+<button type="button" name="button"
+  class="button button--primary button--round button--medium"><span>Round</span></button>
 
 ```ts
 <lmm-button label="Default" :primary="true" />
@@ -152,33 +153,25 @@ import {lmmButton} from './Button.vue';
 
 ## Список свойств
 
-| Свойство | Тип или варианты значения | По умолчанию | Описание |
-| ------------------------ | ----------------------------------------------------------------------------------------- |
-------------------------- | -------------------------------------------------------------------------------- |
-| [`label`](#текст-на-кнопке) | `string` | — | Текст на кнопке |
-| [`view`](#внешний-вид) | `'clear', 'primary', 'secondary', 'ghost'` | `primary` | Внешний вид |
-| [`disabled`](#disabled) | `boolean` | `false` | Блокировка кнопки |
-| [`size`](#размер) | `'xs', 's', 'm', 'l'` | `m` | Размер |
-| [`width`](#размер) | `'full', 'default'` | `default` | Ширина |
-| [`form`](#форма) | `'default', 'round', 'brick', 'brickRound', 'roundBrick', 'brickDefault', 'defaultBrick'` |
-`default` | Форма |
-| [`iconLeft`](#кнопка-с-иконкой) | `React.FC<IIcon>` | — | Иконка слева |
-| [`iconRight`](#кнопка-с-иконкой) | `React.FC<IIcon>` | — | Иконка справа |
-| [`onlyIcon`](#только-иконка) | `boolean` | `false` | Только иконка без текста |
-| [`iconSize`](#размер-иконки) | `'xs', 's', 'm'` | Зависит от размера кнопки | Размер иконки |
-| `title` | `string` | — | HTML-атрибут `title` — всплывающая подсказка, появляется при наведении на кнопку |
-| `tabIndex` | `number` | — | Порядковый номер при переходе между элементами интерфейса по клавише **tab** |
-| `as` | `React.ElementType` | `button` | HTML-тег для кнопки |
-| [`loading`](#прелоадер) | `boolean` | `false` | Отображает прелоадер вместо кнопки во время загрузки информации |
-| `onClick` | `React.EventHandler<React.MouseEvent>` | — | Действие по клику |
-| `innerRef` | `React.Ref<HTMLElement>` | — | Ссылка на корневой DOM-элемент |
-| `className` | `string` | — | Дополнительные CSS-классы |
+| Свойство | Тип | По умолчанию | Описание |
+| ------------------------ | -----------------------------------------------------------------------------------------|------------------------- | -------------------------------------------------------------------------------- |
+| `label` | `string` | — | Текст в кнопке |
+| `primary` | `string` | `border`  | Внешний вид основной кнопки |
+| `border` | `string` | `border` | Внешний вид второстепенной кнопки |
+| `size` | `string` | `medium` | Свойство устанавливает размер кнопки |
+| `borderRadius` | `number`, `string` | - | Свойство устанавливает радиус скругления уголков |
+| `borderColor` | `string` | - | Свойство устанвливает цвет обводки |
+| `backgroundColor` | `string` | - | Свойство устанвливает цвет фона |
+| `textColor` | `string` | - | Свойство устанавливает цвет текста |
+| `icon` | `string` | - | Свойство устанавливает картинку |
+
+
 
 ## Пример использования
 
 ```ts
-import Vue from 'vue'
-import { lmmButton } from '../stories/lmmRow/lmmButton';
+import Vue from 'vue';
+import { lmmButton } from '../stories/Button/lmmButton.vue';
 
 <div id="app">
   <lmm-button label="DefHello Worldault" :primary="true" />
@@ -189,4 +182,4 @@ import { lmmButton } from '../stories/lmmRow/lmmButton';
     el: '#app'
   })
 </script>
-  ```
+```
