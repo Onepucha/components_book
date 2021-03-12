@@ -33,7 +33,6 @@
   import debounce from 'lodash/debounce';
   import {
     approximatelyEqual,
-    isClient
   } from '../../utils';
   import './Carousel.scss';
 
@@ -128,30 +127,27 @@
     mounted() {
       this.calcOnInit();
 
-      if (isClient) {
-        // Assign to new variable and keep reference for removeEventListener (Avoid Memory Leaks)
-        this.onResizeFn = debounce(this.calcOnInit, RESIZE_DEBOUNCE)
-        this.onScrollFn = debounce(this.calcOnScroll, SCROLL_DEBOUNCE)
+      // Assign to new variable and keep reference for removeEventListener (Avoid Memory Leaks)
+      this.onResizeFn = debounce(this.calcOnInit, RESIZE_DEBOUNCE)
+      this.onScrollFn = debounce(this.calcOnScroll, SCROLL_DEBOUNCE)
 
-        // MutationObserver
-        this.attachMutationObserver()
+      // MutationObserver
+      this.attachMutationObserver()
 
-        // Events
-        this.$refs.vsWrapper.addEventListener('scroll', this.onScrollFn)
-        window.addEventListener('resize', this.onResizeFn, false)
+      // Events
+      this.$refs.vsWrapper.addEventListener('scroll', this.onScrollFn)
+      window.addEventListener('resize', this.onResizeFn, false)
 
-        this.$on('go-to-page', index => this.goToSlide(index))
-      }
+      this.$on('go-to-page', index => this.goToSlide(index))
+
     },
     beforeDestroy() {
-      if (isClient) {
-        // MutationObserver
-        this.observer.disconnect()
+      // MutationObserver
+      this.observer.disconnect()
 
-        // Events
-        this.$refs.vsWrapper.removeEventListener('scroll', this.onScrollFn)
-        window.removeEventListener('resize', this.onResizeFn, false)
-      }
+      // Events
+      this.$refs.vsWrapper.removeEventListener('scroll', this.onScrollFn)
+      window.removeEventListener('resize', this.onResizeFn, false)
     },
     methods: {
       calcOnInit() {
