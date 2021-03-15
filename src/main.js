@@ -1,5 +1,4 @@
 import Vue from 'vue'
-import Vuelidate from 'vuelidate'
 import 'materialize-css/dist/js/materialize.min'
 import "../src/stories/variables.scss";
 
@@ -11,8 +10,6 @@ import lmmHeading from "./stories/Heading/Heading.vue";
 import lmmText from "./stories/BodyText/BodyText.vue";
 
 Vue.config.productionTip = false
-Vue.use(Vuelidate)
-
 
 const install = Vue => {
   Vue.component('Carousel', Carousel)
