@@ -1,48 +1,53 @@
 import lmmAvatar from "./Avatar.vue";
+import mdx from './Avatar.mdx';
 
 export default {
-    title: "Components/Avatar",
-    component: lmmAvatar,
-    argTypes: {
-      borderRadius: { control: "text" },
-      textColor: {
-        control: "color"
-      },
-      color: {
-        control: "color"
-      },
-      size: {
-        control: {
-          type: "select",
-          options: ["small", "medium", "large"]
-        },
-      },
-      badgeColor: {
-        control: {
-          type: "select",
-          options: ["primary", "danger", "success", "warning", "dark", "light"]
-        },
+  title: "Components/Avatar",
+  component: lmmAvatar,
+  argTypes: {
+    borderRadius: {
+      control: "text"
+    },
+    textColor: {
+      control: "color"
+    },
+    color: {
+      control: "color"
+    },
+    size: {
+      control: {
+        type: "select",
+        options: ["small", "medium", "large"]
       },
     },
-    parameters: {
-        componentSubtitle: "Компонент .",
+    badgeColor: {
+      control: {
+        type: "select",
+        options: ["primary", "danger", "success", "warning", "dark", "light"]
+      },
     },
+  },
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
 };
 
 const Template = (args, {
-    argTypes
+  argTypes
 }) => ({
-    props: Object.keys(argTypes),
-    components: {
-        lmmAvatar
-    },
-    template: '<lmm-avatar v-bind="$props" />',
+  props: Object.keys(argTypes),
+  components: {
+    lmmAvatar
+  },
+  template: '<lmm-avatar v-bind="$props" />',
 });
 
 export const Default = Template.bind({});
 export const Small = Template.bind({});
 export const Large = Template.bind({});
-export const Custom  = Template.bind({});
+export const Custom = Template.bind({});
 
 Default.args = {
   size: "large",
