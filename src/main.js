@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import 'materialize-css/dist/js/materialize.min'
 
-import Carousel from './stories/Carousel/Carousel.vue'
-import Slide from './stories/Slide/Slide.vue'
-import lmmIcon from './stories/lmmIcon/lmmIcon.vue'
-import lmmButton from "./stories/Button/Button.vue";
-import lmmHeading from "./stories/Heading/Heading.vue";
-import lmmText from "./stories/BodyText/BodyText.vue";
+import Carousel from '../src/stories/Carousel/Carousel.vue'
+import Slide from '../src/stories/Slide/Slide.vue'
+import lmmIcon from '../src/stories/lmmIcon/lmmIcon.vue'
+import lmmButton from "../src/stories/Button/Button.vue";
+import lmmHeading from "../src/stories/Heading/Heading.vue";
+import lmmText from "../src/stories/BodyText/BodyText.vue";
 
 Vue.config.productionTip = false
 
