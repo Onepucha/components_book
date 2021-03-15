@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import 'materialize-css/dist/js/materialize.min'
-import "../src/stories/variables.scss";
 
 import Carousel from './stories/Carousel/Carousel.vue'
 import Slide from './stories/Slide/Slide.vue'
