@@ -1,0 +1,15 @@
+FROM node
+
+WORKDIR /opt/app
+
+ENV NLS_LANG=RUSSIAN_RUSSIA.AL32UTF8
+
+COPY package.json package-lock.json ./
+RUN npm install
+
+COPY  babel.config.js postcss.config.js .eslintrc.js .browserslistrc ./
+COPY ./public ./public
+COPY ./.storybook ./.storybook
+COPY ./src ./src 
+
+ENTRYPOINT ["npm", "run", "build-storybook"]

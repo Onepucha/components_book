@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  front-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.build
+    volumes:
+      - ./ss:/opt/app/storybook-static
