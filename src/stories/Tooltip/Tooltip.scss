@@ -13,8 +13,8 @@
   left: 0;
   top: 0;
   z-index: 40000;
-  background: $blue;
-  color: $white;
+  background: cl(primary);
+  color: cl(whites);
   padding: 5px 7px;
   font-family: $Regular;
   font-size: 12px;
@@ -24,7 +24,7 @@
   & h4 {
     font-size: 13px;
     width: 100%;
-    border-bottom: 1px solid $white;
+    border-bottom: 1px solid cl(whites);
     padding-bottom: 5px;
     margin-bottom: 5px;
     text-align: center;

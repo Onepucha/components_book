@@ -2,8 +2,7 @@
 
 .fade-tab-enter-active,
 .fade-tab-leave-active {
-    -webkit-transition: all .3s;
-    transition: all .3s
+    transition: all .3s;
 }
 
 .fade-tab-enter,
@@ -11,22 +10,19 @@
     top: 0;
     opacity: 0;
     position: absolute !important;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0)
+    transform: translate3d(-100%, 0, 0);
 }
 
 .fade-tab-leave-to {
     top: 0;
     opacity: 0;
     position: absolute !important;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0)
+    transform: translate3d(100%, 0, 0);
 }
 
 .fade-tab-invert-enter-active,
 .fade-tab-invert-leave-active {
-    -webkit-transition: all .3s;
-    transition: all .3s
+    transition: all .3s;
 }
 
 .fade-tab-invert-enter,
@@ -34,108 +30,92 @@
     top: 0;
     opacity: 0;
     position: absolute !important;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0)
+    transform: translate3d(100%, 0, 0);
 }
 
 .fade-tab-invert-leave-to {
     top: 0;
     opacity: 0;
     position: absolute !important;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0)
+    transform: translate3d(-100%, 0, 0);
 }
 
 .fade-tab-vertical-enter-active,
 .fade-tab-vertical-leave-active {
-    -webkit-transition: all .3s;
-    transition: all .3s
+    transition: all .3s;
 }
 
 .fade-tab-vertical-enter {
     top: 0;
     opacity: 0;
     position: absolute !important;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0)
+    transform: translate3d(0, 100%, 0);
 }
 
 .fade-tab-vertical-leave-to {
     top: 0;
     opacity: 0;
     position: absolute !important;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0)
+    transform: translate3d(0, -100%, 0);
 }
 
 .fade-tab-vertical-invert-enter-active,
 .fade-tab-vertical-invert-leave-active {
-    -webkit-transition: all .3s;
-    transition: all .3s
+    transition: all .3s;
 }
 
 .fade-tab-vertical-invert-enter {
     top: 0;
     opacity: 0;
     position: absolute !important;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0)
+    transform: translate3d(0, -100%, 0);
 }
 
 .fade-tab-vertical-invert-leave-to {
     top: 0;
     opacity: 0;
     position: absolute !important;
-    -webkit-transform: translate3d(0, 100%, 0) !important;
-    transform: translate3d(0, 100%, 0) !important
+    transform: translate3d(0, 100%, 0) !important;
 }
 
 .con-lmm-tabs {
   width: 100%;
   overflow: hidden;
-  position: relative
+  position: relative;
 }
 
 .con-lmm-tabs .con-slot-tabs {
   position: relative;
   display: block;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .con-lmm-tabs .con-ul-tabs,
 .lmm-tabs--ul {
-  position: relative
+  position: relative;
 }
 
 .lmm-tabs--ul {
   width: 100%;
   padding-left: 0;
-  -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, .04);
-  box-shadow: 0 0 25px 0 rgba(0, 0, 0, .04)
+  box-shadow: 0 0 25px 0 cl(blacks, .04);
 }
 
 .lmm-tabs--ul.ul-tabs-center {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center
+  justify-content: center;
 }
 
 .lmm-tabs--ul.ul-tabs-right {
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end
+  justify-content: flex-end;
 }
 
 .lmm-tabs--ul.ul-tabs-fixed {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: nowrap !important;
-  flex-wrap: nowrap !important
+  flex-wrap: nowrap !important;
 }
 
 .lmm-tabs--ul.ul-tabs-fixed li {
-  width: 100%
+  width: 100%;
 }
 
 .line-lmm-tabs {
@@ -143,21 +123,19 @@
   height: 2px;
   display: block;
   position: absolute;
-  -webkit-transition: all .2s ease;
   transition: all .2s ease;
-  -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  will-change: left, right
+  will-change: left, right;
 }
 
 .lmm-tabs--li {
   display: block;
-  position: relative
+  position: relative;
 }
 
 .lmm-tabs--li button {
   color: inherit;
-  font-family: inherit
+  font-family: inherit;
 }
 
 .lmm-tabs--li button.lmm-tabs--btn {
@@ -171,237 +149,199 @@
   padding: 10px;
   border: 0;
   cursor: pointer;
-  -webkit-transition: all .2s ease;
   transition: all .2s ease;
-  z-index: 100
+  z-index: 100;
 }
 
 .lmm-tabs--li button.lmm-tabs--btn:hover:not(:disabled) {
-  color: inherit
+  color: inherit;
 }
 
 .lmm-tabs--li button:disabled {
   opacity: .5;
   cursor: default !important;
-  pointer-events: none
+  pointer-events: none;
 }
 
 .activeChild button:not(:disabled) {
-  color: inherit
+  color: inherit;
 }
 
 .activeChild button.lmm-tabs--btn {
   padding-top: 8px;
-  padding-bottom: 12px
+  padding-bottom: 12px;
 }
 
 .lmm-tabs--btn-tag {
   position: absolute;
   width: 20px;
   height: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   top: -10px;
   right: -10px;
   border-radius: 3px;
   border: 0;
-  background: #fff;
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .05);
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .05);
+  background: cl(whites);
+  box-shadow: 0 0 10px 0 cl(blacks, .05);
   cursor: pointer;
-  z-index: 200
+  z-index: 200;
 }
 
 .lmm-tabs--btn-tag i {
   padding-right: 0 !important;
-  font-size: .9rem
+  font-size: .9rem;
 }
 
 .vuesax-app-is-rtl .lmm-tabs--btn-icon+span {
-  padding-right: 9px
+  padding-right: 9px;
 }
 
 .vuesax-app-is-ltr .lmm-tabs--btn-icon+span {
-  padding-left: 9px
+  padding-left: 9px;
 }
 
 .lmm-tabs-position-top .lmm-tabs--ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 .lmm-tabs-position-bottom .lmm-tabs--ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  border-top: 1px solid rgba(0, 0, 0, .05);
-  border-bottom: 0 !important
+  border-top: 1px solid cl(blacks, .05);
+  border-bottom: 0 !important;
 }
 
 .lmm-tabs-position-bottom .con-ul-tabs {
-  -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
-  order: 2
+  order: 2;
 }
 
 .lmm-tabs-position-bottom .line-lmm-tabs {
-  top: 0
+  top: 0;
 }
 
 .lmm-tabs-position-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex
+  display: flex;
 }
 
 .lmm-tabs-position-left .line-lmm-tabs {
   left: auto !important;
-  right: 0
+  right: 0;
 }
 
 .lmm-tabs-position-left .con-ul-tabs {
   float: left;
   height: 100%;
-  display: block
+  display: block;
 }
 
 .lmm-tabs-position-left .lmm-tabs--ul {
   display: block;
   width: auto;
   border-bottom: 0 !important;
-  border-right: 1px solid rgba(0, 0, 0, .05)
+  border-right: 1px solid cl(blacks, .05);
 }
 
 .lmm-tabs-position-left .activeChild button {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
   padding-left: 12px !important;
-  padding-right: 8px !important
+  padding-right: 8px !important;
 }
 
 .lmm-tabs-position-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex
+  display: flex;
 }
 
 .lmm-tabs-position-right .con-slot-tabs {
-  width: 100%
+  width: 100%;
 }
 
 .lmm-tabs-position-right .con-ul-tabs {
   float: left;
   height: 100%;
   display: block;
-  -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
-  order: 2
+  order: 2;
 }
 
 .lmm-tabs-position-right .lmm-tabs--ul {
   display: block;
   width: auto;
   border-bottom: 0 !important;
-  border-left: 1px solid rgba(0, 0, 0, .05)
+  border-left: 1px solid cl(blacks, .05);
 }
 
 .lmm-tabs-position-right .activeChild button {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
   padding-left: 8px !important;
-  padding-right: 12px !important
+  padding-right: 12px !important;
 }
 
 .lmm-tabs-primary .con-ul-tabs .activeChild button,
 .lmm-tabs-primary .con-ul-tabs button:not(:disabled):hover {
-  color: rgba($primary, 1) !important
+  color: cl(primary, 1) !important;
 }
 
 .lmm-tabs-primary .con-ul-tabs .line-lmm-tabs {
-  background: linear-gradient(30deg, rgba($primary, 1), rgba($primary, .5)) !important;
-  -webkit-box-shadow: 0 0 8px 0 rgba($primary, .4) !important;
-  box-shadow: 0 0 8px 0 rgba($primary, .4) !important
-}
-
-.lmm-tabs-secondary .con-ul-tabs .activeChild button,
-.lmm-tabs-secondary .con-ul-tabs button:not(:disabled):hover {
-  color: rgba(var(--lmm-secondary), 1) !important
-}
-
-.lmm-tabs-secondary .con-ul-tabs .line-lmm-tabs {
-  background: linear-gradient(30deg, rgba(var(--lmm-secondary), 1), rgba(var(--lmm-secondary), .5)) !important;
-  -webkit-box-shadow: 0 0 8px 0 rgba(var(--lmm-secondary), .4) !important;
-  box-shadow: 0 0 8px 0 rgba(var(--lmm-secondary), .4) !important
+  background: linear-gradient(30deg, cl(primary, 1), cl(primary, .5)) !important;
+  box-shadow: 0 0 8px 0 cl(primary, .4) !important;
 }
 
 .lmm-tabs-danger .con-ul-tabs .activeChild button,
 .lmm-tabs-danger .con-ul-tabs button:not(:disabled):hover {
-  color: rgba($danger, 1) !important
+  color: cl(danger, 1) !important;
 }
 
 .lmm-tabs-danger .con-ul-tabs .line-lmm-tabs {
-  background: linear-gradient(30deg, rgba($danger, 1), rgba($danger, .5)) !important;
-  -webkit-box-shadow: 0 0 8px 0 rgba($danger, .4) !important;
-  box-shadow: 0 0 8px 0 rgba($danger, .4) !important
+  background: linear-gradient(30deg, cl(danger, 1), cl(danger, .5)) !important;
+  box-shadow: 0 0 8px 0 cl(danger, .4) !important;
 }
 
 .lmm-tabs-success .con-ul-tabs .activeChild button,
 .lmm-tabs-success .con-ul-tabs button:not(:disabled):hover {
-  color: rgba($success, 1) !important
+  color: cl(success, 1) !important;
 }
 
 .lmm-tabs-success .con-ul-tabs .line-lmm-tabs {
-  background: linear-gradient(30deg, rgba($success, 1), rgba($success, .5)) !important;
-  -webkit-box-shadow: 0 0 8px 0 rgba($success, .4) !important;
-  box-shadow: 0 0 8px 0 rgba($success, .4) !important
+  background: linear-gradient(30deg, cl(success, 1), cl(success, .5)) !important;
+  box-shadow: 0 0 8px 0 cl(success, .4) !important;
 }
 
 .lmm-tabs-warning .con-ul-tabs .activeChild button,
 .lmm-tabs-warning .con-ul-tabs button:not(:disabled):hover {
-  color: rgba($warning, 1) !important
+  color: cl(warning, 1) !important;
 }
 
 .lmm-tabs-warning .con-ul-tabs .line-lmm-tabs {
-  background: linear-gradient(30deg, rgba($warning, 1), rgba($warning, .5)) !important;
-  -webkit-box-shadow: 0 0 8px 0 rgba($warning, .4) !important;
-  box-shadow: 0 0 8px 0 rgba($warning, .4) !important
+  background: linear-gradient(30deg, cl(warning, 1), cl(warning, .5)) !important;
+  box-shadow: 0 0 8px 0 cl(warning, .4) !important;
 }
 
 .lmm-tabs-dark .con-ul-tabs .activeChild button,
 .lmm-tabs-dark .con-ul-tabs button:not(:disabled):hover {
-  color: rgba($dark, 1) !important
+  color: cl(dark, 1) !important;
 }
 
 .lmm-tabs-dark .con-ul-tabs .line-lmm-tabs {
-  background: linear-gradient(30deg, rgba($dark, 1), rgba($dark, .5)) !important;
-  -webkit-box-shadow: 0 0 8px 0 rgba($dark, .4) !important;
-  box-shadow: 0 0 8px 0 rgba($dark, .4) !important
+  background: linear-gradient(30deg, cl(dark, 1), cl(dark, .5)) !important;
+  box-shadow: 0 0 8px 0 cl(dark, .4) !important;
 }
 
 .lmm-tabs-light .con-ul-tabs .activeChild button,
 .lmm-tabs-light .con-ul-tabs button:not(:disabled):hover {
-  color: rgba($light, 1) !important
+  color: cl(light, 1) !important;
 }
 
 .lmm-tabs-light .con-ul-tabs .line-lmm-tabs {
-  background: linear-gradient(30deg, rgba($light, 1), rgba($light, .5)) !important;
-  -webkit-box-shadow: 0 0 8px 0 rgba($light, .4) !important;
-  box-shadow: 0 0 8px 0 rgba($light, .4) !important
+  background: linear-gradient(30deg, cl(light, 1), cl(light, .5)) !important;
+  box-shadow: 0 0 8px 0 cl(light, .4) !important;
 }
 
 .lmm-tabs--content {
   position: relative;
   width: 100%;
   display: block;
-  padding: 10px
+  padding: 10px;
 }

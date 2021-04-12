@@ -6,73 +6,73 @@
     &.story {
         .story__slide {
             height: 200px;
-            font-size: 18px;
-            color: $white;
+            font-size: $fs18;
+            color: cl(whites);
         }
     
         &--primary {
             .story__slide {
-                background: $primary;
+                background: cl(primary);
             }
 
             .carousel__arrows {
                 i {
-                    color: $white;
+                    color: cl(whites);
                 }
             }
         }
 
         &--danger {
             .story__slide {
-                background: $danger;
+                background: cl(danger);
             }
 
             .carousel__arrows {
                 i {
-                    color: $white;
+                    color: cl(whites);
                 }
             }
         }
 
         &--success {
             .story__slide {
-                background: $success;
+                background:cl(success);
             }
 
             .carousel__arrows {
                 i {
-                    color: $white;
+                    color: cl(whites);
                 }
             }
         }
 
         &--warning {
             .story__slide {
-                background: $warning;
+                background: cl(warning);
             }
 
             .carousel__arrows {
                 i {
-                    color: $white;
+                    color: cl(whites);
                 }
             }
         }
 
         &--dark {
             .story__slide {
-                background: $dark;
+                background: cl(dark);
             }
 
             .carousel__arrows {
                 i {
-                    color: $white;
+                    color: cl(whites);
                 }
             }
         }
 
         &--light {
             .story__slide {
-                background: $light;
+                background: cl(light);
                 color: $black;
             }
 

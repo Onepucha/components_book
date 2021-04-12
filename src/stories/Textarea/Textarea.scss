@@ -3,7 +3,7 @@
 .lmm-content-textarea {
   width: 100%;
   position: relative;
-  border: 1px solid rgba($black, 0.08);
+  border: 1px solid cl(blacks, 0.08);
   box-shadow: 0 0 0 0 transparent;
   border-radius: 6px;
   transition: boxShadow .25s ease, border .25s ease, -webkit-transform .25s ease;
@@ -15,7 +15,7 @@
 
 
   &.focusx h4 {
-    background: $light-white;
+    background: cl(light);
     padding-top: 4px;
     padding-bottom: 4px
   }
@@ -35,7 +35,7 @@
     border: 0 solid transparent;
     display: block;
     padding: 9px;
-    color: $black;
+    color: cl(blacks);
     font-size: .8rem;
     width: 100%;
     max-width: 100%;
@@ -59,54 +59,50 @@
       font-size: .6rem;
       border-radius: 0 0 5px 5px;
       font-weight: 700;
-      box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .05);
+      box-shadow: 0 4px 20px 0 cl(blacks, .05);
       cursor: default;
-      background: rgba($primary, 1);
-      color: #fff;
+      background: cl(primary, 1);
+      color: cl(whites);
       opacity: .3;
       transition: all .25s ease;
     }
 
     &.textarea-danger {
-      border: 1px solid rgba($danger, .4);
-      box-shadow: 0 4px 20px 0 rgba($danger, .1);
+      border: 1px solid cl(danger, .4);
+      box-shadow: 0 4px 20px 0 cl(danger, .1);
     }
   }
 }
 
 
 .textarea-danger .lmm-textarea {
-  color: rgba($danger, .8);
+  color: cl(danger, .8);
 }
 
 .textarea-danger .count {
-  background: rgba($danger, 1);
+  background: cl(danger, 1);
 }
 
 .focusx.lmm-textarea-primary {
-  border: 1px solid rgba($primary, 1) !important;
-}
-
-.focusx.lmm-textarea-secondary {
-  border: 1px solid rgba(var(--vs-secondary), 1) !important;
+  border: 1px solid cl(primary, 1) !important;
 }
 
 .focusx.lmm-textarea-danger {
-  border: 1px solid rgba($danger, 1) !important;
+  border: 1px solid cl(danger, 1) !important;
 }
 
 .focusx.lmm-textarea-success {
-  border: 1px solid rgba($success, 1) !important;
+  border: 1px solid cl(success, 1) !important;
 }
 
 .focusx.lmm-textarea-warning {
-  border: 1px solid rgba($warning, 1) !important;
+  border: 1px solid cl(warning, 1) !important;
 }
 
 .focusx.lmm-textarea-dark {
-  border: 1px solid rgba($dark, 1) !important;
+  border: 1px solid cl(dark, 1) !important;
 }
 
 .focusx.lmm-textarea-light {
-  border: 1px solid rgba($light, 1) !important;
+  border: 1px solid cl(light, 1) !important;
 }

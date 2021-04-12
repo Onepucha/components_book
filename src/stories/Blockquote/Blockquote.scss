@@ -2,7 +2,7 @@
 
 .blockquote {
     background-color: $light-gray;
-    border-left: 5px solid $blue;
+    border-left: 5px solid cl(primary);
     margin: .5rem 0;
     position: relative;
     display: flex;
@@ -18,7 +18,7 @@
 
     &:hover {
         transform: translate3d(0, -3px, 0);
-        box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
+        box-shadow: cl(blacks, 0.08) 0 3px 10px 0;
     }
 
     &--content {
@@ -33,8 +33,8 @@
         justify-content: center;
         align-items: center;
         margin-left: 1rem;
-        color: $primary;
-        fill: $primary;
+        color: cl(primary);
+        fill: cl(primary);
         height: auto;
         flex-shrink: 0;
         font-size: 3em;
@@ -53,38 +53,38 @@
 
     &--code {
         overflow: auto;
-        border-left-color: $primary;
-        background: rgba($gray, 0.25);
+        border-left-color: cl(primary);
+        background: cl(grays, 0.25);
     }
 
     &--primary {
-        border-left-color: $primary;
-        background: rgba($primary, 0.25);
+        border-left-color: cl(primary);
+        background: cl(primary, 0.25);
     }
 
     &--danger {
-        border-left-color: $danger;
-        background: rgba($danger, 0.25);
+        border-left-color: cl(danger);
+        background: cl(danger, 0.25);
     }
 
     &--success {
-        border-left-color: $success;
-        background: rgba($success, 0.25);
+        border-left-color: cl(success);
+        background: cl(success, 0.25);
     }
 
     &--dark {
-        border-left-color: $dark;
-        background: rgba($dark, 0.25);
+        border-left-color: cl(dark);
+        background: cl(dark, 0.25);
     }
 
     &--warning {
-        border-left-color: $warning;
-        background: rgba($warning, 0.25);
+        border-left-color: cl(warning);
+        background: cl(warning, 0.25);
     }
 
     &--light {
-        border-left-color: $light;
-        background: rgba($light, 0.25);
+        border-left-color: cl(light);
+        background: cl(light, 0.25);
     }
 
     &pre[class*='language-'] {
@@ -97,7 +97,7 @@ code[class*="language-"],
 pre[class*="language-"] {
     color: black;
     background: none;
-    text-shadow: 0 1px white;
+    text-shadow: 0 1px cl(whites);
     /* font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;	*/
     font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
     text-align: left;

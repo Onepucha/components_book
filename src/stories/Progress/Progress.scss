@@ -14,7 +14,7 @@
 .lmm-progress--background {
     width: 100%;
     border-radius: 18px;
-    background-color: rgba(0, 0, 0, .06);
+    background-color: cl(blacks, .06);
     z-index: 50;
     position: relative;
     display: inline-block;
@@ -29,57 +29,57 @@
 }
 
 .lmm-progress-primary {
-    background: rgba($primary, .1)
+    background: cl(primary, .1)
 }
 
 .lmm-progress-primary .lmm-progress--foreground,
 .lmm-progress-primary .lmm-progress--indeterminate {
-    background: rgba($primary, 1)
+    background: cl(primary, 1)
 }
 
 .lmm-progress-danger {
-    background: rgba($danger, .1)
+    background: cl(danger, .1)
 }
 
 .lmm-progress-danger .lmm-progress--foreground,
 .lmm-progress-danger .lmm-progress--indeterminate {
-    background: rgba($danger, 1)
+    background: cl(danger, 1)
 }
 
 .lmm-progress-success {
-    background: rgba($success, .1)
+    background: cl(success, .1)
 }
 
 .lmm-progress-success .lmm-progress--foreground,
 .lmm-progress-success .lmm-progress--indeterminate {
-    background: rgba($success, 1)
+    background: cl(success, 1)
 }
 
 .lmm-progress-warning {
-    background: rgba($warning, .1)
+    background: cl(warning, .1)
 }
 
 .lmm-progress-warning .lmm-progress--foreground,
 .lmm-progress-warning .lmm-progress--indeterminate {
-    background: rgba($warning, 1)
+    background: cl(warning, 1)
 }
 
 .lmm-progress-dark {
-    background: rgba($dark, .1)
+    background: cl(dark, .1)
 }
 
 .lmm-progress-dark .lmm-progress--foreground,
 .lmm-progress-dark .lmm-progress--indeterminate {
-    background: rgba($dark, 1)
+    background: cl(dark, 1)
 }
 
 .lmm-progress-light {
-    background: rgba($light, .1)
+    background: cl(light, .1)
 }
 
 .lmm-progress-light .lmm-progress--foreground,
 .lmm-progress-light .lmm-progress--indeterminate {
-    background: rgba($light, 1)
+    background: cl(light, 1)
 }
 
 @keyframes indeterminate {
