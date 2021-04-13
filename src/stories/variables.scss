@@ -156,22 +156,20 @@ $colors: (
 
 :root{
   @if $colors {
-    // RGBA
-    // @if $colors_theme {
-    //   @each $key, $value in $colors_theme {
-    //     --primary-#{$key} : var(--primary-#{$value});
-    //     --danger-#{$key}--rgb : var(--danger-#{$value}--rgb);
-    //     --success-#{$key}--rgb : var(--success-#{$value}--rgb);
-    //     --dark-#{$key}--rgb : var(--dark-#{$value}--rgb);
-    //     --warning-#{$key}--rgb : var(--warning-#{$value}--rgb);
-    //     --light-#{$key}--rgb : var(--light-#{$value}--rgb);
-    //   }
-    // }
+    @if $colors_theme {
+      @each $key, $value in $colors_theme {
+        --primary-#{$key} : var(--primary-#{$value});
+        --danger-#{$key}--rgb : var(--danger-#{$value}--rgb);
+        --success-#{$key}--rgb : var(--success-#{$value}--rgb);
+        --dark-#{$key}--rgb : var(--dark-#{$value}--rgb);
+        --warning-#{$key}--rgb : var(--warning-#{$value}--rgb);
+        --light-#{$key}--rgb : var(--light-#{$value}--rgb);
+      }
+    }
 
     @each $key, $value in $colors {
       --color-#{$key} : #{$value};
-      // RGBA
-      // --color-#{$key}--rgb : #{HexToRGB($value)};
+      --color-#{$key}--rgb : #{HexToRGB($value)};
     }
   }
 }
