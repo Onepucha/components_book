@@ -1,7 +1,8 @@
 @import "../../node_modules/normalize.scss/normalize.scss";
 @import "../../node_modules/scss-reset/src/scss/_reset.scss";
-// @import '../../node_modules/material-icons/iconfont/material-icons.scss';
-// @import "../../../node_modules/material-icons/iconfont/material-icons.css";
+@import "./flexbox.scss";
+$material-icons-font-path: '~material-icons/iconfont/';
+@import '../../node_modules/material-icons/iconfont/material-icons.scss';
 
 $body-fs: 16px;
 $body-lh: 24px;
@@ -141,6 +142,10 @@ $colors: (
       --color-#{$key}--rgb : #{HexToRGB($value)};
     }
   }
+}
+
+.d-flex {
+  display: flex;
 }
 
 ::-webkit-scrollbar {

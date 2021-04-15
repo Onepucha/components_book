@@ -1,8 +1,7 @@
 <template>
   <div>
     <div class="page-title">
-      <a href="#" class="black-text" @click.prevent="logout">
-        <i class="material-icons">assignment_return</i>Выйти
+      <a href="#" class="black-text" @click.prevent="logout">Выйти
       </a>
     </div>
   </div>

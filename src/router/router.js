@@ -24,12 +24,6 @@ export default new Router({
       name: 'home',
       meta: {layout: 'main'},
       component: () => import('../views/Home.vue')
-    },
-    {
-      path: '/profile',
-      name: 'profile',
-      meta: {layout: 'main'},
-      component: () => import('../views/Profile.vue')
     }
   ]
 })
