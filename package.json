@@ -13,11 +13,13 @@
     "build-storybook": "build-storybook -s public"
   },
   "dependencies": {
+    "@storybook/addon-postcss": "^2.0.0",
     "@storybook/addon-storysource": "^6.1.21",
     "core-js": "^3.6.5",
+    "firebase": "^8.4.1",
     "material-design-icons": "^3.0.1",
     "material-icons": "^0.3.1",
-    "materialize-css": "^1.0.0",
+    "materialize-css": "^1.0.0-rc.2",
     "normalize.scss": "^0.1.0",
     "postcss-import": "^12.0.1",
     "register-service-worker": "^1.7.2",

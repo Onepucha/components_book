@@ -3,7 +3,7 @@
 .lmm-con-input-label {
     position: relative;
     transition: all .3s ease;
-    width: 200px;
+    // width: 200px;
 }
 
 .lmm-con-input-label.is-label-placeholder {
@@ -252,6 +252,7 @@
     box-shadow: 0 0 0 0 cl(blacks, .15);
     transition: all .3s ease;
     width: 100%;
+    font-family: $Regular;
 }
 
 .lmm-input--input.small {
@@ -345,19 +346,19 @@
 }
 
 .vuesax-app-is-rtl .lmm-input--input.hasIcon {
-    padding-right: 32px;
+    padding-right: 38px;
 }
 
 .vuesax-app-is-ltr .lmm-input--input.hasIcon {
-    padding-left: 32px;
+    padding-left: 38px;
 }
 
 .vuesax-app-is-rtl .lmm-input--input.hasIcon+.lmm-input--placeholder {
-    padding-right: 32px;
+    padding-right: 38px;
 }
 
 .vuesax-app-is-ltr .lmm-input--input.hasIcon+.lmm-input--placeholder {
-    padding-left: 32px;
+    padding-left: 38px;
 }
 
 .vuesax-app-is-rtl .lmm-input--input.icon-after-input {

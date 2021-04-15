@@ -1,19 +1,21 @@
 <template>
   <div>
-    <h1>Главная</h1>
-    <a href="#" class="black-text" @click.prevent="logout">Выйти</a>
+    <div class="page-title">
+      <a href="#" class="black-text" @click.prevent="logout">
+        <i class="material-icons">assignment_return</i>Выйти
+      </a>
+    </div>
   </div>
-
 </template>
 
 <script>
-export default {
-  name: 'home',
-  methods: {
-    async logout() {
-      await this.$store.dispatch('logout')
-      this.$router.push('/login?message=logout')
-    }
-  },
-}
+  export default {
+    name: 'home',
+    methods: {
+      logout() {
+        console.log('Logout')
+        this.$router.push('/login?message=logout')
+      }
+    },
+  }
 </script>

@@ -1,38 +1,7 @@
 @import "../../node_modules/normalize.scss/normalize.scss";
-@import "../../node_modules/scss-reset/src/scss/reset";
-@import "../../../node_modules/material-icons/iconfont/material-icons.css";
-
-::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-  display: block;
-  background:  cl(primary, 0.15);
-}
-
-::-webkit-scrollbar-thumb {
-  background:  cl(primary, 0.15);
-  border-radius: 5px;
-}
-
-::-moz-selection {
-  background:  cl(primary, 0.15);
-}
-
-::selection {
-  background:  cl(primary, 0.15);
-}
-
-.os-host::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-  display: block;
-  background:  cl(primary, 0.15);
-}
-
-.os-host::-webkit-scrollbar-thumb {
-  background:  cl(primary, 0.15);
-  border-radius: 5px;
-}
+@import "../../node_modules/scss-reset/src/scss/_reset.scss";
+// @import '../../node_modules/material-icons/iconfont/material-icons.scss';
+// @import "../../../node_modules/material-icons/iconfont/material-icons.css";
 
 $body-fs: 16px;
 $body-lh: 24px;
@@ -174,6 +143,34 @@ $colors: (
   }
 }
 
-body{
-  // background-color: cl(primary, 0.5);
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  display: block;
+  background:  cl(primary, 0.15);
+}
+
+::-webkit-scrollbar-thumb {
+  background:  cl(primary, 0.15);
+  border-radius: 5px;
+}
+
+::-moz-selection {
+  background:  cl(primary, 0.15);
+}
+
+::selection {
+  background:  cl(primary, 0.15);
+}
+
+.os-host::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  display: block;
+  background:  cl(primary, 0.15);
+}
+
+.os-host::-webkit-scrollbar-thumb {
+  background:  cl(primary, 0.15);
+  border-radius: 5px;
 }

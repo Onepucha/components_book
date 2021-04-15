@@ -99,7 +99,7 @@ export default {
     agree: {checked: v => v}
   },
   methods: {
-    async submitHandler() {
+    submitHandler() {
       if (this.$v.$invalid) {
         this.$v.$touch()
         return
@@ -111,12 +111,9 @@ export default {
         name: this.name
       }
 
-      try {
-        await this.$store.dispatch('register', formData)
-        this.$router.push('/')
-      } catch (e) {
-          // I want application to not crush, but don't care about the message
-        }
+      console.log(formData)
+
+      this.$router.push('/')
     }
   }
 }
