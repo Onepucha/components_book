@@ -21,7 +21,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
 @import '~materialize-css/dist/css/materialize.min.css';
-@import 'assets/index.css';
+@import 'assets/auth.scss';
 </style>

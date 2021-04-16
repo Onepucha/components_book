@@ -11,11 +11,11 @@
         >
         <label for="email">Email</label>
         <small 
-          class="helper-text invalid"
+          class="helper-text text-danger invalid"
           v-if="$v.email.$dirty && !$v.email.required"
         >Поле Email не должно быть пустым</small>
         <small 
-          class="helper-text invalid"
+          class="helper-text text-danger invalid"
           v-else-if="$v.email.$dirty && !$v.email.email"
         >Введите корретный Email</small>
       </div>
@@ -28,13 +28,13 @@
         >
         <label for="password">Пароль</label>
         <small 
-          class="helper-text invalid"
+          class="helper-text text-danger invalid"
           v-if="$v.password.$dirty && !$v.password.required"
         >
           Введите пароль
         </small>
         <small 
-          class="helper-text invalid"
+          class="helper-text text-danger invalid"
           v-else-if="$v.password.$dirty && !$v.password.minLength"
         >
           Пароль должен быть {{$v.password.$params.minLength.min}} символов. Сейчас он {{password.length}}
@@ -42,7 +42,7 @@
       </div>
     </div>
     <div class="card-action">
-      <div>
+      <div class="mb-20">
         <button
             class="btn waves-effect waves-light auth-submit"
             type="submit"

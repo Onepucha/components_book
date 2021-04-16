@@ -11,11 +11,11 @@
         >
         <label for="email">Email</label>
         <small 
-          class="helper-text invalid"
+          class="helper-text text-danger invalid"
           v-if="$v.email.$dirty && !$v.email.required"
         >Поле Email не должно быть пустым</small>
         <small 
-          class="helper-text invalid"
+          class="helper-text text-danger invalid"
           v-else-if="$v.email.$dirty && !$v.email.email"
         >Введите корретный Email</small>
       </div>
@@ -28,13 +28,13 @@
         >
         <label for="password">Пароль</label>
         <small 
-          class="helper-text invalid"
+          class="helper-text text-danger invalid"
           v-if="$v.password.$dirty && !$v.password.required"
         >
           Введите пароль
         </small>
         <small 
-          class="helper-text invalid"
+          class="helper-text text-danger invalid"
           v-else-if="$v.password.$dirty && !$v.password.minLength"
         >
           Пароль должен быть {{$v.password.$params.minLength.min}} символов. Сейчас он {{password.length}}
@@ -49,21 +49,15 @@
         >
         <label for="name">Имя</label>
         <small 
-          class="helper-text invalid"
+          class="helper-text text-danger invalid"
           v-if="$v.name.$dirty && !$v.name.required"
         >
           Введите ваше имя
         </small>
       </div>
-      <p>
-        <label>
-          <input type="checkbox" v-model="agree" />
-          <span>С правилами согласен</span>
-        </label>
-      </p>
     </div>
     <div class="card-action">
-      <div>
+      <div class="mb-20">
         <button
             class="btn waves-effect waves-light auth-submit"
             type="submit"
@@ -89,16 +83,14 @@ export default {
     email: '',
     password: '',
     name: '',
-    agree: false
   }),
   validations: {
     email: {email, required},
     password: {required, minLength: minLength(6)},
     name: {required},
-    agree: {checked: v => v}
   },
   methods: {
-    submitHandler() {
+    async submitHandler() {
       if (this.$v.$invalid) {
         this.$v.$touch()
         return
@@ -110,9 +102,12 @@ export default {
         name: this.name
       }
 
-      console.log(formData)
-
-      this.$router.push('/')
+      try {
+        await this.$store.dispatch('register', formData)
+        this.$router.push('/')
+      } catch (e) {
+        console.log(e);
+      }
     }
   }
 }
