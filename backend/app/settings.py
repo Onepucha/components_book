@@ -153,7 +153,7 @@ STATICFILES_DIRS = [
     os.path.join(CONTENT_DIR, 'assets'),
 ]
 
-STORYBOOK_STATIC_ROOT = os.path.join(CONTENT_DIR, 'storybook')
+STORYBOOK_STATIC_ROOT = os.path.join(CONTENT_DIR, 'storybook-static')
 STORYBOOK_STATIC_URL = 'story'
 
 LOCALE_PATHS = [

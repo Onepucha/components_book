@@ -5,5 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.build
+    ports:
+      - 8000:8000
     volumes:
-      - ./ss:/opt/app/storybook-static
+      - ./storybook-static:/opt/app/storybook-static

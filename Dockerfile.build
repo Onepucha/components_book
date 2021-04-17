@@ -1,4 +1,4 @@
-FROM node
+FROM node AS builder
 
 WORKDIR /opt/app
 
@@ -7,9 +7,25 @@ ENV NLS_LANG=RUSSIAN_RUSSIA.AL32UTF8
 COPY package.json package-lock.json ./
 RUN npm install
 
+COPY Makefile .
+RUN make patch_node_modules
+
 COPY  babel.config.js postcss.config.js .eslintrc.js .browserslistrc ./
 COPY ./public ./public
 COPY ./.storybook ./.storybook
-COPY ./src ./src 
+COPY ./src ./src
 
-ENTRYPOINT ["npm", "run", "build-storybook"]
+RUN ["npm", "run", "build-storybook"]
+
+FROM python:3.9
+
+WORKDIR /opt/app
+
+COPY ./backend .
+COPY --from=builder /opt/app/storybook-static/iframe.html ./content/storybook-static/iframe.html
+COPY --from=builder /opt/app/storybook-static/js/ ./content/storybook-static/js/
+COPY --from=builder /opt/app/storybook-static/index.html content/templates/storybook/
+
+RUN pip install -r requirements.txt
+
+ENTRYPOINT ["python3", "manage.py", "runserver", "0.0.0.0:8000"]

@@ -2,10 +2,23 @@ const path = require("path");
 
 module.exports = {
   webpackFinal: async (config, { configType }) => {
+    // run убрать
+    config.output = {
+      filename: `js/[name].js`,
+      path: path.resolve(__dirname, "../storybook-static"),
+    }
+
     config.module.rules.push({
       test: /\.scss$/,
       use: ["style-loader", "css-loader", "sass-loader", "postcss-loader"],
       include: path.resolve(__dirname, "../"),
+    });
+
+    // run убрать
+    config.module.rules.push({
+      test: /\.js$/,
+      loader: 'babel-loader',
+      include: path.resolve(__dirname, "../storybook-static/js/"),
     });
 
     return config;

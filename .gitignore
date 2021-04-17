@@ -23,4 +23,6 @@ pnpm-debug.log*
 *.sw?
 
 /storybook-static
+venv/
+__pycache__
 db.sqlite3
