@@ -1,10 +1,10 @@
 <template>
     <div class="features" style="width: 333px;">
         <div :class="[`features--item features--item-${color}`]" @click="active = !active" @mouseleave="mouseleaveflip"
-            @mouseenter="mouseenterflip">
+            @mouseenter="mouseenterflip" :style="styleFlip">
             <div :class="[`features--item__inner features--item__inner-${color}`, { 'flip':active }]">
-                <div class="features--front">
-                    <lazy-image :src="image" :alt="name" class="img-fluid mb-25" />
+                <div class="features--front" ref="features">
+                    <lazy-image tag="picture" :src="image" :alt="name" class="img-center" width="150" height="150" />
                     <lmm-heading :size="sizeTitleFront" :margins="margins" :title="titleFront" />
                     <lmm-text :size="sizeTextFront" :text="textFront" />
                 </div>
@@ -22,6 +22,11 @@
     export default {
         name: "lmm-flip-card",
 
+        data: function() {
+            return {
+                styles: {},
+            }
+        },
         props: {
             active: {
                 default: false,
@@ -71,44 +76,34 @@
                 default: null,
                 type: String
             },
-            size: {
-                default: null,
-                type: String
-            }, 
             margins: {
                 default: null,
                 type: String
-            }, 
-        },
-        mounted() {
-            this.heightFlipCard();
+            },
+            height: {
+                default: '415',
+                type: String
+            },
         },
         computed: {
-            flipHover() {
-                return this.$parent.flipHover;
-            },
+            styleFlip(){
+                return {
+                    height: `${this.height}px`
+                }
+            }
         },
         methods: {
-            heightFlipCard() {
-                var features = document.querySelectorAll('.features');
-
-                features.forEach((item) => {
-                    var card = item.querySelector('.features--item__inner img');
-                    var minHeightItem = item.querySelector('.features--front').offsetHeight;
-                    item.querySelector('.features--item').style.minHeight = minHeightItem + 'px';
-                })
-            },
             mouseenterflip() {
                 if (this.flipHover) {
                     this.active = true;
                 }
-
             },
             mouseleaveflip() {
                 if (this.flipHover) {
                     this.active = false;
                 }
             },
-        }
+        },
+        mounted() {}
     };
 </script>

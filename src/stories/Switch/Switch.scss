@@ -7,16 +7,9 @@
     height: 22px;
     position: relative;
     cursor: pointer;
-    -webkit-transition: all .2s ease;
     transition: all .2s ease;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center
 }
 
@@ -45,14 +38,12 @@
     width: 18px;
     height: 18px;
     position: absolute;
-    background: #fff;
+    background: cl(whites);
     left: 2px;
     top: 2px;
     border-radius: 50%;
-    -webkit-transition: all .25s ease;
     transition: all .25s ease;
-    -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, .1);
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .1)
+    box-shadow: 0 0 4px 0 cl(blacks, .1)
 }
 
 .lmm-switch--text {
@@ -60,16 +51,9 @@
     display: block;
     font-size: .625em;
     opacity: 0;
-    -webkit-transition: all .2s ease;
     transition: all .2s ease;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     white-space: nowrap;
     overflow: hidden
@@ -78,8 +62,7 @@
 .lmm-switch--text.text-on {
     padding-left: 6px;
     left: 0;
-    color: #fff;
-    -webkit-transform: translate(10px);
+    color: cl(whites);
     transform: translate(10px)
 }
 
@@ -87,26 +70,18 @@
     right: 0;
     padding-right: 5px;
     color: #a0a0a0;
-    -webkit-transform: translate(-10px);
     transform: translate(-10px)
 }
 
 .lmm-switch--text.active-text {
     opacity: 1;
-    -webkit-transform: translate(0);
     transform: translate(0)
 }
 
 .lmm-switch--icon {
     font-size: .8rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     overflow: hidden;
     max-width: 16px;
@@ -123,49 +98,49 @@
 }
 
 .lmm-switch-primary {
-    background: #e2e2e2
+    background: cl(light)
 }
 
 .lmm-switch-primary.lmm-switch-active {
-    background: rgba($primary, 100)
+    background: cl(primary, 100)
 }
 
 .lmm-switch-danger {
-    background: #e2e2e2
+    background: cl(light)
 }
 
 .lmm-switch-danger.lmm-switch-active {
-    background: rgba($danger, 100)
+    background: cl(danger, 100)
 }
 
 .lmm-switch-success {
-    background: #e2e2e2
+    background: cl(light)
 }
 
 .lmm-switch-success.lmm-switch-active {
-    background: rgba($success, 100)
+    background: cl(success, 100)
 }
 
 .lmm-switch-warning {
-    background: #e2e2e2
+    background: cl(light)
 }
 
 .lmm-switch-warning.lmm-switch-active {
-    background: rgba($warning, 100)
+    background: cl(warning, 100)
 }
 
 .lmm-switch-dark {
-    background: #e2e2e2
+    background: cl(light)
 }
 
 .lmm-switch-dark.lmm-switch-active {
-    background: rgba($dark, 100)
+    background: cl(dark, 100)
 }
 
 .lmm-switch-light {
-    background: #e2e2e2
+    background: cl(light)
 }
 
 .lmm-switch-light.lmm-switch-active {
-    background: rgba($light, 100)
+    background: cl(light, 100)
 }

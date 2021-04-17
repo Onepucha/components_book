@@ -2,19 +2,19 @@
 @import "../Grid/main.scss";
 
 .con-vs-card {
-    width: 100%;
+    width: auto;
     height: auto;
     background: $white;
     border-radius: 8px;
     display: block;
-    box-shadow: 0 4px 25px 0 rgba($black, .1);
+    box-shadow: 0 4px 25px 0 cl(blacks, .1);
     transition: all .3s ease;
 
     &.withHover {
         cursor: pointer;
         &:hover{
             transform: translateY(4px);
-            box-shadow: 0 0 5px 0 rgba($black, .1);
+            box-shadow: 0 0 5px 0 cl(blacks, .1);
 
             & img {
                 transform: scale(1.1);
@@ -30,7 +30,7 @@
     .vs-card {
         &--header {
             padding: 10px;
-            box-shadow: 0 10px 15px -10px rgba($black, .05);
+            box-shadow: 0 10px 15px -10px cl(blacks, .05);
     
             & h3 {
                 padding: 0;
@@ -72,5 +72,4 @@
             }
         }
     }
-
 }

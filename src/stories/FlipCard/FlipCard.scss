@@ -16,7 +16,7 @@
         line-height: $lh21;
         background-repeat: no-repeat;
         background-position: center;
-        background-color: $white;
+        background-color: cl(whites);
         text-decoration: none;
         transition-property: all;
         transition-duration: .3s;
@@ -28,7 +28,7 @@
             height: 100%;
             transition: all 0.6s;
             transform-style: preserve-3d;
-            border: 1px solid rgba($primary, 0.25);
+            border: 1px solid cl(primary, 0.25);
             border-radius: 15px;
 
             &.flip {
@@ -46,7 +46,7 @@
             }
 
             &:hover {
-                border-color: $primary;
+                border-color: cl(primary);
             }
         }
 
@@ -61,8 +61,8 @@
             right: 0;
             left: 0;
             transition: background 600ms;
-            background-color: $primary;
-            border: 1px solid $primary;
+            background-color: cl(primary);
+            border: 1px solid cl(primary);
             border-radius: 50%;
             background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTYgNy41Mzg0NkMxOC42NTc5IDcuNTM4NDYgMjEuMDMyOSA4LjczNjE1IDIyLjYwMjggMTAuNjE1NEgyNC41MjUyQzIyLjcyNzcgNy44Mzk3NiAxOS41ODEyIDYgMTYgNkMxMC41MTk2IDYgNi4wNTcxOCAxMC4zMDg1IDUuODg5NDggMTUuNjg2MUw0LjEwMDQxIDEzLjkxNzVMMyAxNS4wMDU0TDYuNjYyNjQgMTguNjI2MkwxMC4zMjUzIDE1LjAwNTRMOS4yMjQ4NyAxMy45MTc1TDcuNDQ3IDE1LjY3NTFDNy42MTk3MyAxMS4xNTI1IDExLjM4MjkgNy41Mzg0NiAxNiA3LjUzODQ2WiIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNOS4zOTc0NiAyMS4zODQ2SDcuNDc1QzkuMjcyNTQgMjQuMTYwMiAxMi40MTkxIDI2IDE2LjAwMDIgMjZDMjEuNDgwNSAyNiAyNS45NDI5IDIxLjY5MTYgMjYuMTEwOCAxNi4zMTQxTDI3Ljg5OTYgMTguMDgyNUwyOSAxNi45OTQ2TDI1LjMzNzQgMTMuMzczOEwyMS42NzQ3IDE2Ljk5NDZMMjIuNzc1MSAxOC4wODI1TDI0LjU1MzIgMTYuMzI0N0MyNC4zODA3IDIwLjg0NzQgMjAuNjE3NCAyNC40NjE1IDE2LjAwMDIgMjQuNDYxNUMxMy4zNDIzIDI0LjQ2MTUgMTAuOTY3NCAyMy4yNjM5IDkuMzk3NDYgMjEuMzg0NloiIGZpbGw9IndoaXRlIi8+PC9zdmc+);
             background-repeat: no-repeat;
@@ -73,8 +73,8 @@
 
         &:hover {
             &::after {
-                background-color: rgba($primary, 0.85);
-                border: 1px solid rgba($primary, 0.85);
+                background-color: cl(primary, 0.85);
+                border: 1px solid cl(primary, 0.85);
             }
         }
     }
@@ -104,111 +104,111 @@
 
 
 .features--item__inner-danger {
-    border-color: rgba($danger, 0.25);
+    border-color: cl(danger, 0.25);
 
     &:hover {
-        border-color: $danger;
+        border-color: cl(danger);
     }
 }
 
 .features--item-danger {
     &::after {
-        background-color: $danger;;
-        border-color: $danger;
+        background-color: cl(danger);
+        border-color: cl(danger);
     }
 
     &:hover {
         &::after {
-            background-color: rgba($danger, 0.85);
-            border-color: rgba($danger, 0.85);
+            background-color: cl(danger, 0.85);
+            border-color: cl(danger, 0.85);
         }
     }
 }
 
 .features--item__inner-success {
-    border-color: rgba($success, 0.25);
+    border-color: cl(success, 0.25);
 
     &:hover {
-        border-color: $success;
+        border-color: cl(success);
     }
 }
 
 .features--item-success {
     &::after {
-        background-color: $success;;
-        border-color: $success;
+        background-color: cl(success);
+        border-color: cl(success);
     }
 
     &:hover {
         &::after {
-            background-color: rgba($success, 0.85);
-            border-color: rgba($success, 0.85);
+            background-color: cl(success, 0.85);
+            border-color: cl(success, 0.85);
         }
     }
 }
 
 .features--item__inner-warning {
-    border-color: rgba($warning, 0.25);
+    border-color: cl(warning, 0.25);
 
     &:hover {
-        border-color: $warning;
+        border-color: cl(warning);
     }
 }
 
 .features--item-warning {
     &::after {
-        background-color: $warning;;
-        border-color: $warning;
+        background-color: cl(warning);
+        border-color: cl(warning);
     }
 
     &:hover {
         &::after {
-            background-color: rgba($warning, 0.85);
-            border-color: rgba($warning, 0.85);
+            background-color: cl(warning, 0.85);
+            border-color: cl(warning, 0.85);
         }
     }
 }
 
 .features--item__inner-dark {
-    border-color: rgba($dark, 0.25);
+    border-color: cl(dark, 0.25);
 
     &:hover {
-        border-color: $dark;
+        border-color: cl(dark);
     }
 }
 
 .features--item-dark {
     &::after {
-        background-color: $dark;;
-        border-color: $dark;
+        background-color: cl(dark);
+        border-color: cl(dark);
     }
 
     &:hover {
         &::after {
-            background-color: rgba($dark, 0.85);
-            border-color: rgba($dark, 0.85);
+            background-color: cl(dark, 0.85);
+            border-color: cl(dark, 0.85);
         }
     }
 }
 
 .features--item__inner-light {
-    border-color: rgba($light, 0.25);
+    border-color: cl(light, 0.25);
 
     &:hover {
-        border-color: $light;
+        border-color: cl(light);
     }
 }
 
 .features--item-light {
     &::after {
-        background-color: $light;;
-        border-color: $light;
+        background-color: cl(light);
+        border-color: cl(light);
     }
 
     &:hover {
         &::after {
-            background-color: rgba($light, 0.85);
-            border-color: rgba($light, 0.85);
+            background-color: cl(light, 0.85);
+            border-color: cl(light, 0.85);
         }
     }
 }

@@ -8,7 +8,7 @@
 
   &:hover {
     .lmm-radio--border {
-      border: 2px solid $blue;
+      border: 2px solid cl(primary);
     }
   }
 
@@ -31,7 +31,7 @@
     &--border {
       border-radius: 50%;
       background: transparent;
-      border: 2px solid $gray;
+      border: 2px solid cl(grays);
     }
 
     &--border,
@@ -106,8 +106,8 @@
           }
 
           .lmm-radio--border {
-            border: 2px solid $gray;
-            background: $gray;
+            border: 2px solid cl(grays);
+            background: cl(grays);
             pointer-events: none;
           }
         }

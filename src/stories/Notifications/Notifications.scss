@@ -9,8 +9,8 @@
   border-radius: 10px;
   overflow: hidden;
   transition: all 0.3s ease;
-  background: $blue;
-  color: $white;
+  background: cl(primary);
+  color: cl(whites);
   cursor: default;
   max-width: 350px;
   min-width: 200px;

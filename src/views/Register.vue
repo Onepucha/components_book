@@ -1,7 +1,7 @@
 <template>
   <form class="card auth-card" @submit.prevent="submitHandler">
     <div class="card-content">
-      <span class="card-title">Домашняя бухгалтерия</span>
+      <span class="card-title">Регистрация</span>
       <div class="input-field">
         <input
             id="email"
@@ -69,7 +69,6 @@
             type="submit"
         >
           Зарегистрироваться
-          <i class="material-icons right">send</i>
         </button>
       </div>
 
@@ -99,7 +98,7 @@ export default {
     agree: {checked: v => v}
   },
   methods: {
-    async submitHandler() {
+    submitHandler() {
       if (this.$v.$invalid) {
         this.$v.$touch()
         return
@@ -111,12 +110,9 @@ export default {
         name: this.name
       }
 
-      try {
-        await this.$store.dispatch('register', formData)
-        this.$router.push('/')
-      } catch (e) {
-          // I want application to not crush, but don't care about the message
-        }
+      console.log(formData)
+
+      this.$router.push('/')
     }
   }
 }

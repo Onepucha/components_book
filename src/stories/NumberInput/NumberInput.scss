@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     margin: 5px 10px;
-    background: $light-gray;
+    background: cl(light);
     padding: 2px;
     border-radius: 5px;
     font-family: $Regular;
@@ -49,7 +49,7 @@
     align-items: center;
     justify-content: center;
     transition: all .3s ease;
-    color: $white;
+    color: cl(whites);
     backface-visibility: hidden;
 }
 
@@ -84,7 +84,7 @@
     opacity: .5;
     cursor: default;
     pointer-events: none;
-    background-color: rgba($black, .5);
+    background-color: cl(blacks, .5);
 }
 
 .app-is-rtl .lmm-input-number button.lmm-input-number--button-less {
@@ -108,7 +108,7 @@
     opacity: .5;
     cursor: default;
     pointer-events: none;
-    background-color: rgba($black, .5);
+    background-color: cl(blacks, .5);
 }
 
 .lmm-input-number.lmm-input-number-size-medium input {
@@ -250,49 +250,49 @@
 }
 
 .lmm-input-number-primary button {
-    background: rgba($primary, 1);
+    background: cl(primary, 1);
 }
 
 .lmm-input-number-primary button:hover {
-    box-shadow: 0 3px 12px 0 rgba($primary, .4);
+    box-shadow: 0 3px 12px 0 cl(primary, .4);
 }
 
 .lmm-input-number-danger button {
-    background: rgba($danger, 1);
+    background: cl(danger, 1);
 }
 
 .lmm-input-number-danger button:hover {
-    box-shadow: 0 3px 12px 0 rgba($danger, .4);
+    box-shadow: 0 3px 12px 0 cl(danger, .4);
 }
 
 .lmm-input-number-success button {
-    background: rgba($success, 1);
+    background: cl(success, 1);
 }
 
 .lmm-input-number-success button:hover {
-    box-shadow: 0 3px 12px 0 rgba($success, .4);
+    box-shadow: 0 3px 12px 0 cl(success, .4);
 }
 
 .lmm-input-number-warning button {
-    background: rgba($warning, 1);
+    background: cl(warning, 1);
 }
 
 .lmm-input-number-warning button:hover {
-    box-shadow: 0 3px 12px 0 rgba($warning, .4);
+    box-shadow: 0 3px 12px 0 cl(warning, .4);
 }
 
 .lmm-input-number-dark button {
-    background: rgba($dark, 1);
+    background: cl(dark, 1);
 }
 
 .lmm-input-number-dark button:hover {
-    box-shadow: 0 3px 12px 0 rgba($dark, .4);
+    box-shadow: 0 3px 12px 0 cl(dark, .4);
 }
 
 .lmm-input-number-light button {
-    background: rgba($light, 1);
+    background: cl(light, 1);
 }
 
 .lmm-input-number-light button:hover {
-    box-shadow: 0 3px 12px 0 rgba($light, .4);
+    box-shadow: 0 3px 12px 0 cl(light, .4);
 }

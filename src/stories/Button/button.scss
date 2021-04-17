@@ -24,9 +24,9 @@
   user-select: none;
   touch-action: manipulation;
   border-radius: 0;
-  color: $black;
+  color: cl(blacks);
   background-color: transparent;
-  border: 1px solid $black;
+  border: 1px solid cl(blacks);
 
   span {
     display: inline-block;
@@ -70,11 +70,11 @@
   &:hover,
   &:focus {
     outline: none;
-    color: $blue;
-    background: $white;
-    border-color: $blue;
+    color: cl(primary);
+    background: cl(whites);
+    border-color: cl(primary);
     transform: translate3d(0, -3px, 0);
-    box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
+    box-shadow: cl(blacks, 0.08) 0 3px 10px 0;
   }
 
   &:not([disabled]) {
@@ -121,121 +121,121 @@
   }
 
   &--primary {
-    color: $white;
-    background-color: $blue;
-    border-color: $blue;
+    color: cl(whites);
+    background-color: cl(primary);
+    border-color: cl(primary);
 
     &:hover,
     &:focus {
-      color: $white;
-      background-color: rgba($blue, 0.85);
+      color: cl(whites);
+      background-color: cl(primary, 0.85);
       border-color: transparent;
     }
 
     &.button--border {
-      border: 1px solid rgba($blue, 100);
+      border: 1px solid cl(primary, 100);
       background: transparent !important;
-      color: rgba($blue,100);
+      color: cl(primary, 100);
 
       &:hover,
       &:focus {
-        background: rgba($blue, 0.20) !important;
+        background: cl(primary, 0.20) !important;
       }
     }
   }
 
   &--success {
-    color: $white;
-    background-color: $success;
-    border-color: $success;
+    color: cl(whites);
+    background-color: cl(success);
+    border-color: cl(success);
 
     &:hover,
     &:focus {
-      color: $white;
-      background-color: rgba($success, 0.85);
+      color: cl(whites);
+      background-color: cl(success, 0.85);
       border-color: transparent;
     }
 
     &.button--border {
-      border: 1px solid rgba($success, 100);
+      border: 1px solid cl(success, 100);
       background: transparent !important;
-      color: rgba($success,100);
+      color: cl(success,100);
 
       &:hover,
       &:focus {
-        background: rgba($success, 0.20) !important;
+        background: cl(success, 0.20) !important;
       }
     }
   }
 
   &--danger {
-    color: $white;
-    background-color: $danger;
-    border-color: $danger;
+    color: cl(whites);
+    background-color: cl(danger);
+    border-color: cl(danger);
 
     &:hover,
     &:focus {
-      color: $white;
-      background-color: rgba($danger, 0.85);
+      color: cl(whites);
+      background-color: cl(danger, 0.85);
       border-color: transparent;
     }
 
     &.button--border {
-      border: 1px solid rgba($danger, 100);
+      border: 1px solid cl(danger, 100);
       background: transparent !important;
-      color: rgba($danger,100);
+      color: cl(danger,100);
 
       &:hover,
       &:focus {
-        background: rgba($danger, 0.20) !important;
+        background: cl(danger, 0.20) !important;
       }
     }
   }
 
   &--warning {
-    color: $white;
-    background-color: $warning;
-    border-color: $warning;
+    color: cl(whites);
+    background-color: cl(warning);
+    border-color: cl(warning);
 
     &:hover,
     &:focus {
-      color: $white;
-      background-color: rgba($warning, 0.85);
+      color: cl(whites);
+      background-color: cl(warning, 0.85);
       border-color: transparent;
     }
 
     &.button--border {
-      border: 1px solid rgba($warning, 100);
+      border: 1px solid cl(warning, 100);
       background: transparent !important;
-      color: rgba($warning,100);
+      color: cl(warning,100);
 
       &:hover,
       &:focus {
-        background: rgba($warning, 0.20) !important;
+        background: cl(warning, 0.20) !important;
       }
     }
   }
 
   &--dark {
-    color: $white;
-    background-color: $dark;
-    border-color: $dark;
+    color: cl(whites);
+    background-color: cl(dark);
+    border-color: cl(dark);
 
     &:hover,
     &:focus {
-      color: $white;
-      background-color: rgba($dark, 0.85);
+      color: cl(whites);
+      background-color: cl(dark, 0.85);
       border-color: transparent;
     }
 
     &.button--border {
-      border: 1px solid rgba($dark, 100);
+      border: 1px solid cl(dark, 100);
       background: transparent !important;
-      color: rgba($dark,100);
+      color: cl(dark,100);
 
       &:hover,
       &:focus {
-        background: rgba($dark, 0.20) !important;
+        background: cl(dark, 0.20) !important;
       }
     }
   }

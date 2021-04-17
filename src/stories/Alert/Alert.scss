@@ -2,7 +2,7 @@
 
 .con-lmm-alert {
     border-radius: 6px;
-    color: #fff;
+    color: cl(whites);
     width: 100%;
     position: relative;
     font-size: .8rem;
@@ -18,11 +18,7 @@
     padding: 10px;
     top: 0;
     font-size: 1.1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center
 }
 
@@ -83,108 +79,95 @@
 }
 
 .lmm-alert--close:hover {
-    -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .1);
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .1)
+    box-shadow: 0 5px 15px 0 cl(blacks, .1)
 }
 
 .con-lmm-alert-primary {
-    background: rgba($primary, .15);
-    -webkit-box-shadow: 0 0 25px 0 rgba($primary, .15);
-    box-shadow: 0 0 25px 0 rgba($primary, .15);
-    color: rgba($primary, 1)
+    background: cl(primary, .15);
+    box-shadow: 0 0 25px 0 cl(primary, .15);
+    color: cl(primary, 1)
 }
 
 .con-lmm-alert-primary h4 {
-    -webkit-box-shadow: 0 6px 15px -7px rgba($primary, .4);
-    box-shadow: 0 6px 15px -7px rgba($primary, .4)
+    box-shadow: 0 6px 15px -7px cl(primary, .4)
 }
 
 .con-lmm-alert-primary .con-x {
-    background: rgba($primary, 1);
-    color: #fff
+    background: cl(primary, 1);
+    color: cl(whites)
 }
 
 .con-lmm-alert-danger {
-    background: rgba($danger, .15);
-    -webkit-box-shadow: 0 0 25px 0 rgba($danger, .15);
-    box-shadow: 0 0 25px 0 rgba($danger, .15);
-    color: rgba($danger, 1)
+    background: cl(danger, .15);
+    box-shadow: 0 0 25px 0 cl(danger, .15);
+    color: cl(danger, 1)
 }
 
 .con-lmm-alert-danger h4 {
-    -webkit-box-shadow: 0 6px 15px -7px rgba($danger, .4);
-    box-shadow: 0 6px 15px -7px rgba($danger, .4)
+    box-shadow: 0 6px 15px -7px cl(danger, .4)
 }
 
 .con-lmm-alert-danger .con-x {
-    background: rgba($danger, 1);
-    color: #fff
+    background: cl(danger, 1);
+    color: cl(whites)
 }
 
 .con-lmm-alert-success {
-    background: rgba($success, .15);
-    -webkit-box-shadow: 0 0 25px 0 rgba($success, .15);
-    box-shadow: 0 0 25px 0 rgba($success, .15);
-    color: rgba($success, 1)
+    background: cl(success, .15);
+    box-shadow: 0 0 25px 0 cl(success, .15);
+    color: cl(success, 1)
 }
 
 .con-lmm-alert-success h4 {
-    -webkit-box-shadow: 0 6px 15px -7px rgba($success, .4);
-    box-shadow: 0 6px 15px -7px rgba($success, .4)
+    box-shadow: 0 6px 15px -7px cl(success, .4)
 }
 
 .con-lmm-alert-success .con-x {
-    background: rgba($success, 1);
-    color: #fff
+    background: cl(success, 1);
+    color: cl(whites)
 }
 
 .con-lmm-alert-warning {
-    background: rgba($warning, .15);
-    -webkit-box-shadow: 0 0 25px 0 rgba($warning, .15);
-    box-shadow: 0 0 25px 0 rgba($warning, .15);
-    color: rgba($warning, 1)
+    background: cl(warning, .15);
+    box-shadow: 0 0 25px 0 cl(warning, .15);
+    color: cl(warning, 1)
 }
 
 .con-lmm-alert-warning h4 {
-    -webkit-box-shadow: 0 6px 15px -7px rgba($warning, .4);
-    box-shadow: 0 6px 15px -7px rgba($warning, .4)
+    box-shadow: 0 6px 15px -7px cl(warning, .4)
 }
 
 .con-lmm-alert-warning .con-x {
-    background: rgba($warning, 1);
-    color: #fff
+    background: cl(warning, 1);
+    color: cl(whites)
 }
 
 .con-lmm-alert-dark {
-    background: rgba($dark, .15);
-    -webkit-box-shadow: 0 0 25px 0 rgba($dark, .15);
-    box-shadow: 0 0 25px 0 rgba($dark, .15);
-    color: rgba($dark, 1)
+    background: cl(dark, .15);
+    box-shadow: 0 0 25px 0 cl(dark, .15);
+    color: cl(dark, 1)
 }
 
 .con-lmm-alert-dark h4 {
-    -webkit-box-shadow: 0 6px 15px -7px rgba($dark, .4);
-    box-shadow: 0 6px 15px -7px rgba($dark, .4)
+    box-shadow: 0 6px 15px -7px cl(dark, .4)
 }
 
 .con-lmm-alert-dark .con-x {
-    background: rgba($dark, 1);
-    color: #fff
+    background: cl(dark, 1);
+    color: cl(whites)
 }
 
 .con-lmm-alert-light {
-    background: rgba($light, .15);
-    -webkit-box-shadow: 0 0 25px 0 rgba($light, .15);
-    box-shadow: 0 0 25px 0 rgba($light, .15);
-    color: rgba($light, 1)
+    background: cl(light, .15);
+    box-shadow: 0 0 25px 0 cl(light, .15);
+    color: cl(light, 1)
 }
 
 .con-lmm-alert-light h4 {
-    -webkit-box-shadow: 0 6px 15px -7px rgba($light, .4);
-    box-shadow: 0 6px 15px -7px rgba($light, .4)
+    box-shadow: 0 6px 15px -7px cl(light, .4)
 }
 
 .con-lmm-alert-light .con-x {
-    background: rgba($light, 1);
-    color: #fff
+    background: cl(light, 1);
+    color: cl(whites)
 }

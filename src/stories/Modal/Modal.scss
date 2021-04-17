@@ -8,7 +8,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: cl(blacks, 0.5);
         display: table;
         transition: opacity 0.3s ease;
     }
@@ -23,20 +23,15 @@
         width: 300px;
         margin: 0px auto;
         padding: 20px 30px;
-        background-color: #fff;
+        background-color: cl(whites);
         border-radius: 2px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+        box-shadow: 0 2px 8px cl(blacks, 0.33);
         transition: all 0.3s ease;
         font-family: $Regular;
     }
 
     &-header {
         font-family: $Bold;
-
-        h3 {
-            margin-top: 0;
-            color: #42b983;
-        }
     }
 
     &-body {
@@ -57,14 +52,13 @@
         padding: 8px;
         cursor: pointer;
         border-radius: 5px;
-        background: #fff;
+        background: cl(whites);
         font-size: 1.25em;
 
         &:hover {
-            color: $primary;
+            color: cl(primary);
         }
     }
-
 }
 
 .modal-enter {

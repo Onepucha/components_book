@@ -31,7 +31,8 @@ module.exports = {
     "@storybook/addon-viewport",
     "@storybook/addon-controls",
     "@storybook/addon-storysource",
-    "@storybook/addon-actions"
+    "@storybook/addon-actions",
+    "@storybook/addon-postcss"
   ],
   performance: {
     hints: false
