@@ -1,5 +1,7 @@
+import M from 'materialize-css';
+
 export default {
-  install(Vue, options) {
+  install(Vue) {
     Vue.prototype.$message = function(html) {
       M.toast({html})
     }

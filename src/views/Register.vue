@@ -74,6 +74,12 @@
   </form>
 </template>
 
+<style lang="scss" scoped>
+  @import '~materialize-css/dist/css/materialize.min.css';
+  @import '../assets/auth.scss';
+  @import "../stories/variables.scss";
+</style>
+
 <script>
 import {email, required, minLength} from 'vuelidate/lib/validators'
 

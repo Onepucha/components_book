@@ -8,6 +8,12 @@ module.exports = {
       include: path.resolve(__dirname, "../"),
     });
 
+    config.module.rules.push({
+      test: /\.js$/,
+      loader: 'babel-loader',
+      include: path.resolve(__dirname, "../storybook-static/js/"),
+    });
+
     return config;
   },
   stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],

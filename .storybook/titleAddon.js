@@ -1,6 +1,6 @@
 import addons from "@storybook/addons";
 import { STORY_RENDERED } from "@storybook/core-events";
-console.log(123);
+
 addons.register("TitleAddon", (api) => {
   const cunstomTitle = "Labmedia"; // Define your customTitle title
   let interval = null;

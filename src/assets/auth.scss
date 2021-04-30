@@ -1,4 +1,8 @@
 @import "../stories/variables.scss";
+@import "variables/main.scss";
+@import "mixins/main.scss";
+@import "grid";
+
 
 body {
     font-family: "PT Root UI_Regular", sans-serif !important;
@@ -117,6 +121,10 @@ textarea.materialize-textarea:focus:not([readonly])+label {
     color: cl(blacks) !important;
 }
 
+.input-field input {
+    margin-bottom: 24px;
+}
+
 .btn,
 .btn-large,
 .btn-small {
@@ -155,7 +163,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
     min-width: 600px;
     height: auto;
     background: cl(whites);
-    margin: 0 auto;
+    margin: 0 auto !important;
     border-radius: 8px;
     display: block;
     box-shadow: 0 4px 25px 0 cl(blacks, .1);

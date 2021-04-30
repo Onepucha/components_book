@@ -1,27 +1,27 @@
 <template>
   <div id="app">
     <component :is="layout">
-      <router-view/>
+      <router-view />
     </component>
   </div>
 </template>
 
 <script>
-import EmptyLayout from './layouts/EmptyLayout'
+  import EmptyLayout from './layouts/EmptyLayout'
 
-export default {
-  computed: {
-    layout() {
-      return (this.$route.meta.layout || 'empty') + '-layout'
+  export default {
+    computed: {
+      layout() {
+        return (this.$route.meta.layout || 'empty') + '-layout'
+      }
+    },
+    components: {
+      EmptyLayout
     }
-  },
-  components: {
-    EmptyLayout
   }
-}
 </script>
 
 <style lang="scss">
-@import '~materialize-css/dist/css/materialize.min.css';
-@import 'assets/auth.scss';
+  @import 'assets/auth.scss';
+  @import "stories/variables.scss";
 </style>

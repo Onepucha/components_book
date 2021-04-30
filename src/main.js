@@ -6,7 +6,6 @@ import store from './store'
 import dateFilter from './filters/date.filter'
 import messagePlugin from './utils/message.plugin'
 import './registerServiceWorker'
-import 'materialize-css/dist/js/materialize.min'
 
 import firebase from 'firebase/app'
 import 'firebase/auth'
