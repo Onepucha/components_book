@@ -100,9 +100,9 @@ export default {
         height: /[px]/.test(this.size) ? this.size : null,
         borderRadius: `${this.borderRadius}px`,
       }
-      if (this.color) {
-        style.background = this.color
-      }
+      // if (this.color) {
+      //   style.background = this.color
+      // }
       return style
     },
     iconStyle() {

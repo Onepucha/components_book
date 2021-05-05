@@ -12,7 +12,10 @@ export default {
       control: "color"
     },
     color: {
-      control: "color"
+      control: {
+        type: "select",
+        options: ["primary", "danger", "success", "warning", "dark", "light"]
+      },
     },
     size: {
       control: {

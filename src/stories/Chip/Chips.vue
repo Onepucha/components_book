@@ -29,7 +29,7 @@ import lmmChip from './Chip.vue'
 export default {
   name:'lmmChips',
   components:{
-    vsChip
+    lmmChip,
   },
   props:{
     value:{},

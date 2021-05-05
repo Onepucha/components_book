@@ -70,9 +70,9 @@
   &:hover,
   &:focus {
     outline: none;
-    color: cl(primary);
-    background: cl(whites);
-    border-color: cl(primary);
+    color: cl(primary, 100);
+    background: cl(whites, 100);
+    border-color: cl(primary, 100);
     transform: translate3d(0, -3px, 0);
     box-shadow: cl(blacks, 0.08) 0 3px 10px 0;
   }
@@ -121,7 +121,7 @@
   }
 
   &--primary {
-    color: cl(whites);
+    color: cl(whites, 100);
     background-color: cl(primary, 100);
     border-color: cl(primary, 100);
 
@@ -183,7 +183,7 @@
     &.button--border {
       border: 1px solid cl(danger, 100);
       background: transparent !important;
-      color: cl(danger,100);
+      color: cl(danger, 100);
 
       &:hover,
       &:focus {
@@ -207,7 +207,7 @@
     &.button--border {
       border: 1px solid cl(warning, 100);
       background: transparent !important;
-      color: cl(warning,100);
+      color: cl(warning, 100);
 
       &:hover,
       &:focus {
