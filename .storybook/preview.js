@@ -10,7 +10,21 @@ import 'vue-lazy/dist/vue-lazy.css'
 Vue.use(VueSnap)
 Vue.use(VueLazy)
 
+const tokenContext = require.context(
+  '!!raw-loader!../src',
+  true,
+  /.\.(css|less|scss|svg)$/
+);
+
+const tokenFiles = tokenContext.keys().map(function (filename) {
+  return { filename: filename, content: tokenContext(filename).default };
+});
+
 export const parameters = {
+  designToken: {
+    defaultTab: 'Colors',
+    files: tokenFiles,
+  },
   actions: {
     argTypesRegex: "^on[A-Z].*"
   },

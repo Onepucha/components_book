@@ -2,6 +2,7 @@ const path = require("path");
 
 module.exports = {
   webpackFinal: async (config, { configType }) => {
+    
     config.module.rules.push({
       test: /\.scss$/,
       use: ["style-loader", "css-loader", "sass-loader", "postcss-loader"],
@@ -10,8 +11,8 @@ module.exports = {
 
     config.module.rules.push({
       test: /\.js$/,
-      loader: 'babel-loader',
-      include: path.resolve(__dirname, "../storybook-static/js/"),
+      use: 'babel-loader',
+      include: path.resolve(__dirname, "../js/"),
     });
 
     return config;
@@ -25,7 +26,8 @@ module.exports = {
     "@storybook/addon-controls",
     "@storybook/addon-storysource",
     "@storybook/addon-actions",
-    "@storybook/addon-postcss"
+    "@storybook/addon-postcss",
+    'storybook-design-token'
   ],
   performance: {
     hints: false
