@@ -43,7 +43,7 @@
                 padding-left: 3px;
                 padding-right: 3px;
                 font-size: .625em;
-                color: $white;
+                color: cl(whites, 100);
             }
         }
 
@@ -69,99 +69,99 @@
 }
 
 .con-lmm-avatar-primary {
-    background: cl(primary, 1)
+    background: cl(primary, 100)
 }
 
 .lmm-avatar-text-primary {
-    color: cl(primary, 1)
+    color: cl(primary, 100)
 }
 
 .con-lmm-avatar-danger {
-    background: cl(danger, 1)
+    background: cl(danger, 100)
 }
 
 .lmm-avatar-text-danger {
-    color: cl(danger, 1)
+    color: cl(danger, 100)
 }
 
 .con-lmm-avatar-success {
-    background: cl(success, 1)
+    background: cl(success, 100)
 }
 
 .lmm-avatar-text-success {
-    color: cl(success, 1)
+    color: cl(success, 100)
 }
 
 .con-lmm-avatar-warning {
-    background: cl(warning, 1)
+    background: cl(warning, 100)
 }
 
 .lmm-avatar-text-warning {
-    color: cl(warning, 1)
+    color: cl(warning, 100)
 }
 
 .con-lmm-avatar-dark {
-    background: cl(dark, 1)
+    background: cl(dark, 100)
 }
 
 .lmm-avatar-text-dark {
-    color: cl(dark, 1)
+    color: cl(dark, 100)
 }
 
 .con-lmm-avatar-light {
-    background: cl(light, 1)
+    background: cl(light, 100)
 }
 
 .lmm-avatar-text-light {
-    color: cl(light, 1)
+    color: cl(light, 100)
 }
 
 .con-lmm-icon-bg-primary,
 .dot-count-primary {
-    background: cl(primary, 1)
+    background: cl(primary, 100)
 }
 
 .lmm-icon-primary {
-    color: cl(primary, 1)
+    color: cl(primary, 100)
 }
 
 .con-lmm-icon-bg-danger,
 .dot-count-danger {
-    background: cl(danger, 1)
+    background: cl(danger, 100)
 }
 
 .lmm-icon-danger {
-    color: cl(danger, 1)
+    color: cl(danger, 100)
 }
 
 .con-lmm-icon-bg-success,
 .dot-count-success {
-    background: cl(success, 1)
+    background: cl(success, 100)
 }
 
 .lmm-icon-success {
-    color: cl(success, 1)
+    color: cl(success, 100)
 }
 
 .con-lmm-icon-bg-warning,
 .dot-count-warning {
-    background: cl(warning, 1)
+    background: cl(warning, 100)
 }
 
 .lmm-icon-warning {
-    color: cl(warning, 1)
+    color: cl(warning, 100)
 }
 
 .con-lmm-icon-bg-dark,
 .dot-count-dark {
-    background: cl(dark, 1)
+    background: cl(dark, 100)
 }
 
 .lmm-icon-dark {
-    color: cl(dark, 1)
+    color: cl(dark, 100)
 }
 
 .con-lmm-icon-bg-light,
 .dot-count-light {
-    background: cl(light, 1)
+    background: cl(light, 100)
 }

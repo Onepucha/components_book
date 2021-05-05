@@ -8,78 +8,78 @@
         .story__slide {
             height: 200px;
             font-size: $fs18;
-            color: cl(whites);
+            color: cl(whites, 100);
         }
     
         &--primary {
             .story__slide {
-                background: cl(primary);
+                background: cl(primary, 100);
             }
 
             .carousel__arrows {
                 i {
-                    color: cl(whites);
+                    color: cl(whites, 100);
                 }
             }
         }
 
         &--danger {
             .story__slide {
-                background: cl(danger);
+                background: cl(danger, 100);
             }
 
             .carousel__arrows {
                 i {
-                    color: cl(whites);
+                    color: cl(whites, 100);
                 }
             }
         }
 
         &--success {
             .story__slide {
-                background:cl(success);
+                background:cl(success, 100);
             }
 
             .carousel__arrows {
                 i {
-                    color: cl(whites);
+                    color: cl(whites, 100);
                 }
             }
         }
 
         &--warning {
             .story__slide {
-                background: cl(warning);
+                background: cl(warning, 100);
             }
 
             .carousel__arrows {
                 i {
-                    color: cl(whites);
+                    color: cl(whites, 100);
                 }
             }
         }
 
         &--dark {
             .story__slide {
-                background: cl(dark);
+                background: cl(dark, 100);
             }
 
             .carousel__arrows {
                 i {
-                    color: cl(whites);
+                    color: cl(whites, 100);
                 }
             }
         }
 
         &--light {
             .story__slide {
-                background: cl(light);
-                color: $black;
+                background: cl(light, 100);
+                color: cl(blacks, 100);
             }
 
             .carousel__arrows {
                 i {
-                    color: $black;
+                    color: cl(blacks, 100);
                 }
             }
         }

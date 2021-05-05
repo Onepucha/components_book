@@ -1,7 +1,7 @@
 @import "../variables.scss";
 
 .con-lmm-chip {
-    background: cl(light);
+    background: cl(light, 100);
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -9,7 +9,7 @@
     justify-content: center;
     margin-bottom: 3px;
     min-height: 28px;
-    color: cl(blacks, .7);
+    color: cl(blacks, 0.70);
     position: relative;
     font-family: $Regular;
 
@@ -23,12 +23,12 @@
         border: 0;
         margin: 0 4px;
         cursor: pointer;
-        background: cl(blacks, .15);
-        color: $white;
+        background: cl(blacks, 0.15);
+        color: cl(whites, 100);
         transition: all .3s ease;
 
         &:hover {
-            background: cl(danger, .75);
+            background: cl(danger, 0.75);
         }
 
         & i {
@@ -55,7 +55,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: cl(blacks, .15);
+        background: cl(blacks, 0.15);
 
         &.material-icons {
             margin-top: 0;
@@ -106,55 +106,55 @@
 
 
 .lmm-chip-primary:not(.bg-chip-transparent) {
-    background: cl(primary, 1);
+    background: cl(primary, 100);
 }
 
 .lmm-chip-primary.bg-chip-transparent {
-    background: cl(primary, .15);
-    color: cl(primary, 1);
+    background: cl(primary, 0.15);
+    color: cl(primary, 100);
 }
 
 .lmm-chip-danger:not(.bg-chip-transparent) {
-    background: cl(danger, 1);
+    background: cl(danger, 100);
 }
 
 .lmm-chip-danger.bg-chip-transparent {
-    background: cl(danger, .15);
-    color: cl(danger, 1);
+    background: cl(danger, 0.15);
+    color: cl(danger, 100);
 }
 
 .lmm-chip-success:not(.bg-chip-transparent) {
-    background: cl(success, 1);
+    background: cl(success, 100);
 }
 
 .lmm-chip-success.bg-chip-transparent {
-    background: cl(success, .15);
-    color: cl(success, 1);
+    background: cl(success, 0.15);
+    color: cl(success, 100);
 }
 
 .lmm-chip-warning:not(.bg-chip-transparent) {
-    background: cl(warning, 1);
+    background: cl(warning, 100);
 }
 
 .lmm-chip-warning.bg-chip-transparent {
-    background: cl(warning, .15);
-    color: cl(warning, 1);
+    background: cl(warning, 0.15);
+    color: cl(warning, 100);
 }
 
 .lmm-chip-dark:not(.bg-chip-transparent) {
-    background: cl(dark, 1);
+    background: cl(dark, 100);
 }
 
 .lmm-chip-dark.bg-chip-transparent {
-    background: cl(dark, .15);
-    color: cl(dark, 1);
+    background: cl(dark, 0.15);
+    color: cl(dark, 100);
 }
 
 .lmm-chip-light:not(.bg-chip-transparent) {
-    background: cl(light, 1);
+    background: cl(light, 100);
 }
 
 .lmm-chip-light.bg-chip-transparent {
-    background: cl(light, .15);
-    color: cl(light, 1);
+    background: cl(light, 0.15);
+    color: cl(light, 100);
 }

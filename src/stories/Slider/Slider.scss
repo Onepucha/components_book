@@ -23,7 +23,7 @@
         width: 100%;
         height: 4px;
         border-radius: 4px;
-        background: cl(light);
+        background: cl(light, 100);
         position: relative;
         cursor: pointer;
         border: 0;
@@ -68,7 +68,7 @@
         &--tick {
             position: absolute;
             left: 100px;
-            background: cl(light);
+            background: cl(light, 100);
             width: 4px;
             height: 100%;
             top: 0;
@@ -85,7 +85,7 @@
             transition: border .2s ease, transform .2s ease, border-radius .2s ease;
             transition: border .2s ease, transform .2s ease, border-radius .2s ease, -webkit-transform .2s ease;
             display: block;
-            background: cl(whites);
+            background: cl(whites, 100);
 
             &:hover {
                 &:not(:active) {
@@ -131,7 +131,7 @@
         }
 
         &--circle-text {
-            color: cl(whites);
+            color: cl(whites, 100);
             position: absolute;
             padding: 2px 5px;
             display: block;
@@ -197,7 +197,7 @@
             cursor: pointer;
             border: 0;
             margin: 0;
-            color: cl(whites);
+            color: cl(whites, 100);
 
             &.hasTransition {
                 transition: all .2s ease;
@@ -207,91 +207,91 @@
 
     &.vs-slider-primary{
         & .vs-slider-line-one {
-            background: cl(primary, 1);
+            background: cl(primary, 100);
         }
 
         & .vs-circles-slider {
-            border: 2px solid cl(primary, 1);
+            border: 2px solid cl(primary, 100);
         }
 
         & .text-circle-slider,
         & .vs-slider-line-efect {
-            background: cl(primary, 1);
+            background: cl(primary, 100);
         }
     }
 
     &.vs-slider-danger{
         & .vs-slider-line-one {
-            background: cl(danger, 1);
+            background: cl(danger, 100);
         }
 
         & .vs-circles-slider {
-            border: 2px solid cl(danger, 1);
+            border: 2px solid cl(danger, 100);
         }
 
         & .text-circle-slider,
         & .vs-slider-line-efect {
-            background: cl(danger, 1);
+            background: cl(danger, 100);
         }
     }
 
     &.vs-slider-success{
         & .vs-slider-line-one {
-            background: cl(success, 1);
+            background: cl(success, 100);
         }
 
         & .vs-circles-slider {
-            border: 2px solid cl(success, 1);
+            border: 2px solid cl(success, 100);
         }
 
         & .text-circle-slider,
         & .vs-slider-line-efect {
-            background: cl(success, 1);
+            background: cl(success, 100);
         }
     }
 
     &.vs-slider-warning{
         & .vs-slider-line-one {
-            background: cl(warning, 1);
+            background: cl(warning, 100);
         }
 
         & .vs-circles-slider {
-            border: 2px solid cl(warning, 1);
+            border: 2px solid cl(warning, 100);
         }
 
         & .text-circle-slider,
         & .vs-slider-line-efect {
-            background: cl(warning, 1);
+            background: cl(warning, 100);
         }
     }
 
     &.vs-slider-dark{
         & .vs-slider-line-one {
-            background: cl(dark, 1);
+            background: cl(dark, 100);
         }
 
         & .vs-circles-slider {
-            border: 2px solid cl(dark, 1);
+            border: 2px solid cl(dark, 100);
         }
 
         & .text-circle-slider,
         & .vs-slider-line-efect {
-            background: cl(dark, 1);
+            background: cl(dark, 100);
         }
     }
 
     &.vs-slider-light{
         & .vs-slider-line-one {
-            background: cl(light, 1);
+            background: cl(light, 100);
         }
 
         & .vs-circles-slider {
-            border: 2px solid cl(light, 1);
+            border: 2px solid cl(light, 100);
         }
 
         & .text-circle-slider,
         & .vs-slider-line-efect {
-            background: cl(light, 1);
+            background: cl(light, 100);
         }
     }
 }

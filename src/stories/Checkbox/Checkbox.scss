@@ -13,7 +13,7 @@
   }
 
   .lmm-checkbox .icon {
-    color: cl(whites);
+    color: cl(whites, 100);
   }
 
   .lmm-checkbox--input {
@@ -59,7 +59,7 @@
       &+.lmm-checkbox .icon {
         opacity: 1;
         transform: scale(0);
-        color: cl(whites);
+        color: cl(whites, 100);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -105,8 +105,8 @@
 
     input:checked {
       &+.lmm-checkbox {
-        border: 2px solid cl(primary) !important;
-        background: cl(primary);
+        border: 2px solid cl(primary, 100) !important;
+        background: cl(primary, 100);
       }
     }
   }

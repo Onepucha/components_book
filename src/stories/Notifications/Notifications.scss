@@ -9,8 +9,8 @@
   border-radius: 10px;
   overflow: hidden;
   transition: all 0.3s ease;
-  background: cl(primary);
-  color: cl(whites);
+  background: cl(primary, 100);
+  color: cl(whites, 100);
   cursor: default;
   max-width: 350px;
   min-width: 200px;

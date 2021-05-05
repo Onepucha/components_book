@@ -38,12 +38,12 @@
     width: 18px;
     height: 18px;
     position: absolute;
-    background: cl(whites);
+    background: cl(whites, 100);
     left: 2px;
     top: 2px;
     border-radius: 50%;
     transition: all .25s ease;
-    box-shadow: 0 0 4px 0 cl(blacks, .1)
+    box-shadow: 0 0 4px 0 cl(blacks, 0.10)
 }
 
 .lmm-switch--text {
@@ -62,7 +62,7 @@
 .lmm-switch--text.text-on {
     padding-left: 6px;
     left: 0;
-    color: cl(whites);
+    color: cl(whites, 100);
     transform: translate(10px)
 }
 
@@ -98,7 +98,7 @@
 }
 
 .lmm-switch-primary {
-    background: cl(light)
+    background: cl(light, 100)
 }
 
 .lmm-switch-primary.lmm-switch-active {
@@ -106,7 +106,7 @@
 }
 
 .lmm-switch-danger {
-    background: cl(light)
+    background: cl(light, 100)
 }
 
 .lmm-switch-danger.lmm-switch-active {
@@ -114,7 +114,7 @@
 }
 
 .lmm-switch-success {
-    background: cl(light)
+    background: cl(light, 100)
 }
 
 .lmm-switch-success.lmm-switch-active {
@@ -122,7 +122,7 @@
 }
 
 .lmm-switch-warning {
-    background: cl(light)
+    background: cl(light, 100)
 }
 
 .lmm-switch-warning.lmm-switch-active {
@@ -130,7 +130,7 @@
 }
 
 .lmm-switch-dark {
-    background: cl(light)
+    background: cl(light, 100)
 }
 
 .lmm-switch-dark.lmm-switch-active {
@@ -138,7 +138,7 @@
 }
 
 .lmm-switch-light {
-    background: cl(light)
+    background: cl(light, 100)
 }
 
 .lmm-switch-light.lmm-switch-active {

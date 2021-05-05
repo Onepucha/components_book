@@ -21,7 +21,7 @@
     position: absolute;
     z-index: 100;
     font-size: 1.1rem;
-    color: cl(blacks, .4);
+    color: cl(blacks, 0.40);
     cursor: default;
     user-select: none;
     top: 8px;
@@ -36,11 +36,11 @@
 }
 
 .vuesax-app-is-rtl .lmm-input--icon {
-    border-left: 1px solid cl(blacks, .1);
+    border-left: 1px solid cl(blacks, 0.10);
 }
 
 .vuesax-app-is-ltr .lmm-input--icon {
-    border-right: 1px solid cl(blacks, .1);
+    border-right: 1px solid cl(blacks, 0.10);
 }
 
 .vuesax-app-is-rtl .lmm-input--icon {
@@ -77,11 +77,11 @@
 }
 
 .vuesax-app-is-rtl .lmm-input--icon.icon-after {
-    border-right: 1px solid cl(blacks, .1);
+    border-right: 1px solid cl(blacks, 0.10);
 }
 
 .vuesax-app-is-ltr .lmm-input--icon.icon-after {
-    border-left: 1px solid cl(blacks, .1);
+    border-left: 1px solid cl(blacks, 0.10);
 }
 
 .vuesax-app-is-rtl .lmm-input--icon.icon-after {
@@ -121,7 +121,7 @@
     box-sizing: border-box;
     overflow: hidden;
     font-size: .85rem;
-    color: cl(blacks, .4);
+    color: cl(blacks, 0.40);
     white-space: nowrap;
     cursor: text;
     user-select: none;
@@ -163,7 +163,7 @@
 
 .lmm-input--label {
     font-size: .85rem;
-    color: cl(blacks, .7);
+    color: cl(blacks, 0.70);
 }
 
 .vuesax-app-is-rtl .lmm-input--label {
@@ -246,9 +246,9 @@
     position: relative;
     padding: .4rem;
     border-radius: 5px;
-    border: 1px solid cl(blacks, .2);
+    border: 1px solid cl(blacks, 0.20);
     box-sizing: border-box;
-    box-shadow: 0 0 0 0 cl(blacks, .15);
+    box-shadow: 0 0 0 0 cl(blacks, 0.15);
     transition: all .3s ease;
     width: 100%;
     font-family: $Regular;
@@ -283,7 +283,7 @@
 }
 
 .lmm-input--input:focus {
-    box-shadow: 0 3px 10px 0 cl(blacks, .15);
+    box-shadow: 0 3px 10px 0 cl(blacks, 0.15);
 }
 
 .lmm-input--input.hasValue+.lmm-placeholder-label,
@@ -400,145 +400,145 @@
 }
 
 .lmm-input-primary .lmm-input--input:focus {
-    border: 1px solid cl(primary, 1) !important;
+    border: 1px solid cl(primary, 100) !important;
 }
 
 .lmm-input-primary.isFocus .lmm-input--label,
 .lmm-input-primary .lmm-input--input:focus~.icon-inputx,
 .lmm-input-primary .lmm-input--input:focus~.lmm-placeholder-label {
-    color: cl(primary, 1);
+    color: cl(primary, 100);
 }
 
 .span-text-validation-primary {
-    color: cl(primary, 1) !important;
+    color: cl(primary, 100) !important;
 }
 
 .input-icon-validate-primary .lmm-input--input,
 .input-icon-validate-primary .lmm-input--input:focus {
-    border: 1px solid cl(primary, 1) !important;
+    border: 1px solid cl(primary, 100) !important;
 }
 
 .input-icon-validate-primary .input-icon-validate {
-    background: cl(primary, .2);
-    color: cl(primary, 1);
+    background: cl(primary, 0.20);
+    color: cl(primary, 100);
 }
 
 .lmm-input-danger .lmm-input--input:focus {
-    border: 1px solid cl(danger, 1) !important;
+    border: 1px solid cl(danger, 100) !important;
 }
 
 .lmm-input-danger.isFocus .lmm-input--label,
 .lmm-input-danger .lmm-input--input:focus~.icon-inputx,
 .lmm-input-danger .lmm-input--input:focus~.lmm-placeholder-label {
-    color: cl(danger, 1);
+    color: cl(danger, 100);
 }
 
 .span-text-validation-danger {
-    color: cl(danger, 1) !important;
+    color: cl(danger, 100) !important;
 }
 
 .input-icon-validate-danger .lmm-input--input,
 .input-icon-validate-danger .lmm-input--input:focus {
-    border: 1px solid cl(danger, 1) !important;
+    border: 1px solid cl(danger, 100) !important;
 }
 
 .input-icon-validate-danger .input-icon-validate {
-    background: cl(danger, .2);
-    color: cl(danger, 1);
+    background: cl(danger, 0.20);
+    color: cl(danger, 100);
 }
 
 .lmm-input-success .lmm-input--input:focus {
-    border: 1px solid cl(success, 1) !important;
+    border: 1px solid cl(success, 100) !important;
 }
 
 .lmm-input-success.isFocus .lmm-input--label,
 .lmm-input-success .lmm-input--input:focus~.icon-inputx,
 .lmm-input-success .lmm-input--input:focus~.lmm-placeholder-label {
-    color: cl(success, 1);
+    color: cl(success, 100);
 }
 
 .span-text-validation-success {
-    color: cl(success, 1) !important;
+    color: cl(success, 100) !important;
 }
 
 .input-icon-validate-success .lmm-input--input,
 .input-icon-validate-success .lmm-input--input:focus {
-    border: 1px solid cl(success, 1) !important;
+    border: 1px solid cl(success, 100) !important;
 }
 
 .input-icon-validate-success .input-icon-validate {
-    background: cl(success, .2);
-    color: cl(success, 1);
+    background: cl(success, 0.20);
+    color: cl(success, 100);
 }
 
 .lmm-input-warning .lmm-input--input:focus {
-    border: 1px solid cl(warning, 1) !important;
+    border: 1px solid cl(warning, 100) !important;
 }
 
 .lmm-input-warning.isFocus .lmm-input--label,
 .lmm-input-warning .lmm-input--input:focus~.icon-inputx,
 .lmm-input-warning .lmm-input--input:focus~.lmm-placeholder-label {
-    color: cl(warning, 1);
+    color: cl(warning, 100);
 }
 
 .span-text-validation-warning {
-    color: cl(warning, 1) !important;
+    color: cl(warning, 100) !important;
 }
 
 .input-icon-validate-warning .lmm-input--input,
 .input-icon-validate-warning .lmm-input--input:focus {
-    border: 1px solid cl(warning, 1) !important;
+    border: 1px solid cl(warning, 100) !important;
 }
 
 .input-icon-validate-warning .input-icon-validate {
-    background: cl(warning, .2);
-    color: cl(warning, 1);
+    background: cl(warning, 0.20);
+    color: cl(warning, 100);
 }
 
 .lmm-input-dark .lmm-input--input:focus {
-    border: 1px solid cl(dark, 1) !important;
+    border: 1px solid cl(dark, 100) !important;
 }
 
 .lmm-input-dark.isFocus .lmm-input--label,
 .lmm-input-dark .lmm-input--input:focus~.icon-inputx,
 .lmm-input-dark .lmm-input--input:focus~.lmm-placeholder-label {
-    color: cl(dark, 1);
+    color: cl(dark, 100);
 }
 
 .span-text-validation-dark {
-    color: cl(dark, 1) !important;
+    color: cl(dark, 100) !important;
 }
 
 .input-icon-validate-dark .lmm-input--input,
 .input-icon-validate-dark .lmm-input--input:focus {
-    border: 1px solid cl(dark, 1) !important;
+    border: 1px solid cl(dark, 100) !important;
 }
 
 .input-icon-validate-dark .input-icon-validate {
-    background: cl(dark, .2);
-    color: cl(dark, 1);
+    background: cl(dark, 0.20);
+    color: cl(dark, 100);
 }
 
 .lmm-input-light .lmm-input--input:focus {
-    border: 1px solid cl(light, 1) !important;
+    border: 1px solid cl(light, 100) !important;
 }
 
 .lmm-input-light.isFocus .lmm-input--label,
 .lmm-input-light .lmm-input--input:focus~.icon-inputx,
 .lmm-input-light .lmm-input--input:focus~.lmm-placeholder-label {
-    color: cl(light, 1);
+    color: cl(light, 100);
 }
 
 .span-text-validation-light {
-    color: cl(light, 1) !important;
+    color: cl(light, 100) !important;
 }
 
 .input-icon-validate-light .lmm-input--input,
 .input-icon-validate-light .lmm-input--input:focus {
-    border: 1px solid cl(light, 1) !important;
+    border: 1px solid cl(light, 100) !important;
 }
 
 .input-icon-validate-light .input-icon-validate {
-    background: cl(light, .2);
-    color: cl(light, 1);
+    background: cl(light, 0.20);
+    color: cl(light, 100);
 }
