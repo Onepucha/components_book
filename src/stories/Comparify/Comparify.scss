@@ -1,0 +1,99 @@
+@import "../variables.scss";
+@import "../Grid/main.scss";
+
+.compare-wrapper {
+    position: relative;
+}
+
+.compare,
+.compare__content {
+    position: relative;
+    height: 100%;
+}
+
+.compare-overlay {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    top: 0;
+}
+
+.compare-overlay__content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.handle__arrow {
+    position: absolute;
+    width: 20px;
+}
+
+.handle__arrow--l {
+    left: 0;
+}
+
+.handle__arrow--r {
+    right: 0;
+}
+
+.handle-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.handle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: cl(whites, 100);
+    background: cl(primary, 100);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.handle-line {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: cl(primary, 100);
+    z-index: 4;
+    pointer-events: none;
+    user-select: none;
+}
+
+.compare__range {
+    position: absolute;
+    cursor: ew-resize;
+    left: calc(30px / -2);
+    width: calc(100% + 30px);
+    height: 100%;
+    transform: translatey(-50%);
+    top: calc(50%);
+    z-index: 6;
+    -webkit-appearance: none;
+    /* debugging purposes only */
+    background: cl(blacks, 40);
+    opacity: 0;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}

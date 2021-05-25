@@ -5,6 +5,7 @@ import router from './router/router'
 import store from './store'
 import dateFilter from './filters/date.filter'
 import messagePlugin from './utils/message.plugin'
+import resizeObserver from './utils/vue-resize.umd'
 import './registerServiceWorker'
 
 import firebase from 'firebase/app'
@@ -20,7 +21,7 @@ import lmmText from "../src/stories/BodyText/BodyText.vue";
 
 Vue.config.productionTip = false
 
-Vue.use(messagePlugin)
+Vue.use(messagePlugin, resizeObserver)
 Vue.use(Vuelidate)
 Vue.filter('date', dateFilter)
 
@@ -42,13 +43,14 @@ const install = Vue => {
   Vue.component('lmmButton', lmmButton)
   Vue.component('lmmHeading', lmmHeading)
   Vue.component('lmmText', lmmText)
+  Vue.component('resizeObserver', resizeObserver)
 }
 
 export default {
   install
 }
 
-export { Carousel, Slide, lmmIcon, lmmButton, lmmHeading, lmmText }
+export { Carousel, Slide, lmmIcon, lmmButton, lmmHeading, lmmText, resizeObserver }
 
 let app
 
