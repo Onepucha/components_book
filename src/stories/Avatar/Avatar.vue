@@ -68,7 +68,7 @@ export default {
     },
     textColor:{
       type:String,
-      default:'rgb(255, 255, 255)',
+      default: 'light',
     },
     text:{
       type:[String,Number],
@@ -76,7 +76,7 @@ export default {
     },
     color:{
       type:String,
-      default:'rgb(195, 195, 195)',
+      default:'primary',
     },
     /**
     Свойство устанавливает радиус скругления уголков

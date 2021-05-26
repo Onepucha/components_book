@@ -5,7 +5,10 @@ export default {
   component: lmmTooltip,
   argTypes: {
     color: {
-      control: "color",
+      control: {
+        type: "select",
+        options: ["primary", "danger", "success", "warning", "dark", "light"],
+      },
     },
     position: {
       control: {

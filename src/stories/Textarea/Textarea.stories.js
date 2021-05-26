@@ -6,6 +6,12 @@ export default {
   argTypes: {
     height: { control: "text" },
     width: { control: "text" },
+    color: {
+      control: {
+        type: "select",
+        options: ["primary", "danger", "success", "warning", "dark", "light"],
+      },
+    },
   },
   parameters: {
     componentSubtitle: "Компонент многострочного текстового ввода.",

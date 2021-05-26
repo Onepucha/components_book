@@ -118,3 +118,33 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.lmm-tooltip-primary {
+  background: cl(primary, 100);
+  color: cl(whites, 100);
+}
+
+.lmm-tooltip-danger {
+  background: cl(danger, 100);
+  color: cl(whites, 100);
+}
+
+.lmm-tooltip-success {
+  background: cl(success, 100);
+  color: cl(whites, 100);
+}
+
+.lmm-tooltip-warning {
+  background: cl(warning, 100);
+  color: cl(whites, 100);
+}
+
+.lmm-tooltip-dark {
+  background: cl(dark, 100);
+  color: cl(whites, 100);
+}
+
+.lmm-tooltip-light {
+  background: cl(light, 100);
+  color: cl(whites, 100);
+}

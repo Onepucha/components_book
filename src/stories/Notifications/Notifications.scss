@@ -52,6 +52,37 @@
   }
 }
 
+
+.lmm-noti-primary {
+  background: cl(primary, 100);
+  color: cl(whites, 100);
+}
+
+.lmm-noti-danger {
+  background: cl(danger, 100);
+  color: cl(whites, 100);
+}
+
+.lmm-noti-success {
+  background: cl(success, 100);
+  color: cl(whites, 100);
+}
+
+.lmm-noti-warning {
+  background: cl(warning, 100);
+  color: cl(whites, 100);
+}
+
+.lmm-noti-dark {
+  background: cl(dark, 100);
+  color: cl(whites, 100);
+}
+
+.lmm-noti-light {
+  background: cl(light, 100);
+  color: cl(blacks, 100);
+}
+
 @keyframes open {
   0% {
     opacity: 0;

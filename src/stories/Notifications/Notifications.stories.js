@@ -4,7 +4,12 @@ export default {
   title: "Components/Notifications",
   component: lmmNotifications,
   argTypes: {
-    color: { control: "color" },
+    color: {
+      control: {
+        type: "select",
+        options: ["primary", "danger", "success", "warning", "dark", "light"],
+      },
+    },
     colorText: { control: "color" },
   },
 };

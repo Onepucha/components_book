@@ -47,7 +47,7 @@ export default {
     },
     color:{
       type:String,
-      default:null,
+      default: 'primary',
     },
     closeIcon:{
       type:String,

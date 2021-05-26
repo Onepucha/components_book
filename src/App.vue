@@ -21,7 +21,7 @@
   }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
   @import 'assets/auth.scss';
   @import "stories/variables.scss";
 </style>

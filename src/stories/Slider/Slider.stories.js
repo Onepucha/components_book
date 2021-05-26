@@ -4,7 +4,12 @@ export default {
   title: "Components/Slider",
   component: lmmSlider,
   argTypes: {
-    color: { control: "color" },
+    color: {
+      control: {
+        type: "select",
+        options: ["primary", "danger", "success", "warning", "dark", "light"],
+      },
+    },
   },
   parameters: {
     componentSubtitle: "Компонент выпадающего списка.",

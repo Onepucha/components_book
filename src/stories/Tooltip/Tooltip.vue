@@ -18,11 +18,11 @@
 </template>
 <script>
   import utils from '../../utils';
-import Button from '../Button/Button.vue';
+  import Button from '../Button/Button.vue';
   import "./Tooltip.scss";
 
   export default {
-  components: { Button },
+    components: Button,
     name: "lmm-tooltip",
 
     props: {
@@ -35,7 +35,7 @@ import Button from '../Button/Button.vue';
         type: String,
       },
       color: {
-        default: null,
+        default: 'primary',
         type: String,
       },
       position: {
