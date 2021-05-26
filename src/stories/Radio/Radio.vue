@@ -1,5 +1,5 @@
 <template lang="html">
-  <label class="content-lmm-radio" :style="styleLabel">
+  <label class="content-lmm-radio" :style="styleLabel" :class="[`lmm-radio-${color}`]">
     <input
       v-bind="$attrs"
       :checked="isChecked"
@@ -34,7 +34,7 @@ export default {
     },
     color: {
       type: String,
-      default: "rgb(0, 92, 254)",
+      default: "primary",
     },
     fontSize: {
       type: Number,

@@ -115,3 +115,33 @@
     }
   }
 }
+
+.lmm-radio-primary .lmm-radio--circle {
+  box-shadow: cl(primary, 100) 0px 3px 12px 0px;
+  border: 6px solid cl(primary, 100);
+}
+
+.lmm-radio-danger .lmm-radio--circle {
+  box-shadow: cl(danger, 100) 0px 3px 12px 0px;
+  border: 6px solid cl(danger, 100);
+}
+
+.lmm-radio-success .lmm-radio--circle {
+  box-shadow: cl(success, 100) 0px 3px 12px 0px;
+  border: 6px solid cl(success, 100);
+}
+
+.lmm-radio-warning .lmm-radio--circle {
+  box-shadow: cl(warning, 100) 0px 3px 12px 0px;
+  border: 6px solid cl(warning, 100);
+}
+
+.lmm-radio-dark .lmm-radio--circle {
+  box-shadow: cl(dark, 100) 0px 3px 12px 0px;
+  border: 6px solid cl(dark, 100);
+}
+
+.lmm-radio-light .lmm-radio--circle {
+  box-shadow: cl(light, 100) 0px 3px 12px 0px;
+  border: 6px solid cl(light, 100);
+}

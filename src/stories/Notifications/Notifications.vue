@@ -1,7 +1,6 @@
 <template lang="html">
   <div class="centerx">
-    <button class="button button--medium" @click="active = !active">Notifications</button>
-
+    <lmm-button label="Notifications" @onClick="setIsNotiOpen()" :primary="true" />
     <transition @before-enter="beforeEnter" @enter="enter" @leave="leave">
       <div name="lmm-notifications" v-if="active" ref="notifications" :style="stylex" :class="[
         `lmm-noti-${position}`,
@@ -103,6 +102,9 @@
       }
     },
     methods: {
+      setIsNotiOpen() {
+        this.active = true;
+      },
       clickNoti() {
         this.active = false;
         this.click ? this.click() : null;

@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="content-lmm-checkbox" :style="styleLabel">
+  <div class="content-lmm-checkbox" :style="styleLabel" :class="[`lmm-checkbox-${color}`]">
     <input
       v-bind="$attrs"
       :checked="isChecked || $attrs.checked"
@@ -32,14 +32,17 @@ export default {
   props: {
     color: {
       type: String,
-      default: "rgb(0, 92, 254)",
+      default: "primary",
     },
     value: {},
     icon: {
       default: "check",
       type: String,
     },
-    lmmValue: {},
+    lmmValue: {
+      type:[Boolean,Array,String,Number,Object],
+      default:false,
+    },
     fontSize: {
       type: Number,
       default: 16,
