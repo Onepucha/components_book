@@ -47,7 +47,7 @@ export default {
       default:false,
     },
     badgeColor:{
-      default:'danger',
+      default:'primary',
       type:String,
     },
     size:{

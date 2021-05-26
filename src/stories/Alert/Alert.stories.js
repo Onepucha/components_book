@@ -1,9 +1,11 @@
 import lmmAlert from "./Alert.vue";
 import lmmIcon from "../lmmIcon/lmmIcon.vue";
+import mdx from './Alert.mdx';
 
 export default {
     title: "Components/Alert",
-    component: lmmAlert, lmmIcon,
+    component: lmmAlert,
+    lmmIcon,
     argTypes: {
         color: {
             control: {
@@ -13,7 +15,9 @@ export default {
         },
     },
     parameters: {
-        componentSubtitle: "Компонент уведомления пользователю.",
+        docs: {
+            page: mdx,
+        },
     },
 };
 
@@ -58,5 +62,3 @@ Icon.args = {
     text: 'Default Text',
     icon: 'attachment',
 };
-
-

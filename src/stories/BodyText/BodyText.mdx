@@ -1,0 +1,160 @@
+import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
+import {lmmText} from './BodyText.vue';
+
+# Text
+
+Произвольный текст
+
+Весь текст на странице нужно обернуть в компонент `lmm-text`, стили задаются свойствами.
+
+- [Цвет](#цвет)
+- [Размер текста](#размер-текста)
+- [Наклон](#наклон)
+- [Подчеркивание](#подчеркивание)
+- [Регистр](#регистр)
+- [Выравнивание](#выравнивание)
+- [Список свойств](#свойства)
+- [Пример использования](#пример)
+
+## Цвет
+
+За цвет текста отвечает свойство `textColor`.
+
+<div>
+  <p class="paragrap--l paragrap--primary">«Дизайн-система» Лабмедиа</p>
+  <p class="paragrap--l paragrap--danger">«Дизайн-система» Лабмедиа</p>
+  <p class="paragrap--l paragrap--success">«Дизайн-система» Лабмедиа</p>
+  <p class="paragrap--l paragrap--warning">«Дизайн-система» Лабмедиа</p>
+  <p class="paragrap--l paragrap--dark">«Дизайн-система» Лабмедиа</p>
+  <p style={{ background: '#000' }} class="paragrap--l paragrap--light">«Дизайн-система» Лабмедиа</p>
+</div>
+
+```ts
+<div>
+    <lmm-text :size="l" :text="«Дизайн-система» Лабмедиа" :textColor="primary" />
+    <lmm-text :size="l" :text="«Дизайн-система» Лабмедиа" :textColor="danger" />
+    <lmm-text :size="l" :text="«Дизайн-система» Лабмедиа" :textColor="success" />
+    <lmm-text :size="l" :text="«Дизайн-система» Лабмедиа" :textColor="warning" />
+    <lmm-text :size="l" :text="«Дизайн-система» Лабмедиа" :textColor="dark" />
+    <lmm-text :size="l" :text="«Дизайн-система» Лабмедиа" :textColor="light" />
+</div>
+```
+
+## Размер текста
+
+За размер текста отвечает свойство `size`.
+
+* по умолчанию в параграфах используется размер m.
+* даже для самых неважных подсказок используйте размер xs или больше.
+
+<div>
+  <p class="paragrap--xs">Текст размером `xs`</p>
+  <p class="paragrap--s">Текст размером `s`</p>
+  <p class="paragrap--m">Текст размером `m`</p>
+  <p class="paragrap--l">Текст размером `l`</p>
+  <p class="paragrap--xl">Текст размером `xl`</p>
+</div>
+
+```ts
+<div>
+    <lmm-text :size="xs" :text="Текст размером `xs`" />
+    <lmm-text :size="s" :text="Текст размером `s`" />
+    <lmm-text :size="m" :text="Текст размером `m`" />
+    <lmm-text :size="l" :text="Текст размером `l`" />
+    <lmm-text :size="xl" :text="Текст размером `xl`" />
+</div>
+```
+
+## Наклон
+
+С помощью свойства `fontStyle` можно поменять наклон шрифта (выделить текст курсивом).
+
+<div>
+  <p class="paragrap--m paragrap--italic">Текст размером `m`</p>
+</div>
+
+```ts
+<div>
+    <lmm-text :size="m" :fontStyle="italic" :text="Текст размером `m`" />
+</div>
+```
+
+## Подчеркивание
+
+С помощью свойства `decoration` со значением `underline` можно подчеркивать текст.
+
+<div>
+  <p class="paragrap--m paragrap--underline">Текст размером `m`</p>
+</div>
+
+```ts
+<div>
+    <lmm-text :size="m" :decoration="underline" :text="Текст размером `m`" />
+</div>
+```
+
+## Регистр
+
+С помощью свойства `transform` со значением `uppercase` можно переводит текст в верхний регистр.
+
+<div>
+  <p class="paragrap--m paragrap--uppercase">Текст размером `m`</p>
+  <p class="paragrap--m paragrap--lowercase">Текст размером `m`</p>
+</div>
+
+```ts
+<div>
+    <lmm-text :size="m" :transform="uppercase" :text="Текст размером `m`" />
+    <lmm-text :size="m" :transform="lowercase" :text="Текст размером `m`" />
+</div>
+```
+
+## Выравнивание
+
+С помощью свойства `align` можно выравнивать текста в контейнере.
+
+<div>
+  <p class="paragrap--m paragrap--left">Текст размером `m`</p>
+  <p class="paragrap--m paragrap--center">Текст размером `m`</p>
+  <p class="paragrap--m paragrap--right">Текст размером `m`</p>
+</div>
+
+```ts
+<div>
+    <lmm-text :size="m" :align="left" :text="Текст размером `m`" />
+    <lmm-text :size="m" :align="center" :text="Текст размером `m`" />
+    <lmm-text :size="m" :align="right" :text="Текст размером `m`" />
+</div>
+```
+
+
+## Свойства
+
+| Свойство | Тип | По умолчанию | Описание |
+| ----------------- | ------------------------------ | ------------ |---------------------------------------------------------------- |
+| `textColor` | `string` | `'primary', 'danger', 'success', 'warning', 'dark', 'light'` | Свойство устанавливает цвет текста |
+| `fontStyle ` | `string` | `'italic', 'bold', 'semibold', 'regular'` | Свойство устанавливает тип текста |
+| `decoration` | `string` | `'underline'` | Свойство устанавливает подчеркивание текста |
+| `transform` | `string` | `'uppercase', 'lowercase'` | Свойство переводит текст в верхний или нижний регистр |
+| `align` | `string` | `'left', 'center', 'right'` | Свойство отвечает за выравнивание текста в контейнере |
+| `size` | `string` | `'xs', 's', 'm', 's', 'xs'` | Свойство устанавливает размер текста |
+| `text` | `string`, `number` | - | Произвольный текст |
+
+## Пример
+
+```ts
+import Vue from 'vue';
+import { lmmText } from '../stories/Text/Text.vue';
+
+<div id="app">
+  <div class="lmm-app-is-ltr">
+    <lmm-text :color="primary" :title="По умолчанию «primary»" :text="Подходит, чтобы рассказать стандартную информаци." :active="true" />
+  </div>
+</div>
+
+<script>
+  new Vue({
+    el: '#app'
+  })
+</script>
+```

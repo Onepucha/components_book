@@ -29,9 +29,25 @@ export default {
     Свойство устанавливает цвет текста
     */
     textColor: {
+      default: 'dark',
+      type: String,
+    },
+    fontStyle: {
       default: null,
       type: String,
     },
+    decoration: {
+      default: null,
+      type: String,
+    },
+    transform: {
+      default: null,
+      type: String,
+    },
+    align: {
+      default: null,
+      type: String,
+    }
   },
 
   computed: {
@@ -39,6 +55,11 @@ export default {
       return {
         paragrap: true,
         [`paragrap--${this.size}`]: true,
+        [`paragrap--${this.textColor}`]: true,
+        [`paragrap--${this.fontStyle}`]: true,
+        [`paragrap--${this.decoration}`]: true,
+        [`paragrap--${this.transform}`]: true,
+        [`paragrap--${this.align}`]: true,
       };
     },
     style() {

@@ -96,12 +96,10 @@ body {
   margin: 0 auto;
 }
 
-$colors_theme : (
-  "primary": "primary"
+$colors_theme : ("primary": "primary"
 );
 
-$colors: (
-  "primary": $primary,
+$colors: ("primary": $primary,
   "danger": $danger,
   "success": $success,
   "warning": $warning,
@@ -113,21 +111,27 @@ $colors: (
 );
 
 @function HexToRGB($hex) {
-  @return red($hex), green($hex), blue($hex);
+  @return red($hex),
+  green($hex),
+  blue($hex);
 }
 
 @function cl($name, $opacity: false) {
   @if $opacity {
     @return RGBA(var(--color-#{unquote($name)}--rgb), $opacity);
-  } @else {
+  }
+
+  @else {
     @return var(--color-#{unquote($name)});
   }
 }
 
-:root{
+:root {
   @if $colors {
     @if $colors_theme {
-      @each $key, $value in $colors_theme {
+
+      @each $key,
+      $value in $colors_theme {
         --primary-#{$key} : var(--primary-#{$value});
         --danger-#{$key}--rgb : var(--danger-#{$value}--rgb);
         --success-#{$key}--rgb : var(--success-#{$value}--rgb);
@@ -137,7 +141,8 @@ $colors: (
       }
     }
 
-    @each $key, $value in $colors {
+    @each $key,
+    $value in $colors {
       --color-#{$key} : #{$value};
       --color-#{$key}--rgb : #{HexToRGB($value)};
     }
@@ -152,30 +157,70 @@ $colors: (
   width: 5px;
   height: 5px;
   display: block;
-  background:  cl(primary, 0.15);
+  background: cl(primary, 0.15);
 }
 
 ::-webkit-scrollbar-thumb {
-  background:  cl(primary, 0.15);
+  background: cl(primary, 0.15);
   border-radius: 5px;
 }
 
 ::-moz-selection {
-  background:  cl(primary, 0.15);
+  background: cl(primary, 0.15);
 }
 
 ::selection {
-  background:  cl(primary, 0.15);
+  background: cl(primary, 0.15);
 }
 
 .os-host::-webkit-scrollbar {
   width: 5px;
   height: 5px;
   display: block;
-  background:  cl(primary, 0.15);
+  background: cl(primary, 0.15);
 }
 
 .os-host::-webkit-scrollbar-thumb {
-  background:  cl(primary, 0.15);
+  background: cl(primary, 0.15);
   border-radius: 5px;
+}
+
+.mb-5 {
+  margin-bottom: 5px !important
+}
+
+.mb-10 {
+  margin-bottom: 10px !important
+}
+
+.mb-15 {
+  margin-bottom: 15px !important
+}
+
+.mb-20 {
+  margin-bottom: 20px !important
+}
+
+.mb-25 {
+  margin-bottom: 25px !important
+}
+
+.mb-30 {
+  margin-bottom: 30px !important
+}
+
+.mb-35 {
+  margin-bottom: 35px !important
+}
+
+.mb-40 {
+  margin-bottom: 40px !important
+}
+
+.mb-45 {
+  margin-bottom: 45px !important
+}
+
+.mb-50 {
+  margin-bottom: 50px !important
 }

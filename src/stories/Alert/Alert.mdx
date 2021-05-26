@@ -1,0 +1,186 @@
+import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
+import {lmmAlert} from './Alert.vue';
+
+# Alert
+
+Уведомление
+
+Нужно, чтобы показывать пользователям сообщения. Например, об ошибке в заполненной форме или о том, что изменения сохранились.
+
+- [Тип сообщения](#тип-сообщения)
+- [Текст сообщения](#текст-сообщения)
+- [C иконкой](#c-иконкой)
+- [C кнопкой закрыть](#c-кнопкой-закрыть)
+- [Список свойств](#свойства)
+- [Пример использования](#пример)
+
+## Тип сообщения
+
+За тип сообщения отвечает свойство `color`.
+
+<div>
+  <div class="lmm-app-is-ltr mb-20">
+      <div class="con-lmm-alert con-lmm-alert-primary">
+          <h4 class="titlex lmm-alert--title">По умолчанию «primary»</h4>
+          <div class="lmm-alert">
+              Подходит, чтобы рассказать стандартную информаци.
+          </div>
+      </div>
+  </div>
+  <div class="lmm-app-is-ltr  mb-20">
+      <div class="con-lmm-alert con-lmm-alert-danger">
+          <h4 class="titlex lmm-alert--title">Не получилось — это «danger»</h4>
+          <div class="lmm-alert">
+              Подходит, чтобы рассказать об ошибке в процессе.
+          </div>
+      </div>
+  </div>
+  <div class="lmm-app-is-ltr  mb-20">
+      <div class="con-lmm-alert con-lmm-alert-success">
+          <h4 class="titlex lmm-alert--title">Всё хорошо — это «success»</h4>
+          <div class="lmm-alert">
+              Подходит, чтобы рассказать об успешном результате процесса, в котором сейчас находится пользователь.
+          </div>
+      </div>
+  </div>
+  <div class="lmm-app-is-ltr  mb-20">
+      <div class="con-lmm-alert con-lmm-alert-warning">
+          <h4 class="titlex lmm-alert--title">Внимание — это «warning»</h4>
+          <div class="lmm-alert">
+              Здесь можно написать важную информацию, которая может понадобиться прямо сейчас. Например, о каких-то ограничениях.
+          </div>
+      </div>
+  </div>
+  <div class="lmm-app-is-ltr  mb-20">
+      <div class="con-lmm-alert con-lmm-alert-dark">
+          <h4 class="titlex lmm-alert--title">Важно, но не критично — это «dark» или «light»</h4>
+          <div class="lmm-alert">
+              Это просто информация, которую стоит выделить.
+          </div>
+      </div>
+  </div>
+</div>
+
+```ts
+<div class="lmm-app-is-ltr">
+    <lmm-alert :color="primary" :title="По умолчанию «primary»" :text="Подходит, чтобы рассказать стандартную информаци." :active="true" />
+</div>
+```
+
+## Текст сообщения
+
+Текст состоит из двух частей:
+* заголовок задаётся свойством `title`
+* основной текст — свойством `text`.
+
+Вы можете написать сообщение без заголовка. А вот заголовок без текста лучше не использовать: читателю может показаться, что на него кричат.
+
+### Как писать сообщения
+
+Как можно короче — только самое важное. Всегда с прописной буквы. Если в сообщении одно предложение, в конце точка не нужна. Если предложений несколько или есть заголовок, можно поставить точку (но не обязательно). Главное делать одинаково: или везде ставить точки, или нигде не ставить.
+
+## Когда нужен заголовок
+Если есть важная информация, к которой нужно сразу привлечь внимание. А к ней — пояснения. Например, так:
+
+<div class="lmm-app-is-ltr  mb-20">
+    <div class="con-lmm-alert con-lmm-alert-success">
+        <h4 class="titlex lmm-alert--title">Заявка отправлена</h4>
+        <div class="lmm-alert">
+            Подождите до завтра: мы всё посчитаем и вам позвоним.
+        </div>
+    </div>
+</div>
+
+```ts
+<div class="lmm-app-is-ltr">
+    <lmm-alert :color="success" :title="Заявка отправлена" :text="Подождите до завтра: мы всё посчитаем и вам позвоним." :active="true" />
+</div>
+```
+
+Или так:
+
+<div class="lmm-app-is-ltr  mb-20">
+    <div class="con-lmm-alert con-lmm-alert-danger">
+        <h4 class="titlex lmm-alert--title">Ничего не вышло</h4>
+        <div class="lmm-alert">
+            Попробуйте выйти и зайти снова. Если не получается, нажмите красную кнопку три раза.
+        </div>
+    </div>
+</div>
+
+```ts
+<div class="lmm-app-is-ltr">
+    <lmm-alert :color="danger" :title="Ничего не вышло" :text="Попробуйте выйти и зайти снова. Если не получается, нажмите красную кнопку три раза." :active="true" />
+</div>
+```
+
+## C иконкой
+
+С помощью свойства `icon` можно добавить иконку. Это свойство ожидает компонент иконки из нашей библиотеки иконок.
+
+<div class="lmm-app-is-ltr">
+    <div class="con-lmm-alert con-lmm-alert-success con-icon">
+        <div class="lmm-alert con-icon">
+            Сообщение отправлено.
+            <i class="lmm-icon notranslate icon-scale icon-alert material-icons null">thumb_up</i> </div>
+    </div>
+</div>
+
+```ts
+<div class="lmm-app-is-ltr">
+    <lmm-alert :color="danger" :text="Сообщение отправлено." :iconPack="material-icons" :icon="thumb_up" :active="true" />
+</div>
+```
+
+## C кнопкой закрыть
+
+С помощью свойства `closable` можно добавить кнопку закрытия. Это свойство `iconPack` и `closeIcon` ожидает компонент иконки из нашей библиотеки иконок.
+
+<div class="lmm-app-is-ltr">
+    <div class="con-lmm-alert con-lmm-alert-primary">
+        <div class="con-x lmm-alert--close"><i class="lmm-icon notranslate icon-scale material-icons null">close</i>
+        </div>
+        <h4 class="titlex lmm-alert--title">По умолчанию «primary»</h4>
+        <div class="lmm-alert">
+            Подходит, чтобы рассказать стандартную информаци.
+        </div>
+    </div>
+</div>
+
+```ts
+<div class="lmm-app-is-ltr">
+    <lmm-alert :color="danger" :title="Ничего не вышло" :text="Попробуйте выйти и зайти снова. Если не получается, нажмите красную кнопку три раза."  :closable="true" :iconPack="material-icons" :closeIcon="close" :active="true" />
+</div>
+```
+
+## Свойства
+
+| Свойство | Тип | По умолчанию | Описание |
+| ----------------- | ------------------------------ | ------------ |---------------------------------------------------------------- |
+| `color` | `string` | `'rgb(195, 195, 195)'` | Свойство устанавливает цвет фона |
+| `title` | `string`, `number` | - | Заголовок |
+| `text` | `string`, `number` | - | Произвольный текст |
+| `active` | `boolean` | true/false | Свойство отвечает за показ уведомления |
+| `closable` | `boolean` | true/false | Свойство отвечает за показ кнопки закрытия |
+| `closeIcon` | `string` | `'close'` | Свойство устанавливает картинку в кнопку закрытия |
+| `icon` | `string` | `'thumb_up'` | Свойство устанавливает картинку |
+| `iconPack` | `string` | `'material-icons'` | Свойство отвечает за выбор библиотеки иконок |
+
+## Пример
+
+```ts
+import Vue from 'vue';
+import { lmmAlert } from '../stories/Alert/Alert.vue';
+
+<div id="app">
+  <div class="lmm-app-is-ltr">
+    <lmm-alert :color="primary" :title="По умолчанию «primary»" :text="Подходит, чтобы рассказать стандартную информаци." :active="true" />
+  </div>
+</div>
+
+<script>
+  new Vue({
+    el: '#app'
+  })
+</script>
+```

@@ -45,21 +45,22 @@
 }
 
 .lmm-alert--title {
-    font-size: .9rem;
-    font-weight: 700;
-    padding: 8px 10px
+    font-size: .9rem !important;
+    font-weight: 700 !important;
+    padding: 8px 10px !important;
+    margin: 0 !important;
 }
 
 .lmm-alert--close {
     position: relative;
-    margin-top: 0px;
+    margin-top: 0px !important;
     display: inline-block;
     padding: 4px;
     border-radius: 6px;
     padding-bottom: 1px;
     cursor: pointer;
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease
+    transition: all .2s ease;
+    z-index: 2;
 }
 
 .lmm-app-is-rtl .lmm-alert--close {
@@ -85,89 +86,95 @@
 .con-lmm-alert-primary {
     background: cl(primary, 0.15);
     box-shadow: 0 0 25px 0 cl(primary, 0.15);
-    color: cl(primary, 100)
+    color: cl(primary, 100) !important;
 }
 
 .con-lmm-alert-primary h4 {
-    box-shadow: 0 6px 15px -7px cl(primary, 0.40)
+    box-shadow: 0 6px 15px -7px cl(primary, 0.40);
+    color: cl(primary, 100) !important;
 }
 
 .con-lmm-alert-primary .con-x {
     background: cl(primary, 100);
-    color: cl(whites, 100)
+    color: cl(whites, 100) !important;
 }
 
 .con-lmm-alert-danger {
     background: cl(danger, 0.15);
     box-shadow: 0 0 25px 0 cl(danger, 0.15);
-    color: cl(danger, 100)
+    color: cl(danger, 100) !important;
 }
 
 .con-lmm-alert-danger h4 {
-    box-shadow: 0 6px 15px -7px cl(danger, 0.40)
+    box-shadow: 0 6px 15px -7px cl(danger, 0.40);
+    color: cl(danger, 100) !important;
 }
 
 .con-lmm-alert-danger .con-x {
     background: cl(danger, 100);
-    color: cl(whites, 100)
+    color: cl(whites, 100) !important;
 }
 
 .con-lmm-alert-success {
     background: cl(success, 0.15);
     box-shadow: 0 0 25px 0 cl(success, 0.15);
-    color: cl(success, 100)
+    color: cl(success, 100) !important;
 }
 
 .con-lmm-alert-success h4 {
-    box-shadow: 0 6px 15px -7px cl(success, 0.40)
+    box-shadow: 0 6px 15px -7px cl(success, 0.40);
+    color: cl(success, 100) !important;
 }
 
 .con-lmm-alert-success .con-x {
     background: cl(success, 100);
-    color: cl(whites, 100)
+    color: cl(whites, 100) !important;
 }
 
 .con-lmm-alert-warning {
     background: cl(warning, 0.15);
     box-shadow: 0 0 25px 0 cl(warning, 0.15);
-    color: cl(warning, 100)
+    color: cl(warning, 100) !important;
 }
 
 .con-lmm-alert-warning h4 {
-    box-shadow: 0 6px 15px -7px cl(warning, 0.40)
+    box-shadow: 0 6px 15px -7px cl(warning, 0.40);
+    color: cl(warning, 100) !important;
 }
 
 .con-lmm-alert-warning .con-x {
     background: cl(warning, 1);
-    color: cl(whites, 100)
+    color: cl(whites, 100) !important;
 }
 
 .con-lmm-alert-dark {
     background: cl(dark, 0.15);
     box-shadow: 0 0 25px 0 cl(dark, 0.15);
-    color: cl(dark, 100)
+    color: cl(dark, 100) !important;
 }
 
 .con-lmm-alert-dark h4 {
-    box-shadow: 0 6px 15px -7px cl(dark, 0.40)
+    box-shadow: 0 6px 15px -7px cl(dark, 0.40);
+    color: cl(dark, 100) !important;
 }
 
 .con-lmm-alert-dark .con-x {
     background: cl(dark, 100);
-    color: cl(whites, 100)
+    color: cl(whites, 100) !important;
 }
 
 .con-lmm-alert-light {
     background: cl(light, 0.15);
     box-shadow: 0 0 25px 0 cl(light, 0.15);
-    color: cl(light, 100)
+    color: cl(light, 100) !important;
 }
 
 .con-lmm-alert-light h4 {
-    box-shadow: 0 6px 15px -7px cl(light, 0.40)
+    box-shadow: 0 6px 15px -7px cl(light, 0.40);
+    color: cl(light, 100) !important;
 }
 
 .con-lmm-alert-light .con-x {
     background: cl(light, 100);
-    color: cl(whites, 100)
+    color: cl(whites, 100) !important;
 }

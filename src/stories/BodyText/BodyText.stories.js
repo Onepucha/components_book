@@ -1,22 +1,61 @@
 import lmmText from "./BodyText.vue";
+import mdx from './BodyText.mdx';
 
 export default {
   title: "Components/BodyText",
   component: lmmText,
   argTypes: {
-    textColor: { control: "color" },
+    textColor: {
+      control: {
+        type: "select",
+        options: ["primary", "danger", "success", "warning", "dark", "light"],
+      },
+    },
+    fontStyle: {
+      control: {
+        type: "select",
+        options: ["italic", "bold", "semibold", "regular"],
+      },
+    },
+    decoration: {
+      control: {
+        type: "select",
+        options: ["underline"],
+      },
+    },
+    transform: {
+      control: {
+        type: "select",
+        options: ["uppercase, lowercase"],
+      },
+    },
+    align: {
+      control: {
+        type: "select",
+        options: ["left, center, right"],
+      },
+    },
     size: {
-      control: { type: "select", options: ["xl", "l", "m", "s", "xs"] },
+      control: {
+        type: "select",
+        options: ["xl", "l", "m", "s", "xs"]
+      },
     },
   },
   parameters: {
-    componentSubtitle: "Компонент текста.",
-  },
+    docs: {
+      page: mdx,
+    },
+  }
 };
 
-const Template = (args, { argTypes }) => ({
+const Template = (args, {
+  argTypes
+}) => ({
   props: Object.keys(argTypes),
-  components: { lmmText },
+  components: {
+    lmmText
+  },
   template: '<lmm-text v-bind="$props" />',
 });
 
