@@ -28,42 +28,36 @@ export const bottomCenter = Template.bind({});
 export const topCenter = Template.bind({});
 
 topRight.args = {
-  active: true,
   title: "Position top-right",
   text: "Lorem ipsum dolor sit amet, consectetur",
   position: "top-right",
 };
 
 topLeft.args = {
-  active: true,
   title: "Position top-left",
   text: "Lorem ipsum dolor sit amet, consectetur",
   position: "top-left",
 };
 
 bottomRight.args = {
-  active: true,
   title: "Position bottom-right",
   text: "Lorem ipsum dolor sit amet, consectetur",
   position: "bottom-right",
 };
 
 bottomLeft.args = {
-  active: true,
   title: "Position bottom-left",
   text: "Lorem ipsum dolor sit amet, consectetur",
   position: "bottom-left",
 };
 
 bottomCenter.args = {
-  active: true,
   title: "Position bottom-center",
   text: "Lorem ipsum dolor sit amet, consectetur",
   position: "bottom-center",
 };
 
 topCenter.args = {
-  active: true,
   title: "Position top-center",
   text: "Lorem ipsum dolor sit amet, consectetur",
   position: "top-center",
