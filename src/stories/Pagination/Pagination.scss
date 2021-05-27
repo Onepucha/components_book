@@ -1,0 +1,288 @@
+@import "../variables.scss";
+
+.lmm-pagination--input-goto {
+    color: inherit;
+    padding: 8px;
+    border-radius: 5px;
+    border: 0 solid cl(blacks, 20);
+    background: cl(grays, 100);
+}
+
+/*.lmm-app-is-rtl .lmm-pagination--input-goto {
+    margin-right: 5px;
+}
+
+.lmm-app-is-ltr .lmm-pagination--input-goto {
+    margin-left: 5px;
+}*/
+
+.lmm-pagination--input-goto {
+    margin-right: 5px;
+}
+
+.lmm-pagination--input-goto {
+    margin-left: 5px;
+}
+
+.lmm-pagination--nav,
+.lmm-pagination--ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lmm-pagination--ul {
+    padding: 0;
+    background: cl(grays, 100) !important;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.lmm-pagination--array {
+    display: inline-block;
+    padding: 0;
+}
+
+.lmm-pagination--array li {
+    display: inline-block;
+}
+
+.lmm-pagination--mb {
+    margin-bottom: 5px;
+}
+
+.lmm-pagination--bold {
+    font-weight: 700;
+}
+
+.lmm-pagination--li {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: all .25s ease;
+    position: relative;
+    backface-visibility: visible;
+    margin: 0 2px;
+    font-weight: 700;
+    color: cl(blacks, 50);
+}
+
+.lmm-pagination--li span {
+    z-index: 100;
+}
+
+.lmm-pagination--li .effect {
+    z-index: 50;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: cl(primary, 100);
+    top: 0;
+    display: block;
+    border-radius: 8px;
+    transform: scale(.5);
+    opacity: 0;
+    transition: all .2s ease;
+    box-shadow: 0 0 20px 0 transparent;
+}
+
+/*.lmm-app-is-rtl .lmm-pagination--li .effect {
+    right: 0;
+}
+
+.lmm-app-is-ltr .lmm-pagination--li .effect {
+    left: 0;
+} */
+.lmm-pagination--li .effect {
+    right: 0;
+}
+
+.lmm-pagination--li .effect {
+    left: 0;
+}
+
+.lmm-pagination--li.is-current {
+    transform: scale(1.05);
+    color: cl(whites, 100);
+    font-weight: 700;
+    cursor: default;
+    background: cl(primary, 100);
+}
+
+.lmm-pagination--li.is-current .effect {
+    opacity: 1;
+    transform: scale(1) !important;
+}
+
+.lmm-pagination--li:hover:not(.is-current) {
+    color: cl(primary, 100);
+}
+
+.lmm-pagination--buttons {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: cl(blacks, 60);
+    transition: all .2s ease;
+    background: cl(grays, 100);
+    margin: 0;
+    z-index: 200;
+}
+
+/*.lmm-app-is-rtl .lmm-pagination--buttons.lmm-pagination--button-prev {
+    margin-left: 5px;
+}
+
+.lmm-app-is-ltr .lmm-pagination--buttons.lmm-pagination--button-prev,
+.lmm-app-is-rtl .lmm-pagination--buttons.lmm-pagination--button-next {
+    margin-right: 5px;
+}
+
+.lmm-app-is-ltr .lmm-pagination--buttons.lmm-pagination--button-next {
+    margin-left: 5px;
+}*/
+
+
+.lmm-pagination--buttons.lmm-pagination--button-prev {
+    margin-left: 5px;
+}
+
+.lmm-pagination--buttons.lmm-pagination--button-prev,
+.lmm-pagination--buttons.lmm-pagination--button-next {
+    margin-right: 5px;
+}
+
+.lmm-pagination--buttons.lmm-pagination--button-next {
+    margin-left: 5px;
+}
+
+.lmm-pagination--buttons.disabled,
+.lmm-pagination--buttons:disabled {
+    cursor: default;
+    pointer-events: none;
+    opacity: .5;
+}
+
+.lmm-pagination--buttons i {
+    font-size: 1.2rem;
+}
+
+.lmm-pagination--buttons:hover {
+    background: cl(primary, 100);
+    color: #fff;
+}
+
+.lmm-pagination-primary li:hover:not(.is-current) {
+    color: cl(primary, 100) !important;
+}
+
+.lmm-pagination-primary .effect {
+    -webkit-box-shadow: 0 0 20px 0 cl(primary, 50);
+    box-shadow: 0 0 20px 0 cl(primary, 50);
+}
+
+.lmm-pagination-primary .effect,
+.lmm-pagination-primary .lmm-pagination--buttons:hover {
+    background: cl(primary, 100) !important;
+}
+
+.lmm-pagination-danger li:hover:not(.is-current) {
+    color: cl(danger, 100) !important;
+}
+
+.lmm-pagination-danger .effect {
+    box-shadow: 0 0 20px 0 cl(danger, 50);
+}
+
+.lmm-pagination-danger .effect,
+.lmm-pagination-danger .lmm-pagination--buttons:hover {
+    background: cl(danger, 100) !important;
+}
+
+.lmm-pagination-success li:hover:not(.is-current) {
+    color: cl(success, 100) !important;
+}
+
+.lmm-pagination-success .effect {
+    box-shadow: 0 0 20px 0 cl(success, 50);
+}
+
+.lmm-pagination-success .effect,
+.lmm-pagination-success .lmm-pagination--buttons:hover {
+    background: cl(success, 100) !important;
+}
+
+.lmm-pagination-warning li:hover:not(.is-current) {
+    color: cl(warning, 100) !important;
+}
+
+.lmm-pagination-warning .effect {
+    box-shadow: 0 0 20px 0 cl(warning, 50);
+}
+
+.lmm-pagination-warning .effect,
+.lmm-pagination-warning .lmm-pagination--buttons:hover {
+    background: cl(warning, 100) !important;
+}
+
+.lmm-pagination-dark li:hover:not(.is-current) {
+    color: cl(dark, 100) !important;
+}
+
+.lmm-pagination-dark .effect {
+    box-shadow: 0 0 20px 0 cl(dark, 50);
+}
+
+.lmm-pagination-dark .effect,
+.lmm-pagination-dark .lmm-pagination--buttons:hover {
+    background: cl(dark, 100) !important;
+}
+
+.lmm-pagination-light li:hover:not(.is-current) {
+    color: cl(light, 100) !important;
+}
+
+.lmm-pagination-light .effect {
+    box-shadow: 0 0 20px 0 cl(light, 50);
+}
+
+.lmm-pagination-light .effect,
+.lmm-pagination-light .lmm-pagination--buttons:hover {
+    background: cl(light, 100) !important;
+}
+
+.lmm-description-primary {
+    color: cl(primary, 100) !important;
+}
+
+.lmm-description-danger {
+    color: cl(danger, 100) !important;
+}
+
+.lmm-description-success {
+    color: cl(success, 100) !important;
+}
+
+.lmm-description-warning {
+    color: cl(warning, 100) !important;
+}
+
+.lmm-description-dark {
+    color: cl(dark, 100) !important;
+}
+
+.lmm-description-light {
+    color: cl(light, 100) !important;
+}

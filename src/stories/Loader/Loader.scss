@@ -1,0 +1,131 @@
+@import "../variables.scss";
+
+.loader {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: calc(100% - var(--loader-size));
+    transform: translate(-50%, -50%);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: calc(50% - (var(--loader-size) * 0.5));
+      left: calc(50% - (var(--loader-size) * 2.5));
+      width: var(--loader-size);
+      height: var(--loader-size);
+      background: cl(primary, 100);
+      border-radius: 50%;
+      animation: loader 1s ease infinite;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: calc(50% - (var(--loader-size) * 0.5));
+      left: calc(50% + (var(--loader-size) * 1.5));
+      width: var(--loader-size);
+      height: var(--loader-size);
+      background: cl(primary, 100);
+      border-radius: 50%;
+      animation: loader 1s -0.36s ease infinite;
+    }
+
+    &-dot {
+      position: absolute;
+      top: calc(50% - (var(--loader-size) * 0.5));
+      left: calc(50% - (var(--loader-size) * 0.5));
+      width: var(--loader-size);
+      height: var(--loader-size);
+      background: cl(primary, 100);
+      border-radius: 50%;
+      animation: loader 1s -0.18s ease infinite;
+    }
+
+    &_size {
+      &_small {
+        --loader-size: 4px;
+      }
+
+      &_medium {
+        --loader-size: 8px;
+      }
+
+      &_large {
+        --loader-size: 12px;
+      }
+    }
+
+    &-primary {
+        &:after,
+        &:before {
+            background: cl(primary, 100);
+        }
+
+        .loader-dot {
+            background: cl(primary, 100);
+        }
+    }
+
+    &-danger {
+        &:after,
+        &:before {
+            background: cl(danger, 100);
+        }
+
+        .loader-dot {
+            background: cl(danger, 100);
+        }
+    }
+
+    &-success {
+        &:after,
+        &:before {
+            background: cl(success, 100);
+        }
+
+        .loader-dot {
+            background: cl(success, 100);
+        }
+    }
+
+    &-warning {
+        &:after,
+        &:before {
+            background: cl(warning, 100);
+        }
+
+        .loader-dot {
+            background: cl(warning, 100);
+        }
+    }
+
+    &-dark {
+        &:after,
+        &:before {
+            background: cl(dark, 100);
+        }
+
+        .loader-dot {
+            background: cl(dark, 100);
+        }
+    }
+
+    &-light {
+        &:after,
+        &:before {
+            background: cl(light, 100);
+        }
+
+        .loader-dot {
+            background: cl(light, 100);
+        }
+    }
+  }
+
+  @keyframes loader {
+    50% {
+      transform: scale(1.5);
+    }
+  }

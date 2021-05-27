@@ -1,0 +1,78 @@
+@import "../variables.scss";
+
+.lmm-breadcrumb {
+    display: flex;
+}
+
+.lmm-breadcrumb.lmm-align-left {
+    justify-content: flex-start;
+}
+
+.lmm-breadcrumb.lmm-align-center {
+    justify-content: center;
+}
+
+.lmm-breadcrumb.lmm-align-right {
+    justify-content: flex-end;
+}
+
+.lmm-breadcrumb .disabled-link {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.lmm-breadcrumb--ol {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .75rem 1rem;
+    list-style-type: none;
+}
+
+.lmm-breadcrumb--ol li.lmm-active {
+    cursor: default;
+}
+
+.lmm-breadcrumb--ol a {
+    transition: all .2s ease;
+    color: cl(blacks, 40);
+}
+
+.lmm-breadcrumb--ol a:focus,
+.lmm-breadcrumb--ol a:hover {
+    color: cl(blacks, 70);
+    text-decoration: none;
+}
+
+.lmm-breadcrum--separator {
+    color: cl(blacks, 40);
+    padding: 0 .5rem 0 .5rem;
+}
+
+.lmm-breadcrum--separator.material-icons {
+    vertical-align: middle;
+    font-size: inherit;
+}
+
+.lmm-breadcrumb-text-primary {
+    color: cl(primary, 100);
+}
+
+.lmm-breadcrumb-text-danger {
+    color: cl(danger, 100);
+}
+
+.lmm-breadcrumb-text-success {
+    color: cl(success, 100);
+}
+
+.lmm-breadcrumb-text-warning {
+    color: cl(warning, 100);
+}
+
+.lmm-breadcrumb-text-dark {
+    color: cl(dark, 100);
+}
+
+.lmm-breadcrumb-text-light {
+    color: cl(light, 100);
+}
