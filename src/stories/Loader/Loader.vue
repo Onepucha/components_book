@@ -1,16 +1,23 @@
 <template>
-    <div>
-        <div class="loader" :class="classes">
-            <div class="loader-dot"></div>
+    <div class="centerx">
+        <lmm-button label="Loading" @onClick="setIsLoaderShow()" :primary="true" />
+        <div class="loader-overlay" @click="setIsLoaderHide()" v-if="active">
+            <div class="loader" :class="classes">
+                <div class="loader-dot"></div>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
     import "./Loader.scss";
+    import lmmButton from "../Button/Button.vue";
 
     export default {
         name: "lmm-loader",
+        components: {
+            lmmButton,
+        },
         props: {
             size: {
                 type: String,
@@ -20,6 +27,10 @@
                 type: String,
                 default: "primary",
             },
+            active: {
+                type: Boolean,
+                default: false,
+            }
         },
         computed: {
             classes() {
@@ -31,7 +42,12 @@
             },
         },
         methods: {
-
+            setIsLoaderShow() {
+                this.active = true;
+            },
+            setIsLoaderHide() {
+                this.active = false;
+            },
         },
     }
 </script>

@@ -29,7 +29,7 @@ const Template = (args, {
     components: {
         lmmLoader,
     },
-    template: `<lmm-loader style="margin-top: 20px;" v-bind="$props" />`,
+    template: `<lmm-loader v-bind="$props" />`,
     data: () => {
         return {
 

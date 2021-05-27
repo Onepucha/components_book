@@ -36,7 +36,7 @@
   padding: 7px;
   border-radius: 5px;
   font-family: $Regular;
-  border: 1px solid cl(blacks, 0.10);
+  border: 1px solid cl(blacks, 0.1);
   transition: all 0.2s ease;
   cursor: pointer;
   overflow: hidden;
@@ -45,7 +45,7 @@
 }
 
 .vs-select--input:hover {
-  border: 1px solid cl(blacks, 0.40);
+  border: 1px solid cl(blacks, 0.4);
 }
 
 .vs-select--input-con {
@@ -61,7 +61,7 @@
 .vs-select--label {
   font-family: $Regular;
   font-size: 0.85rem;
-  color: cl(blacks, 0.60);
+  color: cl(blacks, 0.6);
   padding-left: 5px;
 }
 
@@ -91,9 +91,9 @@
   border-radius: 5px;
   position: absolute;
   z-index: 40000;
-  background: cl(whites, 100);
+  background: cl(whites, 1);
   padding-left: 5px;
-  border: 1px solid cl(primary, 100);
+  border: 1px solid cl(primary, 1);
 }
 
 .vs-select--options ul {
@@ -112,8 +112,8 @@
   padding: 7px;
   border: 0;
   position: relative;
-  border-top: 1px solid cl(whites, 100);
-  border-bottom: 1px solid cl(whites, 100);
+  border-top: 1px solid cl(whites, 1);
+  border-bottom: 1px solid cl(whites, 1);
   font-family: $Regular;
   transition: all 0.3s ease;
   margin: 0 !important;
@@ -123,7 +123,7 @@
 
 .vs-select--item:focus,
 .vs-select--item:hover {
-  background: cl(light, 100);
+  background: cl(light, 1);
 }
 
 .vs-select--item.con-icon.activex {
@@ -146,111 +146,111 @@
 }
 
 .vs-select-primary .vs-select--item.activex {
-  background: cl(primary, 0.10);
-  color: cl(primary, 100);
+  background: cl(primary, 0.1);
+  color: cl(primary, 1);
   font-weight: 700;
 }
 
 .input-select-label-primary--active {
-  color: cl(primary, 100);
+  color: cl(primary, 1);
 }
 
 .input-select-validate-primary .input-select-con .input-select {
-  border-color: cl(primary, 100);
+  border-color: cl(primary, 1);
 }
 
 .input-select-validate-primary .input-select-con .vs-select--icon {
-  color: cl(primary, 100);
+  color: cl(primary, 1);
 }
 
 .vs-select-danger .vs-select--item.activex {
-  background: cl(danger, 0.10);
-  color: cl(danger, 100);
+  background: cl(danger, 0.1);
+  color: cl(danger, 1);
   font-weight: 700;
 }
 
 .input-select-label-danger--active {
-  color: cl(danger, 100);
+  color: cl(danger, 1);
 }
 
 .input-select-validate-danger .input-select-con .input-select {
-  border-color: cl(danger, 100) !important;
+  border-color: cl(danger, 1) !important;
 }
 
 .input-select-validate-danger .input-select-con .vs-select--icon {
-  color: cl(danger, 100);
+  color: cl(danger, 1);
 }
 
 .vs-select-success .vs-select--item.activex {
-  background: cl(success, 0.10);
-  color: cl(success, 100);
+  background: cl(success, 0.1);
+  color: cl(success, 1);
   font-weight: 700;
 }
 
 .input-select-label-success--active {
-  color: cl(success, 100);
+  color: cl(success, 1);
 }
 
 .input-select-validate-success .input-select-con .input-select {
-  border-color: cl(success, 100) !important;
+  border-color: cl(success, 1) !important;
 }
 
 .input-select-validate-success .input-select-con .vs-select--icon {
-  color: cl(success, 100);
+  color: cl(success, 1);
 }
 
 .vs-select-warning .vs-select--item.activex {
-  background: cl(warning, 0.10);
-  color: cl(warning, 100);
+  background: cl(warning, 0.1);
+  color: cl(warning, 1);
   font-weight: 700;
 }
 
 .input-select-label-warning--active {
-  color: cl(warning, 100);
+  color: cl(warning, 1);
 }
 
 .input-select-validate-warning .input-select-con .input-select {
-  border-color: cl(warning, 100) !important;
+  border-color: cl(warning, 1) !important;
 }
 
 .input-select-validate-warning .input-select-con .vs-select--icon {
-  color: cl(warning, 100);
+  color: cl(warning, 1);
 }
 
 .vs-select-dark .vs-select--item.activex {
-  background: cl(dark, 0.10);
-  color: cl(dark, 100);
+  background: cl(dark, 0.1);
+  color: cl(dark, 1);
   font-weight: 700;
 }
 
 .input-select-label-dark--active {
-  color: cl(dark, 100);
+  color: cl(dark, 1);
 }
 
 .input-select-validate-dark .input-select-con .input-select {
-  border-color: cl(dark, 100);
+  border-color: cl(dark, 1);
 }
 
 .input-select-validate-dark .input-select-con .vs-select--icon {
-  color: cl(dark, 100);
+  color: cl(dark, 1);
 }
 
 .vs-select-light .vs-select--item.activex {
-  background: cl(light, 0.10);
-  color: cl(light, 100);
+  background: cl(light, 0.1);
+  color: cl(light, 1);
   font-weight: 700;
 }
 
 .input-select-label-light--active {
-  color: cl(light, 100);
+  color: cl(light, 1);
 }
 
 .input-select-validate-light .input-select-con .input-select {
-  border-color: cl(light, 100);
+  border-color: cl(light, 1);
 }
 
 .input-select-validate-light .input-select-con .vs-select--icon {
-  color: cl(light, 100);
+  color: cl(light, 1);
 }
 
 .vs-select--item {
@@ -269,7 +269,7 @@
 
 .vs-select--item span.searchx {
   background: cl(blacks, 0.07);
-  border-bottom: 1px solid cl(blacks, 0.30);
+  border-bottom: 1px solid cl(blacks, 0.3);
   font-weight: 700;
   color: inherit;
 }
@@ -282,7 +282,7 @@
 
 .vs-select-group li {
   list-style: none;
-  border-left: 1px solid cl(blacks, 0.10);
+  border-left: 1px solid cl(blacks, 0.1);
   margin-left: 15px !important;
 }
 
@@ -315,13 +315,13 @@
 }
 
 .span-text-validation-success {
-  color: cl(success, 100) !important;
+  color: cl(success, 1) !important;
 }
 
 .span-text-validation-danger {
-  color: cl(danger, 100) !important;
+  color: cl(danger, 1) !important;
 }
 
 .span-text-validation-warning {
-  color: cl(warning, 100) !important;
+  color: cl(warning, 1) !important;
 }

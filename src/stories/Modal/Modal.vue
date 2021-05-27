@@ -1,5 +1,5 @@
 <template lang="html">
-    <div>
+    <div class="centerx">
         <lmm-button label="Открыть модальное окно" @onClick="setIsModalOpen()" :primary="true" />
         <transition name="modal" v-if="showModal">
             <div class="modal-mask" @click="setIsModalClose()">

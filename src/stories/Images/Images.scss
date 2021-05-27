@@ -107,7 +107,7 @@
 }
 
 .lmm-images-hover-dark .lmm-image:hover {
-    background: cl(blacks, 100);
+    background: cl(blacks, 1);
 }
 
 .lmm-images-hover-dark .lmm-image:hover .lmm-image--img {
@@ -117,7 +117,7 @@
 .lmm-images-hover-scale .lmm-image:hover {
     z-index: 300;
     transform: scale(1.15);
-    box-shadow: 0 3px 15px 0 cl(blacks, 0.30);
+    box-shadow: 0 3px 15px 0 cl(blacks, 0.3);
 }
 
 .lmm-images-hover-curtain .lmm-image {
@@ -129,7 +129,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    background: cl(blacks, 0.50);
+    background: cl(blacks, 0.5);
     width: 100%;
     height: 100%;
     z-index: 400;

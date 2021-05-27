@@ -4,17 +4,17 @@
 .con-vs-card {
     width: auto;
     height: auto;
-    background: cl(whites, 100);
+    background: cl(whites, 1);
     border-radius: 8px;
     display: block;
-    box-shadow: 0 4px 25px 0 cl(blacks, 0.10);
+    box-shadow: 0 4px 25px 0 cl(blacks, 0.1);
     transition: all .3s ease;
 
     &.withHover {
         cursor: pointer;
         &:hover{
             transform: translateY(4px);
-            box-shadow: 0 0 5px 0 cl(blacks, 0.10);
+            box-shadow: 0 0 5px 0 cl(blacks, 0.1);
 
             & img {
                 transform: scale(1.1);
@@ -31,17 +31,17 @@
         &--header {
             padding: 10px;
             box-shadow: 0 10px 15px -10px cl(blacks, 0.05);
-    
+
             & h3 {
                 padding: 0;
             }
         }
-    
+
         &--footer {
             position: relative;
             padding: 10px;
             padding-top: 0;
-            
+
             &.fixedHeight {
                 position: absolute;
                 bottom: 0;
@@ -50,21 +50,21 @@
                 transform: translate(0);
             }
         }
-    
+
         &--content {
             padding: 25px 10px 10px 10px;
             font-size: .8rem;
             margin-bottom: 15px;
-    
+
             &.fixedHeight {
                 margin-bottom: 20px;
             }
         }
-    
+
         &--media {
             width: 100%;
             overflow: hidden;
-    
+
             & img {
                 width: 100%;
                 transition: all .25s ease;

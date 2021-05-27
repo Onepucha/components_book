@@ -16,7 +16,7 @@
         line-height: $lh21;
         background-repeat: no-repeat;
         background-position: center;
-        background-color: cl(whites, 100);
+        background-color: cl(whites, 1);
         text-decoration: none;
         transition-property: all;
         transition-duration: .3s;
@@ -46,7 +46,7 @@
             }
 
             &:hover {
-                border-color: cl(primary, 100);
+                border-color: cl(primary, 1);
             }
         }
 
@@ -61,8 +61,8 @@
             right: 0;
             left: 0;
             transition: background 600ms;
-            background-color: cl(primary, 100);
-            border: 1px solid cl(primary, 100);
+            background-color: cl(primary, 1);
+            border: 1px solid cl(primary, 1);
             border-radius: 50%;
             background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTYgNy41Mzg0NkMxOC42NTc5IDcuNTM4NDYgMjEuMDMyOSA4LjczNjE1IDIyLjYwMjggMTAuNjE1NEgyNC41MjUyQzIyLjcyNzcgNy44Mzk3NiAxOS41ODEyIDYgMTYgNkMxMC41MTk2IDYgNi4wNTcxOCAxMC4zMDg1IDUuODg5NDggMTUuNjg2MUw0LjEwMDQxIDEzLjkxNzVMMyAxNS4wMDU0TDYuNjYyNjQgMTguNjI2MkwxMC4zMjUzIDE1LjAwNTRMOS4yMjQ4NyAxMy45MTc1TDcuNDQ3IDE1LjY3NTFDNy42MTk3MyAxMS4xNTI1IDExLjM4MjkgNy41Mzg0NiAxNiA3LjUzODQ2WiIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNOS4zOTc0NiAyMS4zODQ2SDcuNDc1QzkuMjcyNTQgMjQuMTYwMiAxMi40MTkxIDI2IDE2LjAwMDIgMjZDMjEuNDgwNSAyNiAyNS45NDI5IDIxLjY5MTYgMjYuMTEwOCAxNi4zMTQxTDI3Ljg5OTYgMTguMDgyNUwyOSAxNi45OTQ2TDI1LjMzNzQgMTMuMzczOEwyMS42NzQ3IDE2Ljk5NDZMMjIuNzc1MSAxOC4wODI1TDI0LjU1MzIgMTYuMzI0N0MyNC4zODA3IDIwLjg0NzQgMjAuNjE3NCAyNC40NjE1IDE2LjAwMDIgMjQuNDYxNUMxMy4zNDIzIDI0LjQ2MTUgMTAuOTY3NCAyMy4yNjM5IDkuMzk3NDYgMjEuMzg0NloiIGZpbGw9IndoaXRlIi8+PC9zdmc+);
             background-repeat: no-repeat;
@@ -107,14 +107,14 @@
     border-color: cl(danger, 0.25);
 
     &:hover {
-        border-color: cl(danger, 100);
+        border-color: cl(danger, 1);
     }
 }
 
 .features--item-danger {
     &::after {
-        background-color: cl(danger, 100);
-        border-color: cl(danger, 100);
+        background-color: cl(danger, 1);
+        border-color: cl(danger, 1);
     }
 
     &:hover {
@@ -129,14 +129,14 @@
     border-color: cl(success, 0.25);
 
     &:hover {
-        border-color: cl(success, 100);
+        border-color: cl(success, 1);
     }
 }
 
 .features--item-success {
     &::after {
-        background-color: cl(success, 100);
-        border-color: cl(success, 100);
+        background-color: cl(success, 1);
+        border-color: cl(success, 1);
     }
 
     &:hover {
@@ -151,14 +151,14 @@
     border-color: cl(warning, 0.25);
 
     &:hover {
-        border-color: cl(warning, 100);
+        border-color: cl(warning, 1);
     }
 }
 
 .features--item-warning {
     &::after {
-        background-color: cl(warning, 100);
-        border-color: cl(warning, 100);
+        background-color: cl(warning, 1);
+        border-color: cl(warning, 1);
     }
 
     &:hover {
@@ -173,14 +173,14 @@
     border-color: cl(dark, 0.25);
 
     &:hover {
-        border-color: cl(dark, 100);
+        border-color: cl(dark, 1);
     }
 }
 
 .features--item-dark {
     &::after {
-        background-color: cl(dark, 100);
-        border-color: cl(dark, 100);
+        background-color: cl(dark, 1);
+        border-color: cl(dark, 1);
     }
 
     &:hover {
@@ -195,14 +195,14 @@
     border-color: cl(light, 0.25);
 
     &:hover {
-        border-color: cl(light, 100);
+        border-color: cl(light, 1);
     }
 }
 
 .features--item-light {
     &::after {
-        background-color: cl(light, 100);
-        border-color: cl(light, 100);
+        background-color: cl(light, 1);
+        border-color: cl(light, 1);
     }
 
     &:hover {

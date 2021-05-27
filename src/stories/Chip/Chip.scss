@@ -1,7 +1,7 @@
 @import "../variables.scss";
 
 .con-lmm-chip {
-    background: cl(light, 100);
+    background: cl(light, 1);
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -24,7 +24,7 @@
         margin: 0 4px;
         cursor: pointer;
         background: cl(blacks, 0.15);
-        color: cl(whites, 100);
+        color: cl(whites, 1);
         transition: all .3s ease;
 
         &:hover {
@@ -106,55 +106,55 @@
 
 
 .lmm-chip-primary:not(.bg-chip-transparent) {
-    background: cl(primary, 100);
+    background: cl(primary, 1);
 }
 
 .lmm-chip-primary.bg-chip-transparent {
     background: cl(primary, 0.15);
-    color: cl(primary, 100);
+    color: cl(primary, 1);
 }
 
 .lmm-chip-danger:not(.bg-chip-transparent) {
-    background: cl(danger, 100);
+    background: cl(danger, 1);
 }
 
 .lmm-chip-danger.bg-chip-transparent {
     background: cl(danger, 0.15);
-    color: cl(danger, 100);
+    color: cl(danger, 1);
 }
 
 .lmm-chip-success:not(.bg-chip-transparent) {
-    background: cl(success, 100);
+    background: cl(success, 1);
 }
 
 .lmm-chip-success.bg-chip-transparent {
     background: cl(success, 0.15);
-    color: cl(success, 100);
+    color: cl(success, 1);
 }
 
 .lmm-chip-warning:not(.bg-chip-transparent) {
-    background: cl(warning, 100);
+    background: cl(warning, 1);
 }
 
 .lmm-chip-warning.bg-chip-transparent {
     background: cl(warning, 0.15);
-    color: cl(warning, 100);
+    color: cl(warning, 1);
 }
 
 .lmm-chip-dark:not(.bg-chip-transparent) {
-    background: cl(dark, 100);
+    background: cl(dark, 1);
 }
 
 .lmm-chip-dark.bg-chip-transparent {
     background: cl(dark, 0.15);
-    color: cl(dark, 100);
+    color: cl(dark, 1);
 }
 
 .lmm-chip-light:not(.bg-chip-transparent) {
-    background: cl(light, 100);
+    background: cl(light, 1);
 }
 
 .lmm-chip-light.bg-chip-transparent {
     background: cl(light, 0.15);
-    color: cl(light, 100);
+    color: cl(light, 1);
 }

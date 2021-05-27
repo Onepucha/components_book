@@ -38,12 +38,12 @@
     width: 18px;
     height: 18px;
     position: absolute;
-    background: cl(whites, 100);
+    background: cl(whites, 1);
     left: 2px;
     top: 2px;
     border-radius: 50%;
     transition: all .25s ease;
-    box-shadow: 0 0 4px 0 cl(blacks, 0.10)
+    box-shadow: 0 0 4px 0 cl(blacks, 0.1)
 }
 
 .lmm-switch--text {
@@ -62,7 +62,7 @@
 .lmm-switch--text.text-on {
     padding-left: 6px;
     left: 0;
-    color: cl(whites, 100);
+    color: cl(whites, 1);
     transform: translate(10px)
 }
 
@@ -98,49 +98,49 @@
 }
 
 .lmm-switch-primary {
-    background: cl(light, 100)
+    background: cl(light, 1)
 }
 
 .lmm-switch-primary.lmm-switch-active {
-    background: cl(primary, 100)
+    background: cl(primary, 1)
 }
 
 .lmm-switch-danger {
-    background: cl(light, 100)
+    background: cl(light, 1)
 }
 
 .lmm-switch-danger.lmm-switch-active {
-    background: cl(danger, 100)
+    background: cl(danger, 1)
 }
 
 .lmm-switch-success {
-    background: cl(light, 100)
+    background: cl(light, 1)
 }
 
 .lmm-switch-success.lmm-switch-active {
-    background: cl(success, 100)
+    background: cl(success, 1)
 }
 
 .lmm-switch-warning {
-    background: cl(light, 100)
+    background: cl(light, 1)
 }
 
 .lmm-switch-warning.lmm-switch-active {
-    background: cl(warning, 100)
+    background: cl(warning, 1)
 }
 
 .lmm-switch-dark {
-    background: cl(light, 100)
+    background: cl(light, 1)
 }
 
 .lmm-switch-dark.lmm-switch-active {
-    background: cl(dark, 100)
+    background: cl(dark, 1)
 }
 
 .lmm-switch-light {
-    background: cl(light, 100)
+    background: cl(light, 1)
 }
 
 .lmm-switch-light.lmm-switch-active {
-    background: cl(light, 100)
+    background: cl(light, 1)
 }

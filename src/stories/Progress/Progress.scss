@@ -29,57 +29,57 @@
 }
 
 .lmm-progress-primary {
-    background: cl(primary, 0.10)
+    background: cl(primary, 0.1)
 }
 
 .lmm-progress-primary .lmm-progress--foreground,
 .lmm-progress-primary .lmm-progress--indeterminate {
-    background: cl(primary, 100)
+    background: cl(primary, 1)
 }
 
 .lmm-progress-danger {
-    background: cl(danger, 0.10)
+    background: cl(danger, 0.1)
 }
 
 .lmm-progress-danger .lmm-progress--foreground,
 .lmm-progress-danger .lmm-progress--indeterminate {
-    background: cl(danger, 100)
+    background: cl(danger, 1)
 }
 
 .lmm-progress-success {
-    background: cl(success, 0.10)
+    background: cl(success, 0.1)
 }
 
 .lmm-progress-success .lmm-progress--foreground,
 .lmm-progress-success .lmm-progress--indeterminate {
-    background: cl(success, 100)
+    background: cl(success, 1)
 }
 
 .lmm-progress-warning {
-    background: cl(warning, 0.10)
+    background: cl(warning, 0.1)
 }
 
 .lmm-progress-warning .lmm-progress--foreground,
 .lmm-progress-warning .lmm-progress--indeterminate {
-    background: cl(warning, 100)
+    background: cl(warning, 1)
 }
 
 .lmm-progress-dark {
-    background: cl(dark, 0.10)
+    background: cl(dark, 0.1)
 }
 
 .lmm-progress-dark .lmm-progress--foreground,
 .lmm-progress-dark .lmm-progress--indeterminate {
-    background: cl(dark, 100)
+    background: cl(dark, 1)
 }
 
 .lmm-progress-light {
-    background: cl(light, 0.10)
+    background: cl(light, 0.1)
 }
 
 .lmm-progress-light .lmm-progress--foreground,
 .lmm-progress-light .lmm-progress--indeterminate {
-    background: cl(light, 100)
+    background: cl(light, 1)
 }
 
 @keyframes indeterminate {

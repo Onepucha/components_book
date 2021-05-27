@@ -4,8 +4,8 @@
     color: inherit;
     padding: 8px;
     border-radius: 5px;
-    border: 0 solid cl(blacks, 20);
-    background: cl(grays, 100);
+    border: 0 solid cl(blacks, 2);
+    background: cl(grays, 0.1);
 }
 
 /*.lmm-app-is-rtl .lmm-pagination--input-goto {
@@ -33,7 +33,7 @@
 
 .lmm-pagination--ul {
     padding: 0;
-    background: cl(grays, 100) !important;
+    background: cl(grays, 0.1) !important;
     border-radius: 20px;
     padding-left: 5px;
     padding-right: 5px;
@@ -82,7 +82,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: cl(primary, 100);
+    background: cl(primary, 1);
     top: 0;
     display: block;
     border-radius: 8px;
@@ -109,10 +109,10 @@
 
 .lmm-pagination--li.is-current {
     transform: scale(1.05);
-    color: cl(whites, 100);
+    color: cl(whites, 1);
     font-weight: 700;
     cursor: default;
-    background: cl(primary, 100);
+    background: cl(primary, 1);
 }
 
 .lmm-pagination--li.is-current .effect {
@@ -121,7 +121,7 @@
 }
 
 .lmm-pagination--li:hover:not(.is-current) {
-    color: cl(primary, 100);
+    color: cl(primary, 1);
 }
 
 .lmm-pagination--buttons {
@@ -136,7 +136,7 @@
     flex-shrink: 0;
     color: cl(blacks, 60);
     transition: all .2s ease;
-    background: cl(grays, 100);
+    background: cl(grays, 0.1);
     margin: 0;
     z-index: 200;
 }
@@ -180,109 +180,109 @@
 }
 
 .lmm-pagination--buttons:hover {
-    background: cl(primary, 100);
-    color: #fff;
+    background: cl(primary, 1);
+    color: cl(whites, 1);
 }
 
 .lmm-pagination-primary li:hover:not(.is-current) {
-    color: cl(primary, 100) !important;
+    color: cl(primary, 1) !important;
 }
 
 .lmm-pagination-primary .effect {
-    -webkit-box-shadow: 0 0 20px 0 cl(primary, 50);
-    box-shadow: 0 0 20px 0 cl(primary, 50);
+    -webkit-box-shadow: 0 0 20px 0 cl(primary, 5);
+    box-shadow: 0 0 20px 0 cl(primary, 5);
 }
 
 .lmm-pagination-primary .effect,
 .lmm-pagination-primary .lmm-pagination--buttons:hover {
-    background: cl(primary, 100) !important;
+    background: cl(primary, 1) !important;
 }
 
 .lmm-pagination-danger li:hover:not(.is-current) {
-    color: cl(danger, 100) !important;
+    color: cl(danger, 1) !important;
 }
 
 .lmm-pagination-danger .effect {
-    box-shadow: 0 0 20px 0 cl(danger, 50);
+    box-shadow: 0 0 20px 0 cl(danger, 5);
 }
 
 .lmm-pagination-danger .effect,
 .lmm-pagination-danger .lmm-pagination--buttons:hover {
-    background: cl(danger, 100) !important;
+    background: cl(danger, 1) !important;
 }
 
 .lmm-pagination-success li:hover:not(.is-current) {
-    color: cl(success, 100) !important;
+    color: cl(success, 1) !important;
 }
 
 .lmm-pagination-success .effect {
-    box-shadow: 0 0 20px 0 cl(success, 50);
+    box-shadow: 0 0 20px 0 cl(success, 5);
 }
 
 .lmm-pagination-success .effect,
 .lmm-pagination-success .lmm-pagination--buttons:hover {
-    background: cl(success, 100) !important;
+    background: cl(success, 1) !important;
 }
 
 .lmm-pagination-warning li:hover:not(.is-current) {
-    color: cl(warning, 100) !important;
+    color: cl(warning, 1) !important;
 }
 
 .lmm-pagination-warning .effect {
-    box-shadow: 0 0 20px 0 cl(warning, 50);
+    box-shadow: 0 0 20px 0 cl(warning, 5);
 }
 
 .lmm-pagination-warning .effect,
 .lmm-pagination-warning .lmm-pagination--buttons:hover {
-    background: cl(warning, 100) !important;
+    background: cl(warning, 1) !important;
 }
 
 .lmm-pagination-dark li:hover:not(.is-current) {
-    color: cl(dark, 100) !important;
+    color: cl(dark, 1) !important;
 }
 
 .lmm-pagination-dark .effect {
-    box-shadow: 0 0 20px 0 cl(dark, 50);
+    box-shadow: 0 0 20px 0 cl(dark, 5);
 }
 
 .lmm-pagination-dark .effect,
 .lmm-pagination-dark .lmm-pagination--buttons:hover {
-    background: cl(dark, 100) !important;
+    background: cl(dark, 1) !important;
 }
 
 .lmm-pagination-light li:hover:not(.is-current) {
-    color: cl(light, 100) !important;
+    color: cl(light, 1) !important;
 }
 
 .lmm-pagination-light .effect {
-    box-shadow: 0 0 20px 0 cl(light, 50);
+    box-shadow: 0 0 20px 0 cl(light, 5);
 }
 
 .lmm-pagination-light .effect,
 .lmm-pagination-light .lmm-pagination--buttons:hover {
-    background: cl(light, 100) !important;
+    background: cl(light, 1) !important;
 }
 
 .lmm-description-primary {
-    color: cl(primary, 100) !important;
+    color: cl(primary, 1) !important;
 }
 
 .lmm-description-danger {
-    color: cl(danger, 100) !important;
+    color: cl(danger, 1) !important;
 }
 
 .lmm-description-success {
-    color: cl(success, 100) !important;
+    color: cl(success, 1) !important;
 }
 
 .lmm-description-warning {
-    color: cl(warning, 100) !important;
+    color: cl(warning, 1) !important;
 }
 
 .lmm-description-dark {
-    color: cl(dark, 100) !important;
+    color: cl(dark, 1) !important;
 }
 
 .lmm-description-light {
-    color: cl(light, 100) !important;
+    color: cl(light, 1) !important;
 }

@@ -183,7 +183,7 @@
   right: -10px;
   border-radius: 3px;
   border: 0;
-  background: cl(whites, 100);
+  background: cl(whites, 1);
   box-shadow: 0 0 10px 0 cl(blacks, 0.05);
   cursor: pointer;
   z-index: 200;
@@ -281,62 +281,62 @@
 
 .lmm-tabs-primary .con-ul-tabs .activeChild button,
 .lmm-tabs-primary .con-ul-tabs button:not(:disabled):hover {
-  color: cl(primary, 100) !important;
+  color: cl(primary, 1) !important;
 }
 
 .lmm-tabs-primary .con-ul-tabs .line-lmm-tabs {
-  background: linear-gradient(30deg, cl(primary, 100), cl(primary, 0.50)) !important;
-  box-shadow: 0 0 8px 0 cl(primary, 0.40) !important;
+  background: linear-gradient(30deg, cl(primary, 1), cl(primary, 0.5)) !important;
+  box-shadow: 0 0 8px 0 cl(primary, 0.4) !important;
 }
 
 .lmm-tabs-danger .con-ul-tabs .activeChild button,
 .lmm-tabs-danger .con-ul-tabs button:not(:disabled):hover {
-  color: cl(danger, 100) !important;
+  color: cl(danger, 1) !important;
 }
 
 .lmm-tabs-danger .con-ul-tabs .line-lmm-tabs {
-  background: linear-gradient(30deg, cl(danger, 100), cl(danger, 0.50)) !important;
-  box-shadow: 0 0 8px 0 cl(danger, 0.40) !important;
+  background: linear-gradient(30deg, cl(danger, 1), cl(danger, 0.5)) !important;
+  box-shadow: 0 0 8px 0 cl(danger, 0.4) !important;
 }
 
 .lmm-tabs-success .con-ul-tabs .activeChild button,
 .lmm-tabs-success .con-ul-tabs button:not(:disabled):hover {
-  color: cl(success, 100) !important;
+  color: cl(success, 1) !important;
 }
 
 .lmm-tabs-success .con-ul-tabs .line-lmm-tabs {
-  background: linear-gradient(30deg, cl(success, 100), cl(success, 0.50)) !important;
-  box-shadow: 0 0 8px 0 cl(success, 0.40) !important;
+  background: linear-gradient(30deg, cl(success, 1), cl(success, 0.5)) !important;
+  box-shadow: 0 0 8px 0 cl(success, 0.4) !important;
 }
 
 .lmm-tabs-warning .con-ul-tabs .activeChild button,
 .lmm-tabs-warning .con-ul-tabs button:not(:disabled):hover {
-  color: cl(warning, 100) !important;
+  color: cl(warning, 1) !important;
 }
 
 .lmm-tabs-warning .con-ul-tabs .line-lmm-tabs {
-  background: linear-gradient(30deg, cl(warning, 100), cl(warning, 0.50)) !important;
-  box-shadow: 0 0 8px 0 cl(warning, 0.40) !important;
+  background: linear-gradient(30deg, cl(warning, 1), cl(warning, 0.5)) !important;
+  box-shadow: 0 0 8px 0 cl(warning, 0.4) !important;
 }
 
 .lmm-tabs-dark .con-ul-tabs .activeChild button,
 .lmm-tabs-dark .con-ul-tabs button:not(:disabled):hover {
-  color: cl(dark, 100) !important;
+  color: cl(dark, 1) !important;
 }
 
 .lmm-tabs-dark .con-ul-tabs .line-lmm-tabs {
-  background: linear-gradient(30deg, cl(dark, 100), cl(dark, 0.50)) !important;
-  box-shadow: 0 0 8px 0 cl(dark, 0.40) !important;
+  background: linear-gradient(30deg, cl(dark, 1), cl(dark, 0.5)) !important;
+  box-shadow: 0 0 8px 0 cl(dark, 0.4) !important;
 }
 
 .lmm-tabs-light .con-ul-tabs .activeChild button,
 .lmm-tabs-light .con-ul-tabs button:not(:disabled):hover {
-  color: cl(light, 100) !important;
+  color: cl(light, 1) !important;
 }
 
 .lmm-tabs-light .con-ul-tabs .line-lmm-tabs {
-  background: linear-gradient(30deg, cl(light, 100), cl(light, 0.50)) !important;
-  box-shadow: 0 0 8px 0 cl(light, 0.40) !important;
+  background: linear-gradient(30deg, cl(light, 1), cl(light, 0.5)) !important;
+  box-shadow: 0 0 8px 0 cl(light, 0.4) !important;
 }
 
 .lmm-tabs--content {

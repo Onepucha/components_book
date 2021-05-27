@@ -34,17 +34,17 @@
 
 .lmm-breadcrumb--ol a {
     transition: all .2s ease;
-    color: cl(blacks, 40);
+    color: cl(blacks, 0.4);
 }
 
 .lmm-breadcrumb--ol a:focus,
 .lmm-breadcrumb--ol a:hover {
-    color: cl(blacks, 70);
+    color: cl(blacks, 0.7);
     text-decoration: none;
 }
 
 .lmm-breadcrum--separator {
-    color: cl(blacks, 40);
+    color: cl(blacks, 0.4);
     padding: 0 .5rem 0 .5rem;
 }
 
@@ -54,25 +54,25 @@
 }
 
 .lmm-breadcrumb-text-primary {
-    color: cl(primary, 100);
+    color: cl(primary, 1);
 }
 
 .lmm-breadcrumb-text-danger {
-    color: cl(danger, 100);
+    color: cl(danger, 1);
 }
 
 .lmm-breadcrumb-text-success {
-    color: cl(success, 100);
+    color: cl(success, 1);
 }
 
 .lmm-breadcrumb-text-warning {
-    color: cl(warning, 100);
+    color: cl(warning, 1);
 }
 
 .lmm-breadcrumb-text-dark {
-    color: cl(dark, 100);
+    color: cl(dark, 1);
 }
 
 .lmm-breadcrumb-text-light {
-    color: cl(light, 100);
+    color: cl(light, 1);
 }

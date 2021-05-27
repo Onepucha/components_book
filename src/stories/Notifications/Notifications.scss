@@ -9,8 +9,8 @@
   border-radius: 10px;
   overflow: hidden;
   transition: all 0.3s ease;
-  background: cl(primary, 100);
-  color: cl(whites, 100);
+  background: cl(primary, 1);
+  color: cl(whites, 1);
   cursor: default;
   max-width: 350px;
   min-width: 200px;
@@ -54,33 +54,33 @@
 
 
 .lmm-noti-primary {
-  background: cl(primary, 100);
-  color: cl(whites, 100);
+  background: cl(primary, 1);
+  color: cl(whites, 1);
 }
 
 .lmm-noti-danger {
-  background: cl(danger, 100);
-  color: cl(whites, 100);
+  background: cl(danger, 1);
+  color: cl(whites, 1);
 }
 
 .lmm-noti-success {
-  background: cl(success, 100);
-  color: cl(whites, 100);
+  background: cl(success, 1);
+  color: cl(whites, 1);
 }
 
 .lmm-noti-warning {
-  background: cl(warning, 100);
-  color: cl(whites, 100);
+  background: cl(warning, 1);
+  color: cl(whites, 1);
 }
 
 .lmm-noti-dark {
-  background: cl(dark, 100);
-  color: cl(whites, 100);
+  background: cl(dark, 1);
+  color: cl(whites, 1);
 }
 
 .lmm-noti-light {
-  background: cl(light, 100);
-  color: cl(blacks, 100);
+  background: cl(light, 1);
+  color: cl(blacks, 1);
 }
 
 @keyframes open {

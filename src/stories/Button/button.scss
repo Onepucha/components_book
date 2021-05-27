@@ -24,9 +24,9 @@
   user-select: none;
   touch-action: manipulation;
   border-radius: 0;
-  color: cl(blacks);
+  color: cl(blacks, 1);
   background-color: transparent;
-  border: 1px solid cl(blacks);
+  border: 1px solid cl(blacks, 1);
 
   span {
     display: inline-block;
@@ -70,9 +70,9 @@
   &:hover,
   &:focus {
     outline: none;
-    color: cl(primary, 100);
-    background: cl(whites, 100);
-    border-color: cl(primary, 100);
+    color: cl(primary, 1);
+    background: cl(whites, 1);
+    border-color: cl(primary, 1);
     transform: translate3d(0, -3px, 0);
     box-shadow: cl(blacks, 0.08) 0 3px 10px 0;
   }
@@ -121,121 +121,121 @@
   }
 
   &--primary {
-    color: cl(whites, 100);
-    background-color: cl(primary, 100);
-    border-color: cl(primary, 100);
+    color: cl(whites, 1);
+    background-color: cl(primary, 1);
+    border-color: cl(primary, 1);
 
     &:hover,
     &:focus {
-      color: cl(whites, 100);
+      color: cl(whites, 1);
       background-color: cl(primary, 0.85);
       border-color: transparent;
     }
 
     &.button--border {
-      border: 1px solid cl(primary, 100);
+      border: 1px solid cl(primary, 1);
       background: transparent !important;
-      color: cl(primary, 100);
+      color: cl(primary, 1);
 
       &:hover,
       &:focus {
-        background: cl(primary, 0.20) !important;
+        background: cl(primary, 0.2) !important;
       }
     }
   }
 
   &--success {
-    color: cl(whites, 100);
-    background-color: cl(success, 100);
-    border-color: cl(success, 100);
+    color: cl(whites, 1);
+    background-color: cl(success, 1);
+    border-color: cl(success, 1);
 
     &:hover,
     &:focus {
-      color: cl(whites, 100);
+      color: cl(whites, 1);
       background-color: cl(success, 0.85);
       border-color: transparent;
     }
 
     &.button--border {
-      border: 1px solid cl(success, 100);
+      border: 1px solid cl(success, 1);
       background: transparent !important;
-      color: cl(success, 100);
+      color: cl(success, 1);
 
       &:hover,
       &:focus {
-        background: cl(success, 0.20) !important;
+        background: cl(success, 0.2) !important;
       }
     }
   }
 
   &--danger {
-    color: cl(whites, 100);
-    background-color: cl(danger, 100);
-    border-color: cl(danger, 100);
+    color: cl(whites, 1);
+    background-color: cl(danger, 1);
+    border-color: cl(danger, 1);
 
     &:hover,
     &:focus {
-      color: cl(whites, 100);
+      color: cl(whites, 1);
       background-color: cl(danger, 0.85);
       border-color: transparent;
     }
 
     &.button--border {
-      border: 1px solid cl(danger, 100);
+      border: 1px solid cl(danger, 1);
       background: transparent !important;
-      color: cl(danger, 100);
+      color: cl(danger, 1);
 
       &:hover,
       &:focus {
-        background: cl(danger, 0.20) !important;
+        background: cl(danger, 0.2) !important;
       }
     }
   }
 
   &--warning {
-    color: cl(whites, 100);
-    background-color: cl(warning, 100);
-    border-color: cl(warning, 100);
+    color: cl(whites, 1);
+    background-color: cl(warning, 1);
+    border-color: cl(warning, 1);
 
     &:hover,
     &:focus {
-      color: cl(whites, 100);
+      color: cl(whites, 1);
       background-color: cl(warning, 0.85);
       border-color: transparent;
     }
 
     &.button--border {
-      border: 1px solid cl(warning, 100);
+      border: 1px solid cl(warning, 1);
       background: transparent !important;
-      color: cl(warning, 100);
+      color: cl(warning, 1);
 
       &:hover,
       &:focus {
-        background: cl(warning, 0.20) !important;
+        background: cl(warning, 0.2) !important;
       }
     }
   }
 
   &--dark {
-    color: cl(whites, 100);
-    background-color: cl(dark, 100);
-    border-color: cl(dark, 100);
+    color: cl(whites, 1);
+    background-color: cl(dark, 1);
+    border-color: cl(dark, 1);
 
     &:hover,
     &:focus {
-      color: cl(whites, 100);
+      color: cl(whites, 1);
       background-color: cl(dark, 0.85);
       border-color: transparent;
     }
 
     &.button--border {
-      border: 1px solid cl(dark, 100);
+      border: 1px solid cl(dark, 1);
       background: transparent !important;
-      color: cl(dark, 100);
+      color: cl(dark, 1);
 
       &:hover,
       &:focus {
-        background: cl(dark, 0.20) !important;
+        background: cl(dark, 0.2) !important;
       }
     }
   }

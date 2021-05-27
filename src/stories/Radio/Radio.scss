@@ -8,7 +8,7 @@
 
   &:hover {
     .lmm-radio--border {
-      border: 2px solid cl(primary, 100);
+      border: 2px solid cl(primary, 1);
     }
   }
 
@@ -31,7 +31,7 @@
     &--border {
       border-radius: 50%;
       background: transparent;
-      border: 2px solid cl(grays, 100);
+      border: 2px solid cl(grays, 1);
     }
 
     &--border,
@@ -106,8 +106,8 @@
           }
 
           .lmm-radio--border {
-            border: 2px solid cl(grays, 100);
-            background: cl(grays, 100);
+            border: 2px solid cl(grays, 1);
+            background: cl(grays, 1);
             pointer-events: none;
           }
         }
@@ -117,31 +117,31 @@
 }
 
 .lmm-radio-primary .lmm-radio--circle {
-  box-shadow: cl(primary, 100) 0px 3px 12px 0px;
-  border: 6px solid cl(primary, 100);
+  box-shadow: cl(primary, 1) 0px 3px 12px 0px;
+  border: 6px solid cl(primary, 1);
 }
 
 .lmm-radio-danger .lmm-radio--circle {
-  box-shadow: cl(danger, 100) 0px 3px 12px 0px;
-  border: 6px solid cl(danger, 100);
+  box-shadow: cl(danger, 1) 0px 3px 12px 0px;
+  border: 6px solid cl(danger, 1);
 }
 
 .lmm-radio-success .lmm-radio--circle {
-  box-shadow: cl(success, 100) 0px 3px 12px 0px;
-  border: 6px solid cl(success, 100);
+  box-shadow: cl(success, 1) 0px 3px 12px 0px;
+  border: 6px solid cl(success, 1);
 }
 
 .lmm-radio-warning .lmm-radio--circle {
-  box-shadow: cl(warning, 100) 0px 3px 12px 0px;
-  border: 6px solid cl(warning, 100);
+  box-shadow: cl(warning, 1) 0px 3px 12px 0px;
+  border: 6px solid cl(warning, 1);
 }
 
 .lmm-radio-dark .lmm-radio--circle {
-  box-shadow: cl(dark, 100) 0px 3px 12px 0px;
-  border: 6px solid cl(dark, 100);
+  box-shadow: cl(dark, 1) 0px 3px 12px 0px;
+  border: 6px solid cl(dark, 1);
 }
 
 .lmm-radio-light .lmm-radio--circle {
-  box-shadow: cl(light, 100) 0px 3px 12px 0px;
-  border: 6px solid cl(light, 100);
+  box-shadow: cl(light, 1) 0px 3px 12px 0px;
+  border: 6px solid cl(light, 1);
 }

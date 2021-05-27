@@ -13,8 +13,8 @@
   left: 0;
   top: 0;
   z-index: 40000;
-  background: cl(primary, 100);
-  color: cl(whites, 100);
+  background: cl(primary, 1);
+  color: cl(whites, 1);
   padding: 5px 7px;
   font-family: $Regular;
   font-size: 12px;
@@ -24,7 +24,7 @@
   & h4 {
     font-size: 13px;
     width: 100%;
-    border-bottom: 1px solid cl(whites, 100);
+    border-bottom: 1px solid cl(whites, 1);
     padding-bottom: 5px;
     margin-bottom: 5px;
     text-align: center;
@@ -120,31 +120,31 @@
 }
 
 .lmm-tooltip-primary {
-  background: cl(primary, 100);
-  color: cl(whites, 100);
+  background: cl(primary, 1);
+  color: cl(whites, 1);
 }
 
 .lmm-tooltip-danger {
-  background: cl(danger, 100);
-  color: cl(whites, 100);
+  background: cl(danger, 1);
+  color: cl(whites, 1);
 }
 
 .lmm-tooltip-success {
-  background: cl(success, 100);
-  color: cl(whites, 100);
+  background: cl(success, 1);
+  color: cl(whites, 1);
 }
 
 .lmm-tooltip-warning {
-  background: cl(warning, 100);
-  color: cl(whites, 100);
+  background: cl(warning, 1);
+  color: cl(whites, 1);
 }
 
 .lmm-tooltip-dark {
-  background: cl(dark, 100);
-  color: cl(whites, 100);
+  background: cl(dark, 1);
+  color: cl(whites, 1);
 }
 
 .lmm-tooltip-light {
-  background: cl(light, 100);
-  color: cl(whites, 100);
+  background: cl(light, 1);
+  color: cl(whites, 1);
 }

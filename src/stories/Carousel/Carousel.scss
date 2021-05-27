@@ -8,104 +8,104 @@
         .story__slide {
             height: 200px;
             font-size: $fs18;
-            color: cl(whites, 100);
+            color: cl(whites, 1);
         }
-    
+
         &--primary {
             .story__slide {
-                background: cl(primary, 100);
+                background: cl(primary, 1);
             }
 
             .carousel__arrows {
                 i {
-                    color: cl(whites, 100);
+                    color: cl(whites, 1);
                 }
             }
         }
 
         &--danger {
             .story__slide {
-                background: cl(danger, 100);
+                background: cl(danger, 1);
             }
 
             .carousel__arrows {
                 i {
-                    color: cl(whites, 100);
+                    color: cl(whites, 1);
                 }
             }
         }
 
         &--success {
             .story__slide {
-                background:cl(success, 100);
+                background:cl(success, 1);
             }
 
             .carousel__arrows {
                 i {
-                    color: cl(whites, 100);
+                    color: cl(whites, 1);
                 }
             }
         }
 
         &--warning {
             .story__slide {
-                background: cl(warning, 100);
+                background: cl(warning, 1);
             }
 
             .carousel__arrows {
                 i {
-                    color: cl(whites, 100);
+                    color: cl(whites, 1);
                 }
             }
         }
 
         &--dark {
             .story__slide {
-                background: cl(dark, 100);
+                background: cl(dark, 1);
             }
 
             .carousel__arrows {
                 i {
-                    color: cl(whites, 100);
+                    color: cl(whites, 1);
                 }
             }
         }
 
         &--light {
             .story__slide {
-                background: cl(light, 100);
-                color: cl(blacks, 100);
+                background: cl(light, 1);
+                color: cl(blacks, 1);
             }
 
             .carousel__arrows {
                 i {
-                    color: cl(blacks, 100);
+                    color: cl(blacks, 1);
                 }
             }
         }
-    
+
         &--multiple {
             .story__slide {
                 flex: 0 0 100%;
-    
+
                 @media (min-width: 500px) {
                     flex: 0 0 50%;
                 }
-    
+
                 @media (min-width: 768px) {
                     flex: 0 0 33.33%;
                 }
-    
+
                 @media (min-width: 1024px) {
                     flex: 0 0 25%;
                 }
-    
+
                 @media (min-width: 1280px) and (max-width: 1440px) {
                     flex: 0 0 20%;
                 }
             }
         }
-    
+
         &--images {
             .story__slide {
                 img {
@@ -167,5 +167,3 @@
         }
     }
 }
-
-

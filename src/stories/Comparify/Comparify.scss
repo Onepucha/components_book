@@ -52,8 +52,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: cl(whites, 100);
-    background: cl(primary, 100);
+    color: cl(whites, 1);
+    background: cl(primary, 1);
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -65,7 +65,7 @@
     top: 0;
     width: 2px;
     height: 100%;
-    background: cl(primary, 100);
+    background: cl(primary, 1);
     z-index: 4;
     pointer-events: none;
     user-select: none;
@@ -81,7 +81,7 @@
     top: calc(50%);
     z-index: 6;
     -webkit-appearance: none;
-    background: cl(blacks, 40);
+    background: cl(blacks, 4);
     opacity: 0;
 }
 

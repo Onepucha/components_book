@@ -33,7 +33,7 @@
             height: 7px;
             border-radius: 50%;
             z-index: 100;
-    
+
             &.badgeNumber {
                 width: auto;
                 height: auto;
@@ -43,7 +43,7 @@
                 padding-left: 3px;
                 padding-right: 3px;
                 font-size: .625em;
-                color: cl(whites, 100);
+                color: cl(whites, 1);
             }
         }
 
@@ -60,108 +60,108 @@
             height: 100%;
             overflow: hidden;
             border-radius: 50%;
-            
+
             & img {
-                width: 100%
+                width: 100%;
             }
         }
     }
 }
 
 .con-lmm-avatar-primary {
-    background: cl(primary, 100)
+    background: cl(primary, 1);
 }
 
 .lmm-avatar-text-primary {
-    color: cl(primary, 100)
+    color: cl(primary, 1);
 }
 
 .con-lmm-avatar-danger {
-    background: cl(danger, 100)
+    background: cl(danger, 1);
 }
 
 .lmm-avatar-text-danger {
-    color: cl(danger, 100)
+    color: cl(danger, 1);
 }
 
 .con-lmm-avatar-success {
-    background: cl(success, 100)
+    background: cl(success, 1);
 }
 
 .lmm-avatar-text-success {
-    color: cl(success, 100)
+    color: cl(success, 1);
 }
 
 .con-lmm-avatar-warning {
-    background: cl(warning, 100)
+    background: cl(warning, 1);
 }
 
 .lmm-avatar-text-warning {
-    color: cl(warning, 100)
+    color: cl(warning, 1);
 }
 
 .con-lmm-avatar-dark {
-    background: cl(dark, 100)
+    background: cl(dark, 1);
 }
 
 .lmm-avatar-text-dark {
-    color: cl(dark, 100)
+    color: cl(dark, 1);
 }
 
 .con-lmm-avatar-light {
-    background: cl(light, 100)
+    background: cl(light, 1);
 }
 
 .lmm-avatar-text-light {
-    color: cl(light, 100)
+    color: cl(light, 1);
 }
 
 .con-lmm-icon-bg-primary,
 .dot-count-primary {
-    background: cl(primary, 100)
+    background: cl(primary, 1);
 }
 
 .lmm-icon-primary {
-    color: cl(primary, 100)
+    color: cl(primary, 1);
 }
 
 .con-lmm-icon-bg-danger,
 .dot-count-danger {
-    background: cl(danger, 100)
+    background: cl(danger, 1);
 }
 
 .lmm-icon-danger {
-    color: cl(danger, 100)
+    color: cl(danger, 1);
 }
 
 .con-lmm-icon-bg-success,
 .dot-count-success {
-    background: cl(success, 100)
+    background: cl(success, 1);
 }
 
 .lmm-icon-success {
-    color: cl(success, 100)
+    color: cl(success, 1);
 }
 
 .con-lmm-icon-bg-warning,
 .dot-count-warning {
-    background: cl(warning, 100)
+    background: cl(warning, 1);
 }
 
 .lmm-icon-warning {
-    color: cl(warning, 100)
+    color: cl(warning, 1);
 }
 
 .con-lmm-icon-bg-dark,
 .dot-count-dark {
-    background: cl(dark, 100)
+    background: cl(dark, 1);
 }
 
 .lmm-icon-dark {
-    color: cl(dark, 100)
+    color: cl(dark, 1);
 }
 
 .con-lmm-icon-bg-light,
 .dot-count-light {
-    background: cl(light, 100)
+    background: cl(light, 1);
 }
