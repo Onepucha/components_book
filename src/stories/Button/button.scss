@@ -26,7 +26,7 @@
   border-radius: 0;
   color: cl(blacks, 1);
   background-color: transparent;
-  border: 1px solid cl(blacks, 1);
+  border: 1px solid cl(blacks, 1) !important;
 
   span {
     display: inline-block;
@@ -72,7 +72,7 @@
     outline: none;
     color: cl(primary, 1);
     background: cl(whites, 1);
-    border-color: cl(primary, 1);
+    border-color: cl(primary, 1) !important;
     transform: translate3d(0, -3px, 0);
     box-shadow: cl(blacks, 0.08) 0 3px 10px 0;
   }
@@ -92,18 +92,18 @@
   }
 
   &--small {
-    font-size: 12px;
-    padding: 10px 16px;
+    font-size: 12px !important;
+    padding: 10px 16px !important;
   }
 
   &--medium {
-    font-size: 14px;
-    padding: 11px 20px;
+    font-size: 14px !important;
+    padding: 11px 20px !important;
   }
 
   &--large {
-    font-size: 16px;
-    padding: 12px 24px;
+    font-size: 16px !important;
+    padding: 12px 24px !important;
   }
 
   &--round {
@@ -123,19 +123,19 @@
   &--primary {
     color: cl(whites, 1);
     background-color: cl(primary, 1);
-    border-color: cl(primary, 1);
+    border-color: cl(primary, 1) !important;
 
     &:hover,
     &:focus {
       color: cl(whites, 1);
       background-color: cl(primary, 0.85);
-      border-color: transparent;
+      border-color: transparent !important;
     }
 
     &.button--border {
-      border: 1px solid cl(primary, 1);
+      border: 1px solid cl(primary, 1) !important;
       background: transparent !important;
-      color: cl(primary, 1);
+      color: cl(primary, 1) !important;
 
       &:hover,
       &:focus {
@@ -145,15 +145,15 @@
   }
 
   &--success {
-    color: cl(whites, 1);
+    color: cl(whites, 1) !important;
     background-color: cl(success, 1);
-    border-color: cl(success, 1);
+    border-color: cl(success, 1) !important;
 
     &:hover,
     &:focus {
-      color: cl(whites, 1);
+      color: cl(whites, 1) !important;
       background-color: cl(success, 0.85);
-      border-color: transparent;
+      border-color: transparent !important;
     }
 
     &.button--border {
@@ -169,15 +169,15 @@
   }
 
   &--danger {
-    color: cl(whites, 1);
+    color: cl(danger, 1) !important;
     background-color: cl(danger, 1);
-    border-color: cl(danger, 1);
+    border-color: cl(danger, 1) !important;
 
     &:hover,
     &:focus {
-      color: cl(whites, 1);
+      color: cl(whites, 1) !important;
       background-color: cl(danger, 0.85);
-      border-color: transparent;
+      border-color: transparent !important;
     }
 
     &.button--border {
@@ -193,15 +193,15 @@
   }
 
   &--warning {
-    color: cl(whites, 1);
+    color: cl(whites, 1) !important;
     background-color: cl(warning, 1);
-    border-color: cl(warning, 1);
+    border-color: cl(warning, 1) !important;
 
     &:hover,
     &:focus {
-      color: cl(whites, 1);
+      color: cl(whites, 1) !important;
       background-color: cl(warning, 0.85);
-      border-color: transparent;
+      border-color: transparent !important;
     }
 
     &.button--border {
@@ -217,15 +217,15 @@
   }
 
   &--dark {
-    color: cl(whites, 1);
+    color: cl(whites, 1) !important;
     background-color: cl(dark, 1);
-    border-color: cl(dark, 1);
+    border-color: cl(dark, 1) !important;
 
     &:hover,
     &:focus {
-      color: cl(whites, 1);
+      color: cl(whites, 1) !important;
       background-color: cl(dark, 0.85);
-      border-color: transparent;
+      border-color: transparent !important;
     }
 
     &.button--border {

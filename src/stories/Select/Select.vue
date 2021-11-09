@@ -14,6 +14,7 @@
     <label v-if="label" ref="inputSelectLabel" class="vs-select--label">{{
       label
     }}</label>
+    <!-- eslint-disable-next-line vue/valid-v-model -->
     <div class="input-select-con" v-model="valueFilter">
       <input
         ref="inputselect"

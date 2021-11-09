@@ -1,5 +1,5 @@
 <template>
-  <button type="button" name="button" @click="onClick" :class="classes" :disabled="disabled" :style="style">
+  <button type="button" name="button" v-on="$listeners" :class="classes" :disabled="disabled" :style="style">
     <i class="icon material-icons" :class="classesIcon" v-if="icon">{{
       iconLabel
     }}</i>

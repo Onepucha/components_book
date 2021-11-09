@@ -73,10 +73,23 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row mb-100">
         <div class="col-lg-24 col-xs-12">
           <button type="button" class="btn waves-effect waves-light" style="font-size: 14px;padding: 11px 20px;"
             @click.prevent="redirect">Перейти</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-24 col-xs-12">
+          <lmm-button class="mb-30" primary size="large" label="Default" @click="increment" :danger="select == 'danger'" />
+          <select name="bg" id="bg" v-model="select">
+            <option value="primary" selected>primary</option>
+            <option value="success">success</option>
+            <option value="danger">danger</option>
+            <option value="warning">warning</option>
+            <option value="dark">dark</option>
+          </select>
+          <lmm-chip color="primary">Default</lmm-chip>
         </div>
       </div>
     </div>
@@ -84,7 +97,7 @@
 </template>
 
 <style lang="scss" scoped>
-  @import '~materialize-css/dist/css/materialize.min.css';
+  /*@import '~materialize-css/dist/css/materialize.min.css';*/
   @import '../assets/auth.scss';
   @import "../stories/variables.scss";
 
@@ -145,12 +158,29 @@
     label {
       width: 100%;
     }
+
+    #bg {
+      display: block !important;
+    }
+
   }
 </style>
 
 <script>
+  import lmmButton from '../../src/stories/Button/Button.vue';
+  import lmmChip from '../../src/stories/Chip/Chip.vue';
+
   export default {
     name: 'home',
+    components: {
+      lmmButton,
+      lmmChip,
+    },
+    data() {
+      return {
+        select: null,
+      }
+    },
     mounted() {
       document.querySelectorAll('input[type=color]').forEach(function (picker) {
 
@@ -166,6 +196,11 @@
         });
       });
     },
+    computed: {
+      count () {
+        return this.$store.state.count
+      }
+    },
     methods: {
       async logout() {
         await this.$store.dispatch('logout')
@@ -173,6 +208,13 @@
       },
       redirect() {
         window.location.assign('http://localhost:6006/?test=123');
+      },
+      changeOption: function(event){
+        console.log(event.target.value);
+      },
+      increment() {
+        this.$store.commit('increment')
+        console.log(this.$store.state.count)
       }
     },
   }
